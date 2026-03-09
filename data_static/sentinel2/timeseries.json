@@ -1,0 +1,1992 @@
+{
+  "source": {
+    "id": "sentinel2",
+    "label": "Sentinel-2",
+    "description": "Series históricas estacionales derivadas de Sentinel-2 SR Harmonized.",
+    "has_data": true
+  },
+  "wetlands": {
+    "sapunta": {
+      "name": "Sapunta",
+      "indices": {
+        "ndvi": {
+          "points": [
+            {
+              "date": "2017-02-15",
+              "label": "Verano 2017",
+              "year": 2017,
+              "season_key": "verano",
+              "season_label": "Verano",
+              "period_key": "2017_verano",
+              "value": 0.3023
+            },
+            {
+              "date": "2017-05-15",
+              "label": "Otoño 2017",
+              "year": 2017,
+              "season_key": "otono",
+              "season_label": "Otoño",
+              "period_key": "2017_otono",
+              "value": 0.2647
+            },
+            {
+              "date": "2017-08-15",
+              "label": "Invierno 2017",
+              "year": 2017,
+              "season_key": "invierno",
+              "season_label": "Invierno",
+              "period_key": "2017_invierno",
+              "value": 0.1714
+            },
+            {
+              "date": "2018-02-15",
+              "label": "Verano 2018",
+              "year": 2018,
+              "season_key": "verano",
+              "season_label": "Verano",
+              "period_key": "2018_verano",
+              "value": 0.2756
+            },
+            {
+              "date": "2018-08-15",
+              "label": "Invierno 2018",
+              "year": 2018,
+              "season_key": "invierno",
+              "season_label": "Invierno",
+              "period_key": "2018_invierno",
+              "value": 0.1675
+            },
+            {
+              "date": "2018-11-15",
+              "label": "Primavera 2018",
+              "year": 2018,
+              "season_key": "primavera",
+              "season_label": "Primavera",
+              "period_key": "2018_primavera",
+              "value": 0.2154
+            },
+            {
+              "date": "2019-02-15",
+              "label": "Verano 2019",
+              "year": 2019,
+              "season_key": "verano",
+              "season_label": "Verano",
+              "period_key": "2019_verano",
+              "value": 0.1994
+            },
+            {
+              "date": "2019-05-15",
+              "label": "Otoño 2019",
+              "year": 2019,
+              "season_key": "otono",
+              "season_label": "Otoño",
+              "period_key": "2019_otono",
+              "value": 0.194
+            },
+            {
+              "date": "2019-08-15",
+              "label": "Invierno 2019",
+              "year": 2019,
+              "season_key": "invierno",
+              "season_label": "Invierno",
+              "period_key": "2019_invierno",
+              "value": 0.1625
+            },
+            {
+              "date": "2019-11-15",
+              "label": "Primavera 2019",
+              "year": 2019,
+              "season_key": "primavera",
+              "season_label": "Primavera",
+              "period_key": "2019_primavera",
+              "value": 0.2112
+            },
+            {
+              "date": "2020-02-15",
+              "label": "Verano 2020",
+              "year": 2020,
+              "season_key": "verano",
+              "season_label": "Verano",
+              "period_key": "2020_verano",
+              "value": 0.2791
+            },
+            {
+              "date": "2020-05-15",
+              "label": "Otoño 2020",
+              "year": 2020,
+              "season_key": "otono",
+              "season_label": "Otoño",
+              "period_key": "2020_otono",
+              "value": 0.2704
+            },
+            {
+              "date": "2020-08-15",
+              "label": "Invierno 2020",
+              "year": 2020,
+              "season_key": "invierno",
+              "season_label": "Invierno",
+              "period_key": "2020_invierno",
+              "value": 0.1947
+            },
+            {
+              "date": "2020-11-15",
+              "label": "Primavera 2020",
+              "year": 2020,
+              "season_key": "primavera",
+              "season_label": "Primavera",
+              "period_key": "2020_primavera",
+              "value": 0.2261
+            },
+            {
+              "date": "2021-02-15",
+              "label": "Verano 2021",
+              "year": 2021,
+              "season_key": "verano",
+              "season_label": "Verano",
+              "period_key": "2021_verano",
+              "value": 0.32
+            },
+            {
+              "date": "2021-05-15",
+              "label": "Otoño 2021",
+              "year": 2021,
+              "season_key": "otono",
+              "season_label": "Otoño",
+              "period_key": "2021_otono",
+              "value": 0.2628
+            },
+            {
+              "date": "2021-08-15",
+              "label": "Invierno 2021",
+              "year": 2021,
+              "season_key": "invierno",
+              "season_label": "Invierno",
+              "period_key": "2021_invierno",
+              "value": 0.1957
+            },
+            {
+              "date": "2021-11-15",
+              "label": "Primavera 2021",
+              "year": 2021,
+              "season_key": "primavera",
+              "season_label": "Primavera",
+              "period_key": "2021_primavera",
+              "value": 0.2163
+            },
+            {
+              "date": "2022-02-15",
+              "label": "Verano 2022",
+              "year": 2022,
+              "season_key": "verano",
+              "season_label": "Verano",
+              "period_key": "2022_verano",
+              "value": 0.3196
+            },
+            {
+              "date": "2022-05-15",
+              "label": "Otoño 2022",
+              "year": 2022,
+              "season_key": "otono",
+              "season_label": "Otoño",
+              "period_key": "2022_otono",
+              "value": 0.2447
+            },
+            {
+              "date": "2022-08-15",
+              "label": "Invierno 2022",
+              "year": 2022,
+              "season_key": "invierno",
+              "season_label": "Invierno",
+              "period_key": "2022_invierno",
+              "value": 0.1875
+            },
+            {
+              "date": "2022-11-15",
+              "label": "Primavera 2022",
+              "year": 2022,
+              "season_key": "primavera",
+              "season_label": "Primavera",
+              "period_key": "2022_primavera",
+              "value": 0.2074
+            },
+            {
+              "date": "2023-02-15",
+              "label": "Verano 2023",
+              "year": 2023,
+              "season_key": "verano",
+              "season_label": "Verano",
+              "period_key": "2023_verano",
+              "value": 0.2865
+            },
+            {
+              "date": "2023-05-15",
+              "label": "Otoño 2023",
+              "year": 2023,
+              "season_key": "otono",
+              "season_label": "Otoño",
+              "period_key": "2023_otono",
+              "value": 0.2337
+            },
+            {
+              "date": "2023-08-15",
+              "label": "Invierno 2023",
+              "year": 2023,
+              "season_key": "invierno",
+              "season_label": "Invierno",
+              "period_key": "2023_invierno",
+              "value": 0.1847
+            },
+            {
+              "date": "2023-11-15",
+              "label": "Primavera 2023",
+              "year": 2023,
+              "season_key": "primavera",
+              "season_label": "Primavera",
+              "period_key": "2023_primavera",
+              "value": 0.1729
+            },
+            {
+              "date": "2024-02-15",
+              "label": "Verano 2024",
+              "year": 2024,
+              "season_key": "verano",
+              "season_label": "Verano",
+              "period_key": "2024_verano",
+              "value": 0.2016
+            },
+            {
+              "date": "2024-05-15",
+              "label": "Otoño 2024",
+              "year": 2024,
+              "season_key": "otono",
+              "season_label": "Otoño",
+              "period_key": "2024_otono",
+              "value": 0.1866
+            },
+            {
+              "date": "2024-08-15",
+              "label": "Invierno 2024",
+              "year": 2024,
+              "season_key": "invierno",
+              "season_label": "Invierno",
+              "period_key": "2024_invierno",
+              "value": 0.1672
+            },
+            {
+              "date": "2024-11-15",
+              "label": "Primavera 2024",
+              "year": 2024,
+              "season_key": "primavera",
+              "season_label": "Primavera",
+              "period_key": "2024_primavera",
+              "value": 0.1809
+            },
+            {
+              "date": "2025-02-15",
+              "label": "Verano 2025",
+              "year": 2025,
+              "season_key": "verano",
+              "season_label": "Verano",
+              "period_key": "2025_verano",
+              "value": 0.2239
+            },
+            {
+              "date": "2025-05-15",
+              "label": "Otoño 2025",
+              "year": 2025,
+              "season_key": "otono",
+              "season_label": "Otoño",
+              "period_key": "2025_otono",
+              "value": 0.2447
+            },
+            {
+              "date": "2025-08-15",
+              "label": "Invierno 2025",
+              "year": 2025,
+              "season_key": "invierno",
+              "season_label": "Invierno",
+              "period_key": "2025_invierno",
+              "value": 0.1972
+            },
+            {
+              "date": "2025-11-15",
+              "label": "Primavera 2025",
+              "year": 2025,
+              "season_key": "primavera",
+              "season_label": "Primavera",
+              "period_key": "2025_primavera",
+              "value": 0.2435
+            },
+            {
+              "date": "2026-02-15",
+              "label": "Verano 2026",
+              "year": 2026,
+              "season_key": "verano",
+              "season_label": "Verano",
+              "period_key": "2026_verano",
+              "value": 0.3401
+            }
+          ],
+          "metrics": {
+            "latest": {
+              "date": "2026-02-15",
+              "label": "Verano 2026",
+              "year": 2026,
+              "season_key": "verano",
+              "season_label": "Verano",
+              "value": 0.3401,
+              "historical_mean": 0.2272,
+              "historical_anomaly_abs": 0.1129,
+              "historical_anomaly_pct": 49.69,
+              "seasonal_mean": 0.2748,
+              "seasonal_anomaly_abs": 0.0653,
+              "seasonal_anomaly_pct": 23.76
+            },
+            "historical_mean": 0.2272,
+            "seasonal_means": {
+              "verano": {
+                "label": "Verano",
+                "mean": 0.2748
+              },
+              "otono": {
+                "label": "Otoño",
+                "mean": 0.2377
+              },
+              "invierno": {
+                "label": "Invierno",
+                "mean": 0.1809
+              },
+              "primavera": {
+                "label": "Primavera",
+                "mean": 0.2092
+              }
+            },
+            "annual_summary": [
+              {
+                "year": 2017,
+                "mean": 0.2461
+              },
+              {
+                "year": 2018,
+                "mean": 0.2195
+              },
+              {
+                "year": 2019,
+                "mean": 0.1918
+              },
+              {
+                "year": 2020,
+                "mean": 0.2426
+              },
+              {
+                "year": 2021,
+                "mean": 0.2487
+              },
+              {
+                "year": 2022,
+                "mean": 0.2398
+              },
+              {
+                "year": 2023,
+                "mean": 0.2194
+              },
+              {
+                "year": 2024,
+                "mean": 0.1841
+              },
+              {
+                "year": 2025,
+                "mean": 0.2273
+              },
+              {
+                "year": 2026,
+                "mean": 0.3401
+              }
+            ],
+            "trend": {
+              "annual_summary": [
+                {
+                  "year": 2017,
+                  "mean": 0.2461
+                },
+                {
+                  "year": 2018,
+                  "mean": 0.2195
+                },
+                {
+                  "year": 2019,
+                  "mean": 0.1918
+                },
+                {
+                  "year": 2020,
+                  "mean": 0.2426
+                },
+                {
+                  "year": 2021,
+                  "mean": 0.2487
+                },
+                {
+                  "year": 2022,
+                  "mean": 0.2398
+                },
+                {
+                  "year": 2023,
+                  "mean": 0.2194
+                },
+                {
+                  "year": 2024,
+                  "mean": 0.1841
+                },
+                {
+                  "year": 2025,
+                  "mean": 0.2273
+                },
+                {
+                  "year": 2026,
+                  "mean": 0.3401
+                }
+              ],
+              "slope_per_year": 0.0047,
+              "direction": "up",
+              "line": [
+                {
+                  "year": 2017,
+                  "value": 0.2146
+                },
+                {
+                  "year": 2018,
+                  "value": 0.2193
+                },
+                {
+                  "year": 2019,
+                  "value": 0.2241
+                },
+                {
+                  "year": 2020,
+                  "value": 0.2288
+                },
+                {
+                  "year": 2021,
+                  "value": 0.2336
+                },
+                {
+                  "year": 2022,
+                  "value": 0.2383
+                },
+                {
+                  "year": 2023,
+                  "value": 0.2431
+                },
+                {
+                  "year": 2024,
+                  "value": 0.2478
+                },
+                {
+                  "year": 2025,
+                  "value": 0.2526
+                },
+                {
+                  "year": 2026,
+                  "value": 0.2573
+                }
+              ]
+            }
+          }
+        },
+        "ndwi": {
+          "points": [
+            {
+              "date": "2017-02-15",
+              "label": "Verano 2017",
+              "year": 2017,
+              "season_key": "verano",
+              "season_label": "Verano",
+              "period_key": "2017_verano",
+              "value": -0.4284
+            },
+            {
+              "date": "2017-05-15",
+              "label": "Otoño 2017",
+              "year": 2017,
+              "season_key": "otono",
+              "season_label": "Otoño",
+              "period_key": "2017_otono",
+              "value": -0.3972
+            },
+            {
+              "date": "2017-08-15",
+              "label": "Invierno 2017",
+              "year": 2017,
+              "season_key": "invierno",
+              "season_label": "Invierno",
+              "period_key": "2017_invierno",
+              "value": -0.3406
+            },
+            {
+              "date": "2018-02-15",
+              "label": "Verano 2018",
+              "year": 2018,
+              "season_key": "verano",
+              "season_label": "Verano",
+              "period_key": "2018_verano",
+              "value": -0.4027
+            },
+            {
+              "date": "2018-08-15",
+              "label": "Invierno 2018",
+              "year": 2018,
+              "season_key": "invierno",
+              "season_label": "Invierno",
+              "period_key": "2018_invierno",
+              "value": -0.3353
+            },
+            {
+              "date": "2018-11-15",
+              "label": "Primavera 2018",
+              "year": 2018,
+              "season_key": "primavera",
+              "season_label": "Primavera",
+              "period_key": "2018_primavera",
+              "value": -0.3647
+            },
+            {
+              "date": "2019-02-15",
+              "label": "Verano 2019",
+              "year": 2019,
+              "season_key": "verano",
+              "season_label": "Verano",
+              "period_key": "2019_verano",
+              "value": -0.3511
+            },
+            {
+              "date": "2019-05-15",
+              "label": "Otoño 2019",
+              "year": 2019,
+              "season_key": "otono",
+              "season_label": "Otoño",
+              "period_key": "2019_otono",
+              "value": -0.3557
+            },
+            {
+              "date": "2019-08-15",
+              "label": "Invierno 2019",
+              "year": 2019,
+              "season_key": "invierno",
+              "season_label": "Invierno",
+              "period_key": "2019_invierno",
+              "value": -0.3342
+            },
+            {
+              "date": "2019-11-15",
+              "label": "Primavera 2019",
+              "year": 2019,
+              "season_key": "primavera",
+              "season_label": "Primavera",
+              "period_key": "2019_primavera",
+              "value": -0.3606
+            },
+            {
+              "date": "2020-02-15",
+              "label": "Verano 2020",
+              "year": 2020,
+              "season_key": "verano",
+              "season_label": "Verano",
+              "period_key": "2020_verano",
+              "value": -0.4133
+            },
+            {
+              "date": "2020-05-15",
+              "label": "Otoño 2020",
+              "year": 2020,
+              "season_key": "otono",
+              "season_label": "Otoño",
+              "period_key": "2020_otono",
+              "value": -0.4163
+            },
+            {
+              "date": "2020-08-15",
+              "label": "Invierno 2020",
+              "year": 2020,
+              "season_key": "invierno",
+              "season_label": "Invierno",
+              "period_key": "2020_invierno",
+              "value": -0.3586
+            },
+            {
+              "date": "2020-11-15",
+              "label": "Primavera 2020",
+              "year": 2020,
+              "season_key": "primavera",
+              "season_label": "Primavera",
+              "period_key": "2020_primavera",
+              "value": -0.3668
+            },
+            {
+              "date": "2021-02-15",
+              "label": "Verano 2021",
+              "year": 2021,
+              "season_key": "verano",
+              "season_label": "Verano",
+              "period_key": "2021_verano",
+              "value": -0.4432
+            },
+            {
+              "date": "2021-05-15",
+              "label": "Otoño 2021",
+              "year": 2021,
+              "season_key": "otono",
+              "season_label": "Otoño",
+              "period_key": "2021_otono",
+              "value": -0.4082
+            },
+            {
+              "date": "2021-08-15",
+              "label": "Invierno 2021",
+              "year": 2021,
+              "season_key": "invierno",
+              "season_label": "Invierno",
+              "period_key": "2021_invierno",
+              "value": -0.3695
+            },
+            {
+              "date": "2021-11-15",
+              "label": "Primavera 2021",
+              "year": 2021,
+              "season_key": "primavera",
+              "season_label": "Primavera",
+              "period_key": "2021_primavera",
+              "value": -0.3623
+            },
+            {
+              "date": "2022-02-15",
+              "label": "Verano 2022",
+              "year": 2022,
+              "season_key": "verano",
+              "season_label": "Verano",
+              "period_key": "2022_verano",
+              "value": -0.4288
+            },
+            {
+              "date": "2022-05-15",
+              "label": "Otoño 2022",
+              "year": 2022,
+              "season_key": "otono",
+              "season_label": "Otoño",
+              "period_key": "2022_otono",
+              "value": -0.3905
+            },
+            {
+              "date": "2022-08-15",
+              "label": "Invierno 2022",
+              "year": 2022,
+              "season_key": "invierno",
+              "season_label": "Invierno",
+              "period_key": "2022_invierno",
+              "value": -0.3573
+            },
+            {
+              "date": "2022-11-15",
+              "label": "Primavera 2022",
+              "year": 2022,
+              "season_key": "primavera",
+              "season_label": "Primavera",
+              "period_key": "2022_primavera",
+              "value": -0.3621
+            },
+            {
+              "date": "2023-02-15",
+              "label": "Verano 2023",
+              "year": 2023,
+              "season_key": "verano",
+              "season_label": "Verano",
+              "period_key": "2023_verano",
+              "value": -0.4148
+            },
+            {
+              "date": "2023-05-15",
+              "label": "Otoño 2023",
+              "year": 2023,
+              "season_key": "otono",
+              "season_label": "Otoño",
+              "period_key": "2023_otono",
+              "value": -0.3791
+            },
+            {
+              "date": "2023-08-15",
+              "label": "Invierno 2023",
+              "year": 2023,
+              "season_key": "invierno",
+              "season_label": "Invierno",
+              "period_key": "2023_invierno",
+              "value": -0.3436
+            },
+            {
+              "date": "2023-11-15",
+              "label": "Primavera 2023",
+              "year": 2023,
+              "season_key": "primavera",
+              "season_label": "Primavera",
+              "period_key": "2023_primavera",
+              "value": -0.3358
+            },
+            {
+              "date": "2024-02-15",
+              "label": "Verano 2024",
+              "year": 2024,
+              "season_key": "verano",
+              "season_label": "Verano",
+              "period_key": "2024_verano",
+              "value": -0.371
+            },
+            {
+              "date": "2024-05-15",
+              "label": "Otoño 2024",
+              "year": 2024,
+              "season_key": "otono",
+              "season_label": "Otoño",
+              "period_key": "2024_otono",
+              "value": -0.3561
+            },
+            {
+              "date": "2024-08-15",
+              "label": "Invierno 2024",
+              "year": 2024,
+              "season_key": "invierno",
+              "season_label": "Invierno",
+              "period_key": "2024_invierno",
+              "value": -0.3453
+            },
+            {
+              "date": "2024-11-15",
+              "label": "Primavera 2024",
+              "year": 2024,
+              "season_key": "primavera",
+              "season_label": "Primavera",
+              "period_key": "2024_primavera",
+              "value": -0.3438
+            },
+            {
+              "date": "2025-02-15",
+              "label": "Verano 2025",
+              "year": 2025,
+              "season_key": "verano",
+              "season_label": "Verano",
+              "period_key": "2025_verano",
+              "value": -0.3562
+            },
+            {
+              "date": "2025-05-15",
+              "label": "Otoño 2025",
+              "year": 2025,
+              "season_key": "otono",
+              "season_label": "Otoño",
+              "period_key": "2025_otono",
+              "value": -0.385
+            },
+            {
+              "date": "2025-08-15",
+              "label": "Invierno 2025",
+              "year": 2025,
+              "season_key": "invierno",
+              "season_label": "Invierno",
+              "period_key": "2025_invierno",
+              "value": -0.3534
+            },
+            {
+              "date": "2025-11-15",
+              "label": "Primavera 2025",
+              "year": 2025,
+              "season_key": "primavera",
+              "season_label": "Primavera",
+              "period_key": "2025_primavera",
+              "value": -0.3763
+            },
+            {
+              "date": "2026-02-15",
+              "label": "Verano 2026",
+              "year": 2026,
+              "season_key": "verano",
+              "season_label": "Verano",
+              "period_key": "2026_verano",
+              "value": -0.4484
+            }
+          ],
+          "metrics": {
+            "latest": {
+              "date": "2026-02-15",
+              "label": "Verano 2026",
+              "year": 2026,
+              "season_key": "verano",
+              "season_label": "Verano",
+              "value": -0.4484,
+              "historical_mean": -0.3759,
+              "historical_anomaly_abs": -0.0725,
+              "historical_anomaly_pct": -19.29,
+              "seasonal_mean": -0.4058,
+              "seasonal_anomaly_abs": -0.0426,
+              "seasonal_anomaly_pct": -10.5
+            },
+            "historical_mean": -0.3759,
+            "seasonal_means": {
+              "verano": {
+                "label": "Verano",
+                "mean": -0.4058
+              },
+              "otono": {
+                "label": "Otoño",
+                "mean": -0.386
+              },
+              "invierno": {
+                "label": "Invierno",
+                "mean": -0.3486
+              },
+              "primavera": {
+                "label": "Primavera",
+                "mean": -0.359
+              }
+            },
+            "annual_summary": [
+              {
+                "year": 2017,
+                "mean": -0.3887
+              },
+              {
+                "year": 2018,
+                "mean": -0.3676
+              },
+              {
+                "year": 2019,
+                "mean": -0.3504
+              },
+              {
+                "year": 2020,
+                "mean": -0.3887
+              },
+              {
+                "year": 2021,
+                "mean": -0.3958
+              },
+              {
+                "year": 2022,
+                "mean": -0.3847
+              },
+              {
+                "year": 2023,
+                "mean": -0.3683
+              },
+              {
+                "year": 2024,
+                "mean": -0.354
+              },
+              {
+                "year": 2025,
+                "mean": -0.3677
+              },
+              {
+                "year": 2026,
+                "mean": -0.4484
+              }
+            ],
+            "trend": {
+              "annual_summary": [
+                {
+                  "year": 2017,
+                  "mean": -0.3887
+                },
+                {
+                  "year": 2018,
+                  "mean": -0.3676
+                },
+                {
+                  "year": 2019,
+                  "mean": -0.3504
+                },
+                {
+                  "year": 2020,
+                  "mean": -0.3887
+                },
+                {
+                  "year": 2021,
+                  "mean": -0.3958
+                },
+                {
+                  "year": 2022,
+                  "mean": -0.3847
+                },
+                {
+                  "year": 2023,
+                  "mean": -0.3683
+                },
+                {
+                  "year": 2024,
+                  "mean": -0.354
+                },
+                {
+                  "year": 2025,
+                  "mean": -0.3677
+                },
+                {
+                  "year": 2026,
+                  "mean": -0.4484
+                }
+              ],
+              "slope_per_year": -0.0029,
+              "direction": "down",
+              "line": [
+                {
+                  "year": 2017,
+                  "value": -0.3682
+                },
+                {
+                  "year": 2018,
+                  "value": -0.3712
+                },
+                {
+                  "year": 2019,
+                  "value": -0.3741
+                },
+                {
+                  "year": 2020,
+                  "value": -0.377
+                },
+                {
+                  "year": 2021,
+                  "value": -0.38
+                },
+                {
+                  "year": 2022,
+                  "value": -0.3829
+                },
+                {
+                  "year": 2023,
+                  "value": -0.3858
+                },
+                {
+                  "year": 2024,
+                  "value": -0.3888
+                },
+                {
+                  "year": 2025,
+                  "value": -0.3917
+                },
+                {
+                  "year": 2026,
+                  "value": -0.3946
+                }
+              ]
+            }
+          }
+        }
+      }
+    },
+    "vegas_calama": {
+      "name": "Vegas de Calama",
+      "indices": {
+        "ndvi": {
+          "points": [
+            {
+              "date": "2017-02-15",
+              "label": "Verano 2017",
+              "year": 2017,
+              "season_key": "verano",
+              "season_label": "Verano",
+              "period_key": "2017_verano",
+              "value": 0.2966
+            },
+            {
+              "date": "2017-05-15",
+              "label": "Otoño 2017",
+              "year": 2017,
+              "season_key": "otono",
+              "season_label": "Otoño",
+              "period_key": "2017_otono",
+              "value": 0.2594
+            },
+            {
+              "date": "2017-08-15",
+              "label": "Invierno 2017",
+              "year": 2017,
+              "season_key": "invierno",
+              "season_label": "Invierno",
+              "period_key": "2017_invierno",
+              "value": 0.1902
+            },
+            {
+              "date": "2017-11-15",
+              "label": "Primavera 2017",
+              "year": 2017,
+              "season_key": "primavera",
+              "season_label": "Primavera",
+              "period_key": "2017_primavera",
+              "value": 0.1875
+            },
+            {
+              "date": "2018-02-15",
+              "label": "Verano 2018",
+              "year": 2018,
+              "season_key": "verano",
+              "season_label": "Verano",
+              "period_key": "2018_verano",
+              "value": 0.2656
+            },
+            {
+              "date": "2018-05-15",
+              "label": "Otoño 2018",
+              "year": 2018,
+              "season_key": "otono",
+              "season_label": "Otoño",
+              "period_key": "2018_otono",
+              "value": 0.2278
+            },
+            {
+              "date": "2018-08-15",
+              "label": "Invierno 2018",
+              "year": 2018,
+              "season_key": "invierno",
+              "season_label": "Invierno",
+              "period_key": "2018_invierno",
+              "value": 0.1792
+            },
+            {
+              "date": "2018-11-15",
+              "label": "Primavera 2018",
+              "year": 2018,
+              "season_key": "primavera",
+              "season_label": "Primavera",
+              "period_key": "2018_primavera",
+              "value": 0.1893
+            },
+            {
+              "date": "2019-02-15",
+              "label": "Verano 2019",
+              "year": 2019,
+              "season_key": "verano",
+              "season_label": "Verano",
+              "period_key": "2019_verano",
+              "value": 0.2667
+            },
+            {
+              "date": "2019-05-15",
+              "label": "Otoño 2019",
+              "year": 2019,
+              "season_key": "otono",
+              "season_label": "Otoño",
+              "period_key": "2019_otono",
+              "value": 0.2469
+            },
+            {
+              "date": "2019-08-15",
+              "label": "Invierno 2019",
+              "year": 2019,
+              "season_key": "invierno",
+              "season_label": "Invierno",
+              "period_key": "2019_invierno",
+              "value": 0.1852
+            },
+            {
+              "date": "2019-11-15",
+              "label": "Primavera 2019",
+              "year": 2019,
+              "season_key": "primavera",
+              "season_label": "Primavera",
+              "period_key": "2019_primavera",
+              "value": 0.1964
+            },
+            {
+              "date": "2020-02-15",
+              "label": "Verano 2020",
+              "year": 2020,
+              "season_key": "verano",
+              "season_label": "Verano",
+              "period_key": "2020_verano",
+              "value": 0.274
+            },
+            {
+              "date": "2020-05-15",
+              "label": "Otoño 2020",
+              "year": 2020,
+              "season_key": "otono",
+              "season_label": "Otoño",
+              "period_key": "2020_otono",
+              "value": 0.245
+            },
+            {
+              "date": "2020-08-15",
+              "label": "Invierno 2020",
+              "year": 2020,
+              "season_key": "invierno",
+              "season_label": "Invierno",
+              "period_key": "2020_invierno",
+              "value": 0.1661
+            },
+            {
+              "date": "2020-11-15",
+              "label": "Primavera 2020",
+              "year": 2020,
+              "season_key": "primavera",
+              "season_label": "Primavera",
+              "period_key": "2020_primavera",
+              "value": 0.1785
+            },
+            {
+              "date": "2021-02-15",
+              "label": "Verano 2021",
+              "year": 2021,
+              "season_key": "verano",
+              "season_label": "Verano",
+              "period_key": "2021_verano",
+              "value": 0.2344
+            },
+            {
+              "date": "2021-05-15",
+              "label": "Otoño 2021",
+              "year": 2021,
+              "season_key": "otono",
+              "season_label": "Otoño",
+              "period_key": "2021_otono",
+              "value": 0.2372
+            },
+            {
+              "date": "2021-08-15",
+              "label": "Invierno 2021",
+              "year": 2021,
+              "season_key": "invierno",
+              "season_label": "Invierno",
+              "period_key": "2021_invierno",
+              "value": 0.1883
+            },
+            {
+              "date": "2021-11-15",
+              "label": "Primavera 2021",
+              "year": 2021,
+              "season_key": "primavera",
+              "season_label": "Primavera",
+              "period_key": "2021_primavera",
+              "value": 0.1815
+            },
+            {
+              "date": "2022-02-15",
+              "label": "Verano 2022",
+              "year": 2022,
+              "season_key": "verano",
+              "season_label": "Verano",
+              "period_key": "2022_verano",
+              "value": 0.2436
+            },
+            {
+              "date": "2022-05-15",
+              "label": "Otoño 2022",
+              "year": 2022,
+              "season_key": "otono",
+              "season_label": "Otoño",
+              "period_key": "2022_otono",
+              "value": 0.2214
+            },
+            {
+              "date": "2022-08-15",
+              "label": "Invierno 2022",
+              "year": 2022,
+              "season_key": "invierno",
+              "season_label": "Invierno",
+              "period_key": "2022_invierno",
+              "value": 0.1666
+            },
+            {
+              "date": "2022-11-15",
+              "label": "Primavera 2022",
+              "year": 2022,
+              "season_key": "primavera",
+              "season_label": "Primavera",
+              "period_key": "2022_primavera",
+              "value": 0.1657
+            },
+            {
+              "date": "2023-02-15",
+              "label": "Verano 2023",
+              "year": 2023,
+              "season_key": "verano",
+              "season_label": "Verano",
+              "period_key": "2023_verano",
+              "value": 0.2562
+            },
+            {
+              "date": "2023-05-15",
+              "label": "Otoño 2023",
+              "year": 2023,
+              "season_key": "otono",
+              "season_label": "Otoño",
+              "period_key": "2023_otono",
+              "value": 0.2283
+            },
+            {
+              "date": "2023-08-15",
+              "label": "Invierno 2023",
+              "year": 2023,
+              "season_key": "invierno",
+              "season_label": "Invierno",
+              "period_key": "2023_invierno",
+              "value": 0.1635
+            },
+            {
+              "date": "2023-11-15",
+              "label": "Primavera 2023",
+              "year": 2023,
+              "season_key": "primavera",
+              "season_label": "Primavera",
+              "period_key": "2023_primavera",
+              "value": 0.1911
+            },
+            {
+              "date": "2024-02-15",
+              "label": "Verano 2024",
+              "year": 2024,
+              "season_key": "verano",
+              "season_label": "Verano",
+              "period_key": "2024_verano",
+              "value": 0.2467
+            },
+            {
+              "date": "2024-05-15",
+              "label": "Otoño 2024",
+              "year": 2024,
+              "season_key": "otono",
+              "season_label": "Otoño",
+              "period_key": "2024_otono",
+              "value": 0.2323
+            },
+            {
+              "date": "2024-08-15",
+              "label": "Invierno 2024",
+              "year": 2024,
+              "season_key": "invierno",
+              "season_label": "Invierno",
+              "period_key": "2024_invierno",
+              "value": 0.1674
+            },
+            {
+              "date": "2024-11-15",
+              "label": "Primavera 2024",
+              "year": 2024,
+              "season_key": "primavera",
+              "season_label": "Primavera",
+              "period_key": "2024_primavera",
+              "value": 0.1851
+            },
+            {
+              "date": "2025-02-15",
+              "label": "Verano 2025",
+              "year": 2025,
+              "season_key": "verano",
+              "season_label": "Verano",
+              "period_key": "2025_verano",
+              "value": 0.2396
+            },
+            {
+              "date": "2025-05-15",
+              "label": "Otoño 2025",
+              "year": 2025,
+              "season_key": "otono",
+              "season_label": "Otoño",
+              "period_key": "2025_otono",
+              "value": 0.2227
+            },
+            {
+              "date": "2025-08-15",
+              "label": "Invierno 2025",
+              "year": 2025,
+              "season_key": "invierno",
+              "season_label": "Invierno",
+              "period_key": "2025_invierno",
+              "value": 0.1886
+            },
+            {
+              "date": "2025-11-15",
+              "label": "Primavera 2025",
+              "year": 2025,
+              "season_key": "primavera",
+              "season_label": "Primavera",
+              "period_key": "2025_primavera",
+              "value": 0.1903
+            },
+            {
+              "date": "2026-02-15",
+              "label": "Verano 2026",
+              "year": 2026,
+              "season_key": "verano",
+              "season_label": "Verano",
+              "period_key": "2026_verano",
+              "value": 0.2606
+            }
+          ],
+          "metrics": {
+            "latest": {
+              "date": "2026-02-15",
+              "label": "Verano 2026",
+              "year": 2026,
+              "season_key": "verano",
+              "season_label": "Verano",
+              "value": 0.2606,
+              "historical_mean": 0.2153,
+              "historical_anomaly_abs": 0.0453,
+              "historical_anomaly_pct": 21.04,
+              "seasonal_mean": 0.2584,
+              "seasonal_anomaly_abs": 0.0022,
+              "seasonal_anomaly_pct": 0.85
+            },
+            "historical_mean": 0.2153,
+            "seasonal_means": {
+              "verano": {
+                "label": "Verano",
+                "mean": 0.2584
+              },
+              "otono": {
+                "label": "Otoño",
+                "mean": 0.2357
+              },
+              "invierno": {
+                "label": "Invierno",
+                "mean": 0.1772
+              },
+              "primavera": {
+                "label": "Primavera",
+                "mean": 0.185
+              }
+            },
+            "annual_summary": [
+              {
+                "year": 2017,
+                "mean": 0.2334
+              },
+              {
+                "year": 2018,
+                "mean": 0.2155
+              },
+              {
+                "year": 2019,
+                "mean": 0.2238
+              },
+              {
+                "year": 2020,
+                "mean": 0.2159
+              },
+              {
+                "year": 2021,
+                "mean": 0.2104
+              },
+              {
+                "year": 2022,
+                "mean": 0.1993
+              },
+              {
+                "year": 2023,
+                "mean": 0.2098
+              },
+              {
+                "year": 2024,
+                "mean": 0.2079
+              },
+              {
+                "year": 2025,
+                "mean": 0.2103
+              },
+              {
+                "year": 2026,
+                "mean": 0.2606
+              }
+            ],
+            "trend": {
+              "annual_summary": [
+                {
+                  "year": 2017,
+                  "mean": 0.2334
+                },
+                {
+                  "year": 2018,
+                  "mean": 0.2155
+                },
+                {
+                  "year": 2019,
+                  "mean": 0.2238
+                },
+                {
+                  "year": 2020,
+                  "mean": 0.2159
+                },
+                {
+                  "year": 2021,
+                  "mean": 0.2104
+                },
+                {
+                  "year": 2022,
+                  "mean": 0.1993
+                },
+                {
+                  "year": 2023,
+                  "mean": 0.2098
+                },
+                {
+                  "year": 2024,
+                  "mean": 0.2079
+                },
+                {
+                  "year": 2025,
+                  "mean": 0.2103
+                },
+                {
+                  "year": 2026,
+                  "mean": 0.2606
+                }
+              ],
+              "slope_per_year": 0.0006,
+              "direction": "up",
+              "line": [
+                {
+                  "year": 2017,
+                  "value": 0.216
+                },
+                {
+                  "year": 2018,
+                  "value": 0.2166
+                },
+                {
+                  "year": 2019,
+                  "value": 0.2172
+                },
+                {
+                  "year": 2020,
+                  "value": 0.2178
+                },
+                {
+                  "year": 2021,
+                  "value": 0.2184
+                },
+                {
+                  "year": 2022,
+                  "value": 0.219
+                },
+                {
+                  "year": 2023,
+                  "value": 0.2196
+                },
+                {
+                  "year": 2024,
+                  "value": 0.2202
+                },
+                {
+                  "year": 2025,
+                  "value": 0.2208
+                },
+                {
+                  "year": 2026,
+                  "value": 0.2214
+                }
+              ]
+            }
+          }
+        },
+        "ndwi": {
+          "points": [
+            {
+              "date": "2017-02-15",
+              "label": "Verano 2017",
+              "year": 2017,
+              "season_key": "verano",
+              "season_label": "Verano",
+              "period_key": "2017_verano",
+              "value": -0.4042
+            },
+            {
+              "date": "2017-05-15",
+              "label": "Otoño 2017",
+              "year": 2017,
+              "season_key": "otono",
+              "season_label": "Otoño",
+              "period_key": "2017_otono",
+              "value": -0.3694
+            },
+            {
+              "date": "2017-08-15",
+              "label": "Invierno 2017",
+              "year": 2017,
+              "season_key": "invierno",
+              "season_label": "Invierno",
+              "period_key": "2017_invierno",
+              "value": -0.3163
+            },
+            {
+              "date": "2017-11-15",
+              "label": "Primavera 2017",
+              "year": 2017,
+              "season_key": "primavera",
+              "season_label": "Primavera",
+              "period_key": "2017_primavera",
+              "value": -0.2956
+            },
+            {
+              "date": "2018-02-15",
+              "label": "Verano 2018",
+              "year": 2018,
+              "season_key": "verano",
+              "season_label": "Verano",
+              "period_key": "2018_verano",
+              "value": -0.3604
+            },
+            {
+              "date": "2018-05-15",
+              "label": "Otoño 2018",
+              "year": 2018,
+              "season_key": "otono",
+              "season_label": "Otoño",
+              "period_key": "2018_otono",
+              "value": -0.3435
+            },
+            {
+              "date": "2018-08-15",
+              "label": "Invierno 2018",
+              "year": 2018,
+              "season_key": "invierno",
+              "season_label": "Invierno",
+              "period_key": "2018_invierno",
+              "value": -0.3139
+            },
+            {
+              "date": "2018-11-15",
+              "label": "Primavera 2018",
+              "year": 2018,
+              "season_key": "primavera",
+              "season_label": "Primavera",
+              "period_key": "2018_primavera",
+              "value": -0.3017
+            },
+            {
+              "date": "2019-02-15",
+              "label": "Verano 2019",
+              "year": 2019,
+              "season_key": "verano",
+              "season_label": "Verano",
+              "period_key": "2019_verano",
+              "value": -0.3624
+            },
+            {
+              "date": "2019-05-15",
+              "label": "Otoño 2019",
+              "year": 2019,
+              "season_key": "otono",
+              "season_label": "Otoño",
+              "period_key": "2019_otono",
+              "value": -0.3607
+            },
+            {
+              "date": "2019-08-15",
+              "label": "Invierno 2019",
+              "year": 2019,
+              "season_key": "invierno",
+              "season_label": "Invierno",
+              "period_key": "2019_invierno",
+              "value": -0.3136
+            },
+            {
+              "date": "2019-11-15",
+              "label": "Primavera 2019",
+              "year": 2019,
+              "season_key": "primavera",
+              "season_label": "Primavera",
+              "period_key": "2019_primavera",
+              "value": -0.3021
+            },
+            {
+              "date": "2020-02-15",
+              "label": "Verano 2020",
+              "year": 2020,
+              "season_key": "verano",
+              "season_label": "Verano",
+              "period_key": "2020_verano",
+              "value": -0.3715
+            },
+            {
+              "date": "2020-05-15",
+              "label": "Otoño 2020",
+              "year": 2020,
+              "season_key": "otono",
+              "season_label": "Otoño",
+              "period_key": "2020_otono",
+              "value": -0.3606
+            },
+            {
+              "date": "2020-08-15",
+              "label": "Invierno 2020",
+              "year": 2020,
+              "season_key": "invierno",
+              "season_label": "Invierno",
+              "period_key": "2020_invierno",
+              "value": -0.3006
+            },
+            {
+              "date": "2020-11-15",
+              "label": "Primavera 2020",
+              "year": 2020,
+              "season_key": "primavera",
+              "season_label": "Primavera",
+              "period_key": "2020_primavera",
+              "value": -0.2912
+            },
+            {
+              "date": "2021-02-15",
+              "label": "Verano 2021",
+              "year": 2021,
+              "season_key": "verano",
+              "season_label": "Verano",
+              "period_key": "2021_verano",
+              "value": -0.3333
+            },
+            {
+              "date": "2021-05-15",
+              "label": "Otoño 2021",
+              "year": 2021,
+              "season_key": "otono",
+              "season_label": "Otoño",
+              "period_key": "2021_otono",
+              "value": -0.3493
+            },
+            {
+              "date": "2021-08-15",
+              "label": "Invierno 2021",
+              "year": 2021,
+              "season_key": "invierno",
+              "season_label": "Invierno",
+              "period_key": "2021_invierno",
+              "value": -0.3199
+            },
+            {
+              "date": "2021-11-15",
+              "label": "Primavera 2021",
+              "year": 2021,
+              "season_key": "primavera",
+              "season_label": "Primavera",
+              "period_key": "2021_primavera",
+              "value": -0.2925
+            },
+            {
+              "date": "2022-02-15",
+              "label": "Verano 2022",
+              "year": 2022,
+              "season_key": "verano",
+              "season_label": "Verano",
+              "period_key": "2022_verano",
+              "value": -0.3411
+            },
+            {
+              "date": "2022-05-15",
+              "label": "Otoño 2022",
+              "year": 2022,
+              "season_key": "otono",
+              "season_label": "Otoño",
+              "period_key": "2022_otono",
+              "value": -0.3344
+            },
+            {
+              "date": "2022-08-15",
+              "label": "Invierno 2022",
+              "year": 2022,
+              "season_key": "invierno",
+              "season_label": "Invierno",
+              "period_key": "2022_invierno",
+              "value": -0.2868
+            },
+            {
+              "date": "2022-11-15",
+              "label": "Primavera 2022",
+              "year": 2022,
+              "season_key": "primavera",
+              "season_label": "Primavera",
+              "period_key": "2022_primavera",
+              "value": -0.2802
+            },
+            {
+              "date": "2023-02-15",
+              "label": "Verano 2023",
+              "year": 2023,
+              "season_key": "verano",
+              "season_label": "Verano",
+              "period_key": "2023_verano",
+              "value": -0.3545
+            },
+            {
+              "date": "2023-05-15",
+              "label": "Otoño 2023",
+              "year": 2023,
+              "season_key": "otono",
+              "season_label": "Otoño",
+              "period_key": "2023_otono",
+              "value": -0.3431
+            },
+            {
+              "date": "2023-08-15",
+              "label": "Invierno 2023",
+              "year": 2023,
+              "season_key": "invierno",
+              "season_label": "Invierno",
+              "period_key": "2023_invierno",
+              "value": -0.2859
+            },
+            {
+              "date": "2023-11-15",
+              "label": "Primavera 2023",
+              "year": 2023,
+              "season_key": "primavera",
+              "season_label": "Primavera",
+              "period_key": "2023_primavera",
+              "value": -0.3008
+            },
+            {
+              "date": "2024-02-15",
+              "label": "Verano 2024",
+              "year": 2024,
+              "season_key": "verano",
+              "season_label": "Verano",
+              "period_key": "2024_verano",
+              "value": -0.3448
+            },
+            {
+              "date": "2024-05-15",
+              "label": "Otoño 2024",
+              "year": 2024,
+              "season_key": "otono",
+              "season_label": "Otoño",
+              "period_key": "2024_otono",
+              "value": -0.3397
+            },
+            {
+              "date": "2024-08-15",
+              "label": "Invierno 2024",
+              "year": 2024,
+              "season_key": "invierno",
+              "season_label": "Invierno",
+              "period_key": "2024_invierno",
+              "value": -0.2865
+            },
+            {
+              "date": "2024-11-15",
+              "label": "Primavera 2024",
+              "year": 2024,
+              "season_key": "primavera",
+              "season_label": "Primavera",
+              "period_key": "2024_primavera",
+              "value": -0.2921
+            },
+            {
+              "date": "2025-02-15",
+              "label": "Verano 2025",
+              "year": 2025,
+              "season_key": "verano",
+              "season_label": "Verano",
+              "period_key": "2025_verano",
+              "value": -0.3389
+            },
+            {
+              "date": "2025-05-15",
+              "label": "Otoño 2025",
+              "year": 2025,
+              "season_key": "otono",
+              "season_label": "Otoño",
+              "period_key": "2025_otono",
+              "value": -0.3365
+            },
+            {
+              "date": "2025-08-15",
+              "label": "Invierno 2025",
+              "year": 2025,
+              "season_key": "invierno",
+              "season_label": "Invierno",
+              "period_key": "2025_invierno",
+              "value": -0.3095
+            },
+            {
+              "date": "2025-11-15",
+              "label": "Primavera 2025",
+              "year": 2025,
+              "season_key": "primavera",
+              "season_label": "Primavera",
+              "period_key": "2025_primavera",
+              "value": -0.2982
+            },
+            {
+              "date": "2026-02-15",
+              "label": "Verano 2026",
+              "year": 2026,
+              "season_key": "verano",
+              "season_label": "Verano",
+              "period_key": "2026_verano",
+              "value": -0.3545
+            }
+          ],
+          "metrics": {
+            "latest": {
+              "date": "2026-02-15",
+              "label": "Verano 2026",
+              "year": 2026,
+              "season_key": "verano",
+              "season_label": "Verano",
+              "value": -0.3545,
+              "historical_mean": -0.3268,
+              "historical_anomaly_abs": -0.0277,
+              "historical_anomaly_pct": -8.48,
+              "seasonal_mean": -0.3566,
+              "seasonal_anomaly_abs": 0.0021,
+              "seasonal_anomaly_pct": 0.59
+            },
+            "historical_mean": -0.3268,
+            "seasonal_means": {
+              "verano": {
+                "label": "Verano",
+                "mean": -0.3566
+              },
+              "otono": {
+                "label": "Otoño",
+                "mean": -0.3486
+              },
+              "invierno": {
+                "label": "Invierno",
+                "mean": -0.3037
+              },
+              "primavera": {
+                "label": "Primavera",
+                "mean": -0.2949
+              }
+            },
+            "annual_summary": [
+              {
+                "year": 2017,
+                "mean": -0.3464
+              },
+              {
+                "year": 2018,
+                "mean": -0.3299
+              },
+              {
+                "year": 2019,
+                "mean": -0.3347
+              },
+              {
+                "year": 2020,
+                "mean": -0.331
+              },
+              {
+                "year": 2021,
+                "mean": -0.3237
+              },
+              {
+                "year": 2022,
+                "mean": -0.3106
+              },
+              {
+                "year": 2023,
+                "mean": -0.3211
+              },
+              {
+                "year": 2024,
+                "mean": -0.3158
+              },
+              {
+                "year": 2025,
+                "mean": -0.3208
+              },
+              {
+                "year": 2026,
+                "mean": -0.3545
+              }
+            ],
+            "trend": {
+              "annual_summary": [
+                {
+                  "year": 2017,
+                  "mean": -0.3464
+                },
+                {
+                  "year": 2018,
+                  "mean": -0.3299
+                },
+                {
+                  "year": 2019,
+                  "mean": -0.3347
+                },
+                {
+                  "year": 2020,
+                  "mean": -0.331
+                },
+                {
+                  "year": 2021,
+                  "mean": -0.3237
+                },
+                {
+                  "year": 2022,
+                  "mean": -0.3106
+                },
+                {
+                  "year": 2023,
+                  "mean": -0.3211
+                },
+                {
+                  "year": 2024,
+                  "mean": -0.3158
+                },
+                {
+                  "year": 2025,
+                  "mean": -0.3208
+                },
+                {
+                  "year": 2026,
+                  "mean": -0.3545
+                }
+              ],
+              "slope_per_year": 0.0008,
+              "direction": "up",
+              "line": [
+                {
+                  "year": 2017,
+                  "value": -0.3323
+                },
+                {
+                  "year": 2018,
+                  "value": -0.3316
+                },
+                {
+                  "year": 2019,
+                  "value": -0.3308
+                },
+                {
+                  "year": 2020,
+                  "value": -0.33
+                },
+                {
+                  "year": 2021,
+                  "value": -0.3292
+                },
+                {
+                  "year": 2022,
+                  "value": -0.3285
+                },
+                {
+                  "year": 2023,
+                  "value": -0.3277
+                },
+                {
+                  "year": 2024,
+                  "value": -0.3269
+                },
+                {
+                  "year": 2025,
+                  "value": -0.3261
+                },
+                {
+                  "year": 2026,
+                  "value": -0.3254
+                }
+              ]
+            }
+          }
+        }
+      }
+    }
+  }
+}

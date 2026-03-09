@@ -1,0 +1,4998 @@
+{
+  "generated_at": "2026-03-09T03:16:28+00:00",
+  "aoi_id_column": "wetland_id",
+  "source": {
+    "id": "sentinel2",
+    "label": "Sentinel-2",
+    "description": "Series históricas estacionales derivadas de Sentinel-2 SR Harmonized.",
+    "color": "#38bdf8",
+    "has_data": true
+  },
+  "indices": {
+    "ndvi": {
+      "label": "NDVI",
+      "description": "Índice de Vegetación de Diferencia Normalizada",
+      "vmin": -0.1,
+      "vmax": 0.6,
+      "colormap": "RdYlGn"
+    },
+    "ndwi": {
+      "label": "NDWI",
+      "description": "Índice de Agua de Diferencia Normalizada",
+      "vmin": -0.4,
+      "vmax": 0.4,
+      "colormap": "RdYlBu"
+    }
+  },
+  "wetlands": {
+    "sapunta": {
+      "name": "Sapunta",
+      "area_ha": 1.1,
+      "center": [
+        -21.295,
+        -68.772
+      ],
+      "n_periods": 35,
+      "last_period": "Verano 2026",
+      "available_years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "status": "ready"
+    },
+    "vegas_calama": {
+      "name": "Vegas de Calama",
+      "area_ha": 59.7,
+      "center": [
+        -22.445,
+        -68.9682
+      ],
+      "n_periods": 37,
+      "last_period": "Verano 2026",
+      "available_years": [
+        2017,
+        2018,
+        2019,
+        2020,
+        2021,
+        2022,
+        2023,
+        2024,
+        2025,
+        2026
+      ],
+      "status": "ready"
+    }
+  },
+  "rasters": {
+    "sapunta_2017_verano_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndvi",
+      "year": 2017,
+      "season": "Verano",
+      "period_key": "2017_verano",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2017_verano_ndvi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2017_verano_ndvi.tif"
+    },
+    "sapunta_2017_otono_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndvi",
+      "year": 2017,
+      "season": "Otoño",
+      "period_key": "2017_otono",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2017_otono_ndvi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2017_otono_ndvi.tif"
+    },
+    "sapunta_2017_invierno_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndvi",
+      "year": 2017,
+      "season": "Invierno",
+      "period_key": "2017_invierno",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2017_invierno_ndvi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2017_invierno_ndvi.tif"
+    },
+    "sapunta_2018_verano_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndvi",
+      "year": 2018,
+      "season": "Verano",
+      "period_key": "2018_verano",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2018_verano_ndvi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2018_verano_ndvi.tif"
+    },
+    "sapunta_2018_invierno_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndvi",
+      "year": 2018,
+      "season": "Invierno",
+      "period_key": "2018_invierno",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2018_invierno_ndvi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2018_invierno_ndvi.tif"
+    },
+    "sapunta_2018_primavera_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndvi",
+      "year": 2018,
+      "season": "Primavera",
+      "period_key": "2018_primavera",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2018_primavera_ndvi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2018_primavera_ndvi.tif"
+    },
+    "sapunta_2019_verano_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndvi",
+      "year": 2019,
+      "season": "Verano",
+      "period_key": "2019_verano",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2019_verano_ndvi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2019_verano_ndvi.tif"
+    },
+    "sapunta_2019_otono_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndvi",
+      "year": 2019,
+      "season": "Otoño",
+      "period_key": "2019_otono",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2019_otono_ndvi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2019_otono_ndvi.tif"
+    },
+    "sapunta_2019_invierno_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndvi",
+      "year": 2019,
+      "season": "Invierno",
+      "period_key": "2019_invierno",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2019_invierno_ndvi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2019_invierno_ndvi.tif"
+    },
+    "sapunta_2019_primavera_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndvi",
+      "year": 2019,
+      "season": "Primavera",
+      "period_key": "2019_primavera",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2019_primavera_ndvi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2019_primavera_ndvi.tif"
+    },
+    "sapunta_2020_verano_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndvi",
+      "year": 2020,
+      "season": "Verano",
+      "period_key": "2020_verano",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2020_verano_ndvi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2020_verano_ndvi.tif"
+    },
+    "sapunta_2020_otono_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndvi",
+      "year": 2020,
+      "season": "Otoño",
+      "period_key": "2020_otono",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2020_otono_ndvi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2020_otono_ndvi.tif"
+    },
+    "sapunta_2020_invierno_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndvi",
+      "year": 2020,
+      "season": "Invierno",
+      "period_key": "2020_invierno",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2020_invierno_ndvi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2020_invierno_ndvi.tif"
+    },
+    "sapunta_2020_primavera_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndvi",
+      "year": 2020,
+      "season": "Primavera",
+      "period_key": "2020_primavera",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2020_primavera_ndvi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2020_primavera_ndvi.tif"
+    },
+    "sapunta_2021_verano_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndvi",
+      "year": 2021,
+      "season": "Verano",
+      "period_key": "2021_verano",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2021_verano_ndvi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2021_verano_ndvi.tif"
+    },
+    "sapunta_2021_otono_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndvi",
+      "year": 2021,
+      "season": "Otoño",
+      "period_key": "2021_otono",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2021_otono_ndvi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2021_otono_ndvi.tif"
+    },
+    "sapunta_2021_invierno_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndvi",
+      "year": 2021,
+      "season": "Invierno",
+      "period_key": "2021_invierno",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2021_invierno_ndvi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2021_invierno_ndvi.tif"
+    },
+    "sapunta_2021_primavera_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndvi",
+      "year": 2021,
+      "season": "Primavera",
+      "period_key": "2021_primavera",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2021_primavera_ndvi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2021_primavera_ndvi.tif"
+    },
+    "sapunta_2022_verano_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndvi",
+      "year": 2022,
+      "season": "Verano",
+      "period_key": "2022_verano",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2022_verano_ndvi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2022_verano_ndvi.tif"
+    },
+    "sapunta_2022_otono_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndvi",
+      "year": 2022,
+      "season": "Otoño",
+      "period_key": "2022_otono",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2022_otono_ndvi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2022_otono_ndvi.tif"
+    },
+    "sapunta_2022_invierno_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndvi",
+      "year": 2022,
+      "season": "Invierno",
+      "period_key": "2022_invierno",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2022_invierno_ndvi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2022_invierno_ndvi.tif"
+    },
+    "sapunta_2022_primavera_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndvi",
+      "year": 2022,
+      "season": "Primavera",
+      "period_key": "2022_primavera",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2022_primavera_ndvi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2022_primavera_ndvi.tif"
+    },
+    "sapunta_2023_verano_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndvi",
+      "year": 2023,
+      "season": "Verano",
+      "period_key": "2023_verano",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2023_verano_ndvi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2023_verano_ndvi.tif"
+    },
+    "sapunta_2023_otono_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndvi",
+      "year": 2023,
+      "season": "Otoño",
+      "period_key": "2023_otono",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2023_otono_ndvi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2023_otono_ndvi.tif"
+    },
+    "sapunta_2023_invierno_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndvi",
+      "year": 2023,
+      "season": "Invierno",
+      "period_key": "2023_invierno",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2023_invierno_ndvi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2023_invierno_ndvi.tif"
+    },
+    "sapunta_2023_primavera_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndvi",
+      "year": 2023,
+      "season": "Primavera",
+      "period_key": "2023_primavera",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2023_primavera_ndvi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2023_primavera_ndvi.tif"
+    },
+    "sapunta_2024_verano_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndvi",
+      "year": 2024,
+      "season": "Verano",
+      "period_key": "2024_verano",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2024_verano_ndvi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2024_verano_ndvi.tif"
+    },
+    "sapunta_2024_otono_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndvi",
+      "year": 2024,
+      "season": "Otoño",
+      "period_key": "2024_otono",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2024_otono_ndvi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2024_otono_ndvi.tif"
+    },
+    "sapunta_2024_invierno_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndvi",
+      "year": 2024,
+      "season": "Invierno",
+      "period_key": "2024_invierno",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2024_invierno_ndvi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2024_invierno_ndvi.tif"
+    },
+    "sapunta_2024_primavera_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndvi",
+      "year": 2024,
+      "season": "Primavera",
+      "period_key": "2024_primavera",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2024_primavera_ndvi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2024_primavera_ndvi.tif"
+    },
+    "sapunta_2025_verano_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndvi",
+      "year": 2025,
+      "season": "Verano",
+      "period_key": "2025_verano",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2025_verano_ndvi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2025_verano_ndvi.tif"
+    },
+    "sapunta_2025_otono_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndvi",
+      "year": 2025,
+      "season": "Otoño",
+      "period_key": "2025_otono",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2025_otono_ndvi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2025_otono_ndvi.tif"
+    },
+    "sapunta_2025_invierno_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndvi",
+      "year": 2025,
+      "season": "Invierno",
+      "period_key": "2025_invierno",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2025_invierno_ndvi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2025_invierno_ndvi.tif"
+    },
+    "sapunta_2025_primavera_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndvi",
+      "year": 2025,
+      "season": "Primavera",
+      "period_key": "2025_primavera",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2025_primavera_ndvi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2025_primavera_ndvi.tif"
+    },
+    "sapunta_2026_verano_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndvi",
+      "year": 2026,
+      "season": "Verano",
+      "period_key": "2026_verano",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2026_verano_ndvi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2026_verano_ndvi.tif"
+    },
+    "sapunta_2017_verano_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndwi",
+      "year": 2017,
+      "season": "Verano",
+      "period_key": "2017_verano",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2017_verano_ndwi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2017_verano_ndwi.tif"
+    },
+    "sapunta_2017_otono_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndwi",
+      "year": 2017,
+      "season": "Otoño",
+      "period_key": "2017_otono",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2017_otono_ndwi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2017_otono_ndwi.tif"
+    },
+    "sapunta_2017_invierno_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndwi",
+      "year": 2017,
+      "season": "Invierno",
+      "period_key": "2017_invierno",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2017_invierno_ndwi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2017_invierno_ndwi.tif"
+    },
+    "sapunta_2018_verano_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndwi",
+      "year": 2018,
+      "season": "Verano",
+      "period_key": "2018_verano",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2018_verano_ndwi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2018_verano_ndwi.tif"
+    },
+    "sapunta_2018_invierno_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndwi",
+      "year": 2018,
+      "season": "Invierno",
+      "period_key": "2018_invierno",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2018_invierno_ndwi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2018_invierno_ndwi.tif"
+    },
+    "sapunta_2018_primavera_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndwi",
+      "year": 2018,
+      "season": "Primavera",
+      "period_key": "2018_primavera",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2018_primavera_ndwi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2018_primavera_ndwi.tif"
+    },
+    "sapunta_2019_verano_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndwi",
+      "year": 2019,
+      "season": "Verano",
+      "period_key": "2019_verano",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2019_verano_ndwi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2019_verano_ndwi.tif"
+    },
+    "sapunta_2019_otono_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndwi",
+      "year": 2019,
+      "season": "Otoño",
+      "period_key": "2019_otono",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2019_otono_ndwi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2019_otono_ndwi.tif"
+    },
+    "sapunta_2019_invierno_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndwi",
+      "year": 2019,
+      "season": "Invierno",
+      "period_key": "2019_invierno",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2019_invierno_ndwi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2019_invierno_ndwi.tif"
+    },
+    "sapunta_2019_primavera_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndwi",
+      "year": 2019,
+      "season": "Primavera",
+      "period_key": "2019_primavera",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2019_primavera_ndwi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2019_primavera_ndwi.tif"
+    },
+    "sapunta_2020_verano_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndwi",
+      "year": 2020,
+      "season": "Verano",
+      "period_key": "2020_verano",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2020_verano_ndwi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2020_verano_ndwi.tif"
+    },
+    "sapunta_2020_otono_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndwi",
+      "year": 2020,
+      "season": "Otoño",
+      "period_key": "2020_otono",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2020_otono_ndwi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2020_otono_ndwi.tif"
+    },
+    "sapunta_2020_invierno_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndwi",
+      "year": 2020,
+      "season": "Invierno",
+      "period_key": "2020_invierno",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2020_invierno_ndwi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2020_invierno_ndwi.tif"
+    },
+    "sapunta_2020_primavera_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndwi",
+      "year": 2020,
+      "season": "Primavera",
+      "period_key": "2020_primavera",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2020_primavera_ndwi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2020_primavera_ndwi.tif"
+    },
+    "sapunta_2021_verano_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndwi",
+      "year": 2021,
+      "season": "Verano",
+      "period_key": "2021_verano",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2021_verano_ndwi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2021_verano_ndwi.tif"
+    },
+    "sapunta_2021_otono_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndwi",
+      "year": 2021,
+      "season": "Otoño",
+      "period_key": "2021_otono",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2021_otono_ndwi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2021_otono_ndwi.tif"
+    },
+    "sapunta_2021_invierno_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndwi",
+      "year": 2021,
+      "season": "Invierno",
+      "period_key": "2021_invierno",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2021_invierno_ndwi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2021_invierno_ndwi.tif"
+    },
+    "sapunta_2021_primavera_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndwi",
+      "year": 2021,
+      "season": "Primavera",
+      "period_key": "2021_primavera",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2021_primavera_ndwi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2021_primavera_ndwi.tif"
+    },
+    "sapunta_2022_verano_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndwi",
+      "year": 2022,
+      "season": "Verano",
+      "period_key": "2022_verano",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2022_verano_ndwi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2022_verano_ndwi.tif"
+    },
+    "sapunta_2022_otono_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndwi",
+      "year": 2022,
+      "season": "Otoño",
+      "period_key": "2022_otono",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2022_otono_ndwi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2022_otono_ndwi.tif"
+    },
+    "sapunta_2022_invierno_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndwi",
+      "year": 2022,
+      "season": "Invierno",
+      "period_key": "2022_invierno",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2022_invierno_ndwi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2022_invierno_ndwi.tif"
+    },
+    "sapunta_2022_primavera_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndwi",
+      "year": 2022,
+      "season": "Primavera",
+      "period_key": "2022_primavera",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2022_primavera_ndwi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2022_primavera_ndwi.tif"
+    },
+    "sapunta_2023_verano_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndwi",
+      "year": 2023,
+      "season": "Verano",
+      "period_key": "2023_verano",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2023_verano_ndwi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2023_verano_ndwi.tif"
+    },
+    "sapunta_2023_otono_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndwi",
+      "year": 2023,
+      "season": "Otoño",
+      "period_key": "2023_otono",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2023_otono_ndwi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2023_otono_ndwi.tif"
+    },
+    "sapunta_2023_invierno_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndwi",
+      "year": 2023,
+      "season": "Invierno",
+      "period_key": "2023_invierno",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2023_invierno_ndwi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2023_invierno_ndwi.tif"
+    },
+    "sapunta_2023_primavera_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndwi",
+      "year": 2023,
+      "season": "Primavera",
+      "period_key": "2023_primavera",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2023_primavera_ndwi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2023_primavera_ndwi.tif"
+    },
+    "sapunta_2024_verano_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndwi",
+      "year": 2024,
+      "season": "Verano",
+      "period_key": "2024_verano",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2024_verano_ndwi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2024_verano_ndwi.tif"
+    },
+    "sapunta_2024_otono_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndwi",
+      "year": 2024,
+      "season": "Otoño",
+      "period_key": "2024_otono",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2024_otono_ndwi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2024_otono_ndwi.tif"
+    },
+    "sapunta_2024_invierno_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndwi",
+      "year": 2024,
+      "season": "Invierno",
+      "period_key": "2024_invierno",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2024_invierno_ndwi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2024_invierno_ndwi.tif"
+    },
+    "sapunta_2024_primavera_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndwi",
+      "year": 2024,
+      "season": "Primavera",
+      "period_key": "2024_primavera",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2024_primavera_ndwi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2024_primavera_ndwi.tif"
+    },
+    "sapunta_2025_verano_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndwi",
+      "year": 2025,
+      "season": "Verano",
+      "period_key": "2025_verano",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2025_verano_ndwi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2025_verano_ndwi.tif"
+    },
+    "sapunta_2025_otono_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndwi",
+      "year": 2025,
+      "season": "Otoño",
+      "period_key": "2025_otono",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2025_otono_ndwi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2025_otono_ndwi.tif"
+    },
+    "sapunta_2025_invierno_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndwi",
+      "year": 2025,
+      "season": "Invierno",
+      "period_key": "2025_invierno",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2025_invierno_ndwi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2025_invierno_ndwi.tif"
+    },
+    "sapunta_2025_primavera_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndwi",
+      "year": 2025,
+      "season": "Primavera",
+      "period_key": "2025_primavera",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2025_primavera_ndwi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2025_primavera_ndwi.tif"
+    },
+    "sapunta_2026_verano_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "sapunta",
+      "index": "ndwi",
+      "year": 2026,
+      "season": "Verano",
+      "period_key": "2026_verano",
+      "visual": {
+        "path": "sentinel2/rasters/sapunta_2026_verano_ndwi.webp",
+        "bounds": [
+          [
+            -21.29555195686579,
+            -68.77385034232121
+          ],
+          [
+            -21.294294315468022,
+            -68.7699875865995
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          43,
+          14
+        ],
+        "display_size": [
+          86,
+          28
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/sapunta/2026_verano_ndwi.tif"
+    },
+    "vegas_calama_2017_verano_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndvi",
+      "year": 2017,
+      "season": "Verano",
+      "period_key": "2017_verano",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2017_verano_ndvi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2017_verano_ndvi.tif"
+    },
+    "vegas_calama_2017_otono_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndvi",
+      "year": 2017,
+      "season": "Otoño",
+      "period_key": "2017_otono",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2017_otono_ndvi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2017_otono_ndvi.tif"
+    },
+    "vegas_calama_2017_invierno_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndvi",
+      "year": 2017,
+      "season": "Invierno",
+      "period_key": "2017_invierno",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2017_invierno_ndvi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2017_invierno_ndvi.tif"
+    },
+    "vegas_calama_2017_primavera_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndvi",
+      "year": 2017,
+      "season": "Primavera",
+      "period_key": "2017_primavera",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2017_primavera_ndvi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2017_primavera_ndvi.tif"
+    },
+    "vegas_calama_2018_verano_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndvi",
+      "year": 2018,
+      "season": "Verano",
+      "period_key": "2018_verano",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2018_verano_ndvi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2018_verano_ndvi.tif"
+    },
+    "vegas_calama_2018_otono_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndvi",
+      "year": 2018,
+      "season": "Otoño",
+      "period_key": "2018_otono",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2018_otono_ndvi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2018_otono_ndvi.tif"
+    },
+    "vegas_calama_2018_invierno_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndvi",
+      "year": 2018,
+      "season": "Invierno",
+      "period_key": "2018_invierno",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2018_invierno_ndvi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2018_invierno_ndvi.tif"
+    },
+    "vegas_calama_2018_primavera_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndvi",
+      "year": 2018,
+      "season": "Primavera",
+      "period_key": "2018_primavera",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2018_primavera_ndvi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2018_primavera_ndvi.tif"
+    },
+    "vegas_calama_2019_verano_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndvi",
+      "year": 2019,
+      "season": "Verano",
+      "period_key": "2019_verano",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2019_verano_ndvi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2019_verano_ndvi.tif"
+    },
+    "vegas_calama_2019_otono_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndvi",
+      "year": 2019,
+      "season": "Otoño",
+      "period_key": "2019_otono",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2019_otono_ndvi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2019_otono_ndvi.tif"
+    },
+    "vegas_calama_2019_invierno_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndvi",
+      "year": 2019,
+      "season": "Invierno",
+      "period_key": "2019_invierno",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2019_invierno_ndvi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2019_invierno_ndvi.tif"
+    },
+    "vegas_calama_2019_primavera_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndvi",
+      "year": 2019,
+      "season": "Primavera",
+      "period_key": "2019_primavera",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2019_primavera_ndvi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2019_primavera_ndvi.tif"
+    },
+    "vegas_calama_2020_verano_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndvi",
+      "year": 2020,
+      "season": "Verano",
+      "period_key": "2020_verano",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2020_verano_ndvi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2020_verano_ndvi.tif"
+    },
+    "vegas_calama_2020_otono_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndvi",
+      "year": 2020,
+      "season": "Otoño",
+      "period_key": "2020_otono",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2020_otono_ndvi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2020_otono_ndvi.tif"
+    },
+    "vegas_calama_2020_invierno_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndvi",
+      "year": 2020,
+      "season": "Invierno",
+      "period_key": "2020_invierno",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2020_invierno_ndvi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2020_invierno_ndvi.tif"
+    },
+    "vegas_calama_2020_primavera_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndvi",
+      "year": 2020,
+      "season": "Primavera",
+      "period_key": "2020_primavera",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2020_primavera_ndvi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2020_primavera_ndvi.tif"
+    },
+    "vegas_calama_2021_verano_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndvi",
+      "year": 2021,
+      "season": "Verano",
+      "period_key": "2021_verano",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2021_verano_ndvi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2021_verano_ndvi.tif"
+    },
+    "vegas_calama_2021_otono_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndvi",
+      "year": 2021,
+      "season": "Otoño",
+      "period_key": "2021_otono",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2021_otono_ndvi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2021_otono_ndvi.tif"
+    },
+    "vegas_calama_2021_invierno_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndvi",
+      "year": 2021,
+      "season": "Invierno",
+      "period_key": "2021_invierno",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2021_invierno_ndvi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2021_invierno_ndvi.tif"
+    },
+    "vegas_calama_2021_primavera_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndvi",
+      "year": 2021,
+      "season": "Primavera",
+      "period_key": "2021_primavera",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2021_primavera_ndvi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2021_primavera_ndvi.tif"
+    },
+    "vegas_calama_2022_verano_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndvi",
+      "year": 2022,
+      "season": "Verano",
+      "period_key": "2022_verano",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2022_verano_ndvi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2022_verano_ndvi.tif"
+    },
+    "vegas_calama_2022_otono_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndvi",
+      "year": 2022,
+      "season": "Otoño",
+      "period_key": "2022_otono",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2022_otono_ndvi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2022_otono_ndvi.tif"
+    },
+    "vegas_calama_2022_invierno_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndvi",
+      "year": 2022,
+      "season": "Invierno",
+      "period_key": "2022_invierno",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2022_invierno_ndvi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2022_invierno_ndvi.tif"
+    },
+    "vegas_calama_2022_primavera_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndvi",
+      "year": 2022,
+      "season": "Primavera",
+      "period_key": "2022_primavera",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2022_primavera_ndvi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2022_primavera_ndvi.tif"
+    },
+    "vegas_calama_2023_verano_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndvi",
+      "year": 2023,
+      "season": "Verano",
+      "period_key": "2023_verano",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2023_verano_ndvi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2023_verano_ndvi.tif"
+    },
+    "vegas_calama_2023_otono_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndvi",
+      "year": 2023,
+      "season": "Otoño",
+      "period_key": "2023_otono",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2023_otono_ndvi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2023_otono_ndvi.tif"
+    },
+    "vegas_calama_2023_invierno_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndvi",
+      "year": 2023,
+      "season": "Invierno",
+      "period_key": "2023_invierno",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2023_invierno_ndvi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2023_invierno_ndvi.tif"
+    },
+    "vegas_calama_2023_primavera_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndvi",
+      "year": 2023,
+      "season": "Primavera",
+      "period_key": "2023_primavera",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2023_primavera_ndvi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2023_primavera_ndvi.tif"
+    },
+    "vegas_calama_2024_verano_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndvi",
+      "year": 2024,
+      "season": "Verano",
+      "period_key": "2024_verano",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2024_verano_ndvi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2024_verano_ndvi.tif"
+    },
+    "vegas_calama_2024_otono_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndvi",
+      "year": 2024,
+      "season": "Otoño",
+      "period_key": "2024_otono",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2024_otono_ndvi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2024_otono_ndvi.tif"
+    },
+    "vegas_calama_2024_invierno_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndvi",
+      "year": 2024,
+      "season": "Invierno",
+      "period_key": "2024_invierno",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2024_invierno_ndvi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2024_invierno_ndvi.tif"
+    },
+    "vegas_calama_2024_primavera_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndvi",
+      "year": 2024,
+      "season": "Primavera",
+      "period_key": "2024_primavera",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2024_primavera_ndvi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2024_primavera_ndvi.tif"
+    },
+    "vegas_calama_2025_verano_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndvi",
+      "year": 2025,
+      "season": "Verano",
+      "period_key": "2025_verano",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2025_verano_ndvi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2025_verano_ndvi.tif"
+    },
+    "vegas_calama_2025_otono_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndvi",
+      "year": 2025,
+      "season": "Otoño",
+      "period_key": "2025_otono",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2025_otono_ndvi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2025_otono_ndvi.tif"
+    },
+    "vegas_calama_2025_invierno_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndvi",
+      "year": 2025,
+      "season": "Invierno",
+      "period_key": "2025_invierno",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2025_invierno_ndvi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2025_invierno_ndvi.tif"
+    },
+    "vegas_calama_2025_primavera_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndvi",
+      "year": 2025,
+      "season": "Primavera",
+      "period_key": "2025_primavera",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2025_primavera_ndvi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2025_primavera_ndvi.tif"
+    },
+    "vegas_calama_2026_verano_ndvi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndvi",
+      "year": 2026,
+      "season": "Verano",
+      "period_key": "2026_verano",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2026_verano_ndvi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2026_verano_ndvi.tif"
+    },
+    "vegas_calama_2017_verano_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndwi",
+      "year": 2017,
+      "season": "Verano",
+      "period_key": "2017_verano",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2017_verano_ndwi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2017_verano_ndwi.tif"
+    },
+    "vegas_calama_2017_otono_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndwi",
+      "year": 2017,
+      "season": "Otoño",
+      "period_key": "2017_otono",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2017_otono_ndwi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2017_otono_ndwi.tif"
+    },
+    "vegas_calama_2017_invierno_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndwi",
+      "year": 2017,
+      "season": "Invierno",
+      "period_key": "2017_invierno",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2017_invierno_ndwi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2017_invierno_ndwi.tif"
+    },
+    "vegas_calama_2017_primavera_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndwi",
+      "year": 2017,
+      "season": "Primavera",
+      "period_key": "2017_primavera",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2017_primavera_ndwi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2017_primavera_ndwi.tif"
+    },
+    "vegas_calama_2018_verano_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndwi",
+      "year": 2018,
+      "season": "Verano",
+      "period_key": "2018_verano",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2018_verano_ndwi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2018_verano_ndwi.tif"
+    },
+    "vegas_calama_2018_otono_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndwi",
+      "year": 2018,
+      "season": "Otoño",
+      "period_key": "2018_otono",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2018_otono_ndwi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2018_otono_ndwi.tif"
+    },
+    "vegas_calama_2018_invierno_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndwi",
+      "year": 2018,
+      "season": "Invierno",
+      "period_key": "2018_invierno",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2018_invierno_ndwi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2018_invierno_ndwi.tif"
+    },
+    "vegas_calama_2018_primavera_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndwi",
+      "year": 2018,
+      "season": "Primavera",
+      "period_key": "2018_primavera",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2018_primavera_ndwi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2018_primavera_ndwi.tif"
+    },
+    "vegas_calama_2019_verano_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndwi",
+      "year": 2019,
+      "season": "Verano",
+      "period_key": "2019_verano",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2019_verano_ndwi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2019_verano_ndwi.tif"
+    },
+    "vegas_calama_2019_otono_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndwi",
+      "year": 2019,
+      "season": "Otoño",
+      "period_key": "2019_otono",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2019_otono_ndwi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2019_otono_ndwi.tif"
+    },
+    "vegas_calama_2019_invierno_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndwi",
+      "year": 2019,
+      "season": "Invierno",
+      "period_key": "2019_invierno",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2019_invierno_ndwi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2019_invierno_ndwi.tif"
+    },
+    "vegas_calama_2019_primavera_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndwi",
+      "year": 2019,
+      "season": "Primavera",
+      "period_key": "2019_primavera",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2019_primavera_ndwi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2019_primavera_ndwi.tif"
+    },
+    "vegas_calama_2020_verano_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndwi",
+      "year": 2020,
+      "season": "Verano",
+      "period_key": "2020_verano",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2020_verano_ndwi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2020_verano_ndwi.tif"
+    },
+    "vegas_calama_2020_otono_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndwi",
+      "year": 2020,
+      "season": "Otoño",
+      "period_key": "2020_otono",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2020_otono_ndwi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2020_otono_ndwi.tif"
+    },
+    "vegas_calama_2020_invierno_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndwi",
+      "year": 2020,
+      "season": "Invierno",
+      "period_key": "2020_invierno",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2020_invierno_ndwi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2020_invierno_ndwi.tif"
+    },
+    "vegas_calama_2020_primavera_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndwi",
+      "year": 2020,
+      "season": "Primavera",
+      "period_key": "2020_primavera",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2020_primavera_ndwi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2020_primavera_ndwi.tif"
+    },
+    "vegas_calama_2021_verano_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndwi",
+      "year": 2021,
+      "season": "Verano",
+      "period_key": "2021_verano",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2021_verano_ndwi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2021_verano_ndwi.tif"
+    },
+    "vegas_calama_2021_otono_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndwi",
+      "year": 2021,
+      "season": "Otoño",
+      "period_key": "2021_otono",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2021_otono_ndwi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2021_otono_ndwi.tif"
+    },
+    "vegas_calama_2021_invierno_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndwi",
+      "year": 2021,
+      "season": "Invierno",
+      "period_key": "2021_invierno",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2021_invierno_ndwi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2021_invierno_ndwi.tif"
+    },
+    "vegas_calama_2021_primavera_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndwi",
+      "year": 2021,
+      "season": "Primavera",
+      "period_key": "2021_primavera",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2021_primavera_ndwi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2021_primavera_ndwi.tif"
+    },
+    "vegas_calama_2022_verano_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndwi",
+      "year": 2022,
+      "season": "Verano",
+      "period_key": "2022_verano",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2022_verano_ndwi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2022_verano_ndwi.tif"
+    },
+    "vegas_calama_2022_otono_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndwi",
+      "year": 2022,
+      "season": "Otoño",
+      "period_key": "2022_otono",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2022_otono_ndwi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2022_otono_ndwi.tif"
+    },
+    "vegas_calama_2022_invierno_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndwi",
+      "year": 2022,
+      "season": "Invierno",
+      "period_key": "2022_invierno",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2022_invierno_ndwi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2022_invierno_ndwi.tif"
+    },
+    "vegas_calama_2022_primavera_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndwi",
+      "year": 2022,
+      "season": "Primavera",
+      "period_key": "2022_primavera",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2022_primavera_ndwi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2022_primavera_ndwi.tif"
+    },
+    "vegas_calama_2023_verano_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndwi",
+      "year": 2023,
+      "season": "Verano",
+      "period_key": "2023_verano",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2023_verano_ndwi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2023_verano_ndwi.tif"
+    },
+    "vegas_calama_2023_otono_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndwi",
+      "year": 2023,
+      "season": "Otoño",
+      "period_key": "2023_otono",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2023_otono_ndwi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2023_otono_ndwi.tif"
+    },
+    "vegas_calama_2023_invierno_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndwi",
+      "year": 2023,
+      "season": "Invierno",
+      "period_key": "2023_invierno",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2023_invierno_ndwi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2023_invierno_ndwi.tif"
+    },
+    "vegas_calama_2023_primavera_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndwi",
+      "year": 2023,
+      "season": "Primavera",
+      "period_key": "2023_primavera",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2023_primavera_ndwi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2023_primavera_ndwi.tif"
+    },
+    "vegas_calama_2024_verano_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndwi",
+      "year": 2024,
+      "season": "Verano",
+      "period_key": "2024_verano",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2024_verano_ndwi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2024_verano_ndwi.tif"
+    },
+    "vegas_calama_2024_otono_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndwi",
+      "year": 2024,
+      "season": "Otoño",
+      "period_key": "2024_otono",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2024_otono_ndwi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2024_otono_ndwi.tif"
+    },
+    "vegas_calama_2024_invierno_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndwi",
+      "year": 2024,
+      "season": "Invierno",
+      "period_key": "2024_invierno",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2024_invierno_ndwi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2024_invierno_ndwi.tif"
+    },
+    "vegas_calama_2024_primavera_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndwi",
+      "year": 2024,
+      "season": "Primavera",
+      "period_key": "2024_primavera",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2024_primavera_ndwi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2024_primavera_ndwi.tif"
+    },
+    "vegas_calama_2025_verano_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndwi",
+      "year": 2025,
+      "season": "Verano",
+      "period_key": "2025_verano",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2025_verano_ndwi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2025_verano_ndwi.tif"
+    },
+    "vegas_calama_2025_otono_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndwi",
+      "year": 2025,
+      "season": "Otoño",
+      "period_key": "2025_otono",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2025_otono_ndwi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2025_otono_ndwi.tif"
+    },
+    "vegas_calama_2025_invierno_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndwi",
+      "year": 2025,
+      "season": "Invierno",
+      "period_key": "2025_invierno",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2025_invierno_ndwi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2025_invierno_ndwi.tif"
+    },
+    "vegas_calama_2025_primavera_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndwi",
+      "year": 2025,
+      "season": "Primavera",
+      "period_key": "2025_primavera",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2025_primavera_ndwi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2025_primavera_ndwi.tif"
+    },
+    "vegas_calama_2026_verano_ndwi": {
+      "source": "sentinel2",
+      "wetland_id": "vegas_calama",
+      "index": "ndwi",
+      "year": 2026,
+      "season": "Verano",
+      "period_key": "2026_verano",
+      "visual": {
+        "path": "sentinel2/rasters/vegas_calama_2026_verano_ndwi.webp",
+        "bounds": [
+          [
+            -22.449437939317313,
+            -68.98091201531076
+          ],
+          [
+            -22.438837818964704,
+            -68.95279474691782
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          313,
+          118
+        ],
+        "display_size": [
+          626,
+          236
+        ],
+        "render_mode": "pixelated",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/sentinel2/vegas_calama/2026_verano_ndwi.tif"
+    }
+  },
+  "periods": [
+    {
+      "key": "2017_invierno",
+      "label": "Invierno 2017"
+    },
+    {
+      "key": "2017_otono",
+      "label": "Otoño 2017"
+    },
+    {
+      "key": "2017_primavera",
+      "label": "Primavera 2017"
+    },
+    {
+      "key": "2017_verano",
+      "label": "Verano 2017"
+    },
+    {
+      "key": "2018_invierno",
+      "label": "Invierno 2018"
+    },
+    {
+      "key": "2018_otono",
+      "label": "Otoño 2018"
+    },
+    {
+      "key": "2018_primavera",
+      "label": "Primavera 2018"
+    },
+    {
+      "key": "2018_verano",
+      "label": "Verano 2018"
+    },
+    {
+      "key": "2019_invierno",
+      "label": "Invierno 2019"
+    },
+    {
+      "key": "2019_otono",
+      "label": "Otoño 2019"
+    },
+    {
+      "key": "2019_primavera",
+      "label": "Primavera 2019"
+    },
+    {
+      "key": "2019_verano",
+      "label": "Verano 2019"
+    },
+    {
+      "key": "2020_invierno",
+      "label": "Invierno 2020"
+    },
+    {
+      "key": "2020_otono",
+      "label": "Otoño 2020"
+    },
+    {
+      "key": "2020_primavera",
+      "label": "Primavera 2020"
+    },
+    {
+      "key": "2020_verano",
+      "label": "Verano 2020"
+    },
+    {
+      "key": "2021_invierno",
+      "label": "Invierno 2021"
+    },
+    {
+      "key": "2021_otono",
+      "label": "Otoño 2021"
+    },
+    {
+      "key": "2021_primavera",
+      "label": "Primavera 2021"
+    },
+    {
+      "key": "2021_verano",
+      "label": "Verano 2021"
+    },
+    {
+      "key": "2022_invierno",
+      "label": "Invierno 2022"
+    },
+    {
+      "key": "2022_otono",
+      "label": "Otoño 2022"
+    },
+    {
+      "key": "2022_primavera",
+      "label": "Primavera 2022"
+    },
+    {
+      "key": "2022_verano",
+      "label": "Verano 2022"
+    },
+    {
+      "key": "2023_invierno",
+      "label": "Invierno 2023"
+    },
+    {
+      "key": "2023_otono",
+      "label": "Otoño 2023"
+    },
+    {
+      "key": "2023_primavera",
+      "label": "Primavera 2023"
+    },
+    {
+      "key": "2023_verano",
+      "label": "Verano 2023"
+    },
+    {
+      "key": "2024_invierno",
+      "label": "Invierno 2024"
+    },
+    {
+      "key": "2024_otono",
+      "label": "Otoño 2024"
+    },
+    {
+      "key": "2024_primavera",
+      "label": "Primavera 2024"
+    },
+    {
+      "key": "2024_verano",
+      "label": "Verano 2024"
+    },
+    {
+      "key": "2025_invierno",
+      "label": "Invierno 2025"
+    },
+    {
+      "key": "2025_otono",
+      "label": "Otoño 2025"
+    },
+    {
+      "key": "2025_primavera",
+      "label": "Primavera 2025"
+    },
+    {
+      "key": "2025_verano",
+      "label": "Verano 2025"
+    },
+    {
+      "key": "2026_verano",
+      "label": "Verano 2026"
+    }
+  ],
+  "summary": {
+    "n_wetlands": 2,
+    "n_periods": 37,
+    "data_points": 144,
+    "total_area_ha": 60.8,
+    "latest_period": "Verano 2026",
+    "available_years": [
+      2017,
+      2018,
+      2019,
+      2020,
+      2021,
+      2022,
+      2023,
+      2024,
+      2025,
+      2026
+    ]
+  }
+}

@@ -1,0 +1,653 @@
+{
+  "aoi_id_column": "wetland_id",
+  "indices": {
+    "ndvi": {
+      "label": "NDVI",
+      "description": "Índice de Vegetación de Diferencia Normalizada",
+      "vmin": -0.1,
+      "vmax": 0.6,
+      "colormap": "RdYlGn"
+    },
+    "ndwi": {
+      "label": "NDWI",
+      "description": "Índice de Agua de Diferencia Normalizada",
+      "vmin": -0.4,
+      "vmax": 0.4,
+      "colormap": "RdYlBu"
+    }
+  },
+  "wetlands": {
+    "salar_huasco": {
+      "name": "Salar del Huasco",
+      "area_ha": 6470.0,
+      "center": [
+        -20.305,
+        -68.85
+      ],
+      "n_periods": 16,
+      "last_period": "Primavera 2025"
+    },
+    "salar_tara": {
+      "name": "Salar de Tara",
+      "area_ha": 11245.4,
+      "center": [
+        -22.935,
+        -67.255
+      ],
+      "n_periods": 16,
+      "last_period": "Primavera 2025"
+    }
+  },
+  "rasters": {
+    "salar_huasco_2024_verano_ndvi": {
+      "path": "rasters/salar_huasco_2024_verano_ndvi.png",
+      "bounds": [
+        [
+          -20.340013989147852,
+          -68.89000250855787
+        ],
+        [
+          -20.26994539698653,
+          -68.80996261674282
+        ]
+      ],
+      "wetland_id": "salar_huasco",
+      "index": "ndvi",
+      "year": 2024,
+      "season": "Verano",
+      "period_key": "2024_verano"
+    },
+    "salar_huasco_2024_otono_ndvi": {
+      "path": "rasters/salar_huasco_2024_otono_ndvi.png",
+      "bounds": [
+        [
+          -20.340013989147852,
+          -68.89000250855787
+        ],
+        [
+          -20.26994539698653,
+          -68.80996261674282
+        ]
+      ],
+      "wetland_id": "salar_huasco",
+      "index": "ndvi",
+      "year": 2024,
+      "season": "Otoño",
+      "period_key": "2024_otono"
+    },
+    "salar_huasco_2024_invierno_ndvi": {
+      "path": "rasters/salar_huasco_2024_invierno_ndvi.png",
+      "bounds": [
+        [
+          -20.340013989147852,
+          -68.89000250855787
+        ],
+        [
+          -20.26994539698653,
+          -68.80996261674282
+        ]
+      ],
+      "wetland_id": "salar_huasco",
+      "index": "ndvi",
+      "year": 2024,
+      "season": "Invierno",
+      "period_key": "2024_invierno"
+    },
+    "salar_huasco_2024_primavera_ndvi": {
+      "path": "rasters/salar_huasco_2024_primavera_ndvi.png",
+      "bounds": [
+        [
+          -20.340013989147852,
+          -68.89000250855787
+        ],
+        [
+          -20.26994539698653,
+          -68.80996261674282
+        ]
+      ],
+      "wetland_id": "salar_huasco",
+      "index": "ndvi",
+      "year": 2024,
+      "season": "Primavera",
+      "period_key": "2024_primavera"
+    },
+    "salar_huasco_2025_verano_ndvi": {
+      "path": "rasters/salar_huasco_2025_verano_ndvi.png",
+      "bounds": [
+        [
+          -20.340013989147852,
+          -68.89000250855787
+        ],
+        [
+          -20.26994539698653,
+          -68.80996261674282
+        ]
+      ],
+      "wetland_id": "salar_huasco",
+      "index": "ndvi",
+      "year": 2025,
+      "season": "Verano",
+      "period_key": "2025_verano"
+    },
+    "salar_huasco_2025_otono_ndvi": {
+      "path": "rasters/salar_huasco_2025_otono_ndvi.png",
+      "bounds": [
+        [
+          -20.340013989147852,
+          -68.89000250855787
+        ],
+        [
+          -20.26994539698653,
+          -68.80996261674282
+        ]
+      ],
+      "wetland_id": "salar_huasco",
+      "index": "ndvi",
+      "year": 2025,
+      "season": "Otoño",
+      "period_key": "2025_otono"
+    },
+    "salar_huasco_2025_invierno_ndvi": {
+      "path": "rasters/salar_huasco_2025_invierno_ndvi.png",
+      "bounds": [
+        [
+          -20.340013989147852,
+          -68.89000250855787
+        ],
+        [
+          -20.26994539698653,
+          -68.80996261674282
+        ]
+      ],
+      "wetland_id": "salar_huasco",
+      "index": "ndvi",
+      "year": 2025,
+      "season": "Invierno",
+      "period_key": "2025_invierno"
+    },
+    "salar_huasco_2025_primavera_ndvi": {
+      "path": "rasters/salar_huasco_2025_primavera_ndvi.png",
+      "bounds": [
+        [
+          -20.340013989147852,
+          -68.89000250855787
+        ],
+        [
+          -20.26994539698653,
+          -68.80996261674282
+        ]
+      ],
+      "wetland_id": "salar_huasco",
+      "index": "ndvi",
+      "year": 2025,
+      "season": "Primavera",
+      "period_key": "2025_primavera"
+    },
+    "salar_huasco_2024_verano_ndwi": {
+      "path": "rasters/salar_huasco_2024_verano_ndwi.png",
+      "bounds": [
+        [
+          -20.340013989147852,
+          -68.89000250855787
+        ],
+        [
+          -20.26994539698653,
+          -68.80996261674282
+        ]
+      ],
+      "wetland_id": "salar_huasco",
+      "index": "ndwi",
+      "year": 2024,
+      "season": "Verano",
+      "period_key": "2024_verano"
+    },
+    "salar_huasco_2024_otono_ndwi": {
+      "path": "rasters/salar_huasco_2024_otono_ndwi.png",
+      "bounds": [
+        [
+          -20.340013989147852,
+          -68.89000250855787
+        ],
+        [
+          -20.26994539698653,
+          -68.80996261674282
+        ]
+      ],
+      "wetland_id": "salar_huasco",
+      "index": "ndwi",
+      "year": 2024,
+      "season": "Otoño",
+      "period_key": "2024_otono"
+    },
+    "salar_huasco_2024_invierno_ndwi": {
+      "path": "rasters/salar_huasco_2024_invierno_ndwi.png",
+      "bounds": [
+        [
+          -20.340013989147852,
+          -68.89000250855787
+        ],
+        [
+          -20.26994539698653,
+          -68.80996261674282
+        ]
+      ],
+      "wetland_id": "salar_huasco",
+      "index": "ndwi",
+      "year": 2024,
+      "season": "Invierno",
+      "period_key": "2024_invierno"
+    },
+    "salar_huasco_2024_primavera_ndwi": {
+      "path": "rasters/salar_huasco_2024_primavera_ndwi.png",
+      "bounds": [
+        [
+          -20.340013989147852,
+          -68.89000250855787
+        ],
+        [
+          -20.26994539698653,
+          -68.80996261674282
+        ]
+      ],
+      "wetland_id": "salar_huasco",
+      "index": "ndwi",
+      "year": 2024,
+      "season": "Primavera",
+      "period_key": "2024_primavera"
+    },
+    "salar_huasco_2025_verano_ndwi": {
+      "path": "rasters/salar_huasco_2025_verano_ndwi.png",
+      "bounds": [
+        [
+          -20.340013989147852,
+          -68.89000250855787
+        ],
+        [
+          -20.26994539698653,
+          -68.80996261674282
+        ]
+      ],
+      "wetland_id": "salar_huasco",
+      "index": "ndwi",
+      "year": 2025,
+      "season": "Verano",
+      "period_key": "2025_verano"
+    },
+    "salar_huasco_2025_otono_ndwi": {
+      "path": "rasters/salar_huasco_2025_otono_ndwi.png",
+      "bounds": [
+        [
+          -20.340013989147852,
+          -68.89000250855787
+        ],
+        [
+          -20.26994539698653,
+          -68.80996261674282
+        ]
+      ],
+      "wetland_id": "salar_huasco",
+      "index": "ndwi",
+      "year": 2025,
+      "season": "Otoño",
+      "period_key": "2025_otono"
+    },
+    "salar_huasco_2025_invierno_ndwi": {
+      "path": "rasters/salar_huasco_2025_invierno_ndwi.png",
+      "bounds": [
+        [
+          -20.340013989147852,
+          -68.89000250855787
+        ],
+        [
+          -20.26994539698653,
+          -68.80996261674282
+        ]
+      ],
+      "wetland_id": "salar_huasco",
+      "index": "ndwi",
+      "year": 2025,
+      "season": "Invierno",
+      "period_key": "2025_invierno"
+    },
+    "salar_huasco_2025_primavera_ndwi": {
+      "path": "rasters/salar_huasco_2025_primavera_ndwi.png",
+      "bounds": [
+        [
+          -20.340013989147852,
+          -68.89000250855787
+        ],
+        [
+          -20.26994539698653,
+          -68.80996261674282
+        ]
+      ],
+      "wetland_id": "salar_huasco",
+      "index": "ndwi",
+      "year": 2025,
+      "season": "Primavera",
+      "period_key": "2025_primavera"
+    },
+    "salar_tara_2024_verano_ndvi": {
+      "path": "rasters/salar_tara_2024_verano_ndvi.png",
+      "bounds": [
+        [
+          -22.980072777646715,
+          -67.31004558684845
+        ],
+        [
+          -22.889971754649526,
+          -67.19991213301539
+        ]
+      ],
+      "wetland_id": "salar_tara",
+      "index": "ndvi",
+      "year": 2024,
+      "season": "Verano",
+      "period_key": "2024_verano"
+    },
+    "salar_tara_2024_otono_ndvi": {
+      "path": "rasters/salar_tara_2024_otono_ndvi.png",
+      "bounds": [
+        [
+          -22.980072777646715,
+          -67.31004558684845
+        ],
+        [
+          -22.889971754649526,
+          -67.19991213301539
+        ]
+      ],
+      "wetland_id": "salar_tara",
+      "index": "ndvi",
+      "year": 2024,
+      "season": "Otoño",
+      "period_key": "2024_otono"
+    },
+    "salar_tara_2024_invierno_ndvi": {
+      "path": "rasters/salar_tara_2024_invierno_ndvi.png",
+      "bounds": [
+        [
+          -22.980072777646715,
+          -67.31004558684845
+        ],
+        [
+          -22.889971754649526,
+          -67.19991213301539
+        ]
+      ],
+      "wetland_id": "salar_tara",
+      "index": "ndvi",
+      "year": 2024,
+      "season": "Invierno",
+      "period_key": "2024_invierno"
+    },
+    "salar_tara_2024_primavera_ndvi": {
+      "path": "rasters/salar_tara_2024_primavera_ndvi.png",
+      "bounds": [
+        [
+          -22.980072777646715,
+          -67.31004558684845
+        ],
+        [
+          -22.889971754649526,
+          -67.19991213301539
+        ]
+      ],
+      "wetland_id": "salar_tara",
+      "index": "ndvi",
+      "year": 2024,
+      "season": "Primavera",
+      "period_key": "2024_primavera"
+    },
+    "salar_tara_2025_verano_ndvi": {
+      "path": "rasters/salar_tara_2025_verano_ndvi.png",
+      "bounds": [
+        [
+          -22.980072777646715,
+          -67.31004558684845
+        ],
+        [
+          -22.889971754649526,
+          -67.19991213301539
+        ]
+      ],
+      "wetland_id": "salar_tara",
+      "index": "ndvi",
+      "year": 2025,
+      "season": "Verano",
+      "period_key": "2025_verano"
+    },
+    "salar_tara_2025_otono_ndvi": {
+      "path": "rasters/salar_tara_2025_otono_ndvi.png",
+      "bounds": [
+        [
+          -22.980072777646715,
+          -67.31004558684845
+        ],
+        [
+          -22.889971754649526,
+          -67.19991213301539
+        ]
+      ],
+      "wetland_id": "salar_tara",
+      "index": "ndvi",
+      "year": 2025,
+      "season": "Otoño",
+      "period_key": "2025_otono"
+    },
+    "salar_tara_2025_invierno_ndvi": {
+      "path": "rasters/salar_tara_2025_invierno_ndvi.png",
+      "bounds": [
+        [
+          -22.980072777646715,
+          -67.31004558684845
+        ],
+        [
+          -22.889971754649526,
+          -67.19991213301539
+        ]
+      ],
+      "wetland_id": "salar_tara",
+      "index": "ndvi",
+      "year": 2025,
+      "season": "Invierno",
+      "period_key": "2025_invierno"
+    },
+    "salar_tara_2025_primavera_ndvi": {
+      "path": "rasters/salar_tara_2025_primavera_ndvi.png",
+      "bounds": [
+        [
+          -22.980072777646715,
+          -67.31004558684845
+        ],
+        [
+          -22.889971754649526,
+          -67.19991213301539
+        ]
+      ],
+      "wetland_id": "salar_tara",
+      "index": "ndvi",
+      "year": 2025,
+      "season": "Primavera",
+      "period_key": "2025_primavera"
+    },
+    "salar_tara_2024_verano_ndwi": {
+      "path": "rasters/salar_tara_2024_verano_ndwi.png",
+      "bounds": [
+        [
+          -22.980072777646715,
+          -67.31004558684845
+        ],
+        [
+          -22.889971754649526,
+          -67.19991213301539
+        ]
+      ],
+      "wetland_id": "salar_tara",
+      "index": "ndwi",
+      "year": 2024,
+      "season": "Verano",
+      "period_key": "2024_verano"
+    },
+    "salar_tara_2024_otono_ndwi": {
+      "path": "rasters/salar_tara_2024_otono_ndwi.png",
+      "bounds": [
+        [
+          -22.980072777646715,
+          -67.31004558684845
+        ],
+        [
+          -22.889971754649526,
+          -67.19991213301539
+        ]
+      ],
+      "wetland_id": "salar_tara",
+      "index": "ndwi",
+      "year": 2024,
+      "season": "Otoño",
+      "period_key": "2024_otono"
+    },
+    "salar_tara_2024_invierno_ndwi": {
+      "path": "rasters/salar_tara_2024_invierno_ndwi.png",
+      "bounds": [
+        [
+          -22.980072777646715,
+          -67.31004558684845
+        ],
+        [
+          -22.889971754649526,
+          -67.19991213301539
+        ]
+      ],
+      "wetland_id": "salar_tara",
+      "index": "ndwi",
+      "year": 2024,
+      "season": "Invierno",
+      "period_key": "2024_invierno"
+    },
+    "salar_tara_2024_primavera_ndwi": {
+      "path": "rasters/salar_tara_2024_primavera_ndwi.png",
+      "bounds": [
+        [
+          -22.980072777646715,
+          -67.31004558684845
+        ],
+        [
+          -22.889971754649526,
+          -67.19991213301539
+        ]
+      ],
+      "wetland_id": "salar_tara",
+      "index": "ndwi",
+      "year": 2024,
+      "season": "Primavera",
+      "period_key": "2024_primavera"
+    },
+    "salar_tara_2025_verano_ndwi": {
+      "path": "rasters/salar_tara_2025_verano_ndwi.png",
+      "bounds": [
+        [
+          -22.980072777646715,
+          -67.31004558684845
+        ],
+        [
+          -22.889971754649526,
+          -67.19991213301539
+        ]
+      ],
+      "wetland_id": "salar_tara",
+      "index": "ndwi",
+      "year": 2025,
+      "season": "Verano",
+      "period_key": "2025_verano"
+    },
+    "salar_tara_2025_otono_ndwi": {
+      "path": "rasters/salar_tara_2025_otono_ndwi.png",
+      "bounds": [
+        [
+          -22.980072777646715,
+          -67.31004558684845
+        ],
+        [
+          -22.889971754649526,
+          -67.19991213301539
+        ]
+      ],
+      "wetland_id": "salar_tara",
+      "index": "ndwi",
+      "year": 2025,
+      "season": "Otoño",
+      "period_key": "2025_otono"
+    },
+    "salar_tara_2025_invierno_ndwi": {
+      "path": "rasters/salar_tara_2025_invierno_ndwi.png",
+      "bounds": [
+        [
+          -22.980072777646715,
+          -67.31004558684845
+        ],
+        [
+          -22.889971754649526,
+          -67.19991213301539
+        ]
+      ],
+      "wetland_id": "salar_tara",
+      "index": "ndwi",
+      "year": 2025,
+      "season": "Invierno",
+      "period_key": "2025_invierno"
+    },
+    "salar_tara_2025_primavera_ndwi": {
+      "path": "rasters/salar_tara_2025_primavera_ndwi.png",
+      "bounds": [
+        [
+          -22.980072777646715,
+          -67.31004558684845
+        ],
+        [
+          -22.889971754649526,
+          -67.19991213301539
+        ]
+      ],
+      "wetland_id": "salar_tara",
+      "index": "ndwi",
+      "year": 2025,
+      "season": "Primavera",
+      "period_key": "2025_primavera"
+    }
+  },
+  "periods": [
+    {
+      "key": "2024_invierno",
+      "label": "Invierno 2024"
+    },
+    {
+      "key": "2024_otono",
+      "label": "Otoño 2024"
+    },
+    {
+      "key": "2024_primavera",
+      "label": "Primavera 2024"
+    },
+    {
+      "key": "2024_verano",
+      "label": "Verano 2024"
+    },
+    {
+      "key": "2025_invierno",
+      "label": "Invierno 2025"
+    },
+    {
+      "key": "2025_otono",
+      "label": "Otoño 2025"
+    },
+    {
+      "key": "2025_primavera",
+      "label": "Primavera 2025"
+    },
+    {
+      "key": "2025_verano",
+      "label": "Verano 2025"
+    }
+  ]
+}

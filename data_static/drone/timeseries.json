@@ -1,0 +1,60 @@
+{
+  "source": {
+    "id": "drone",
+    "label": "Dron Multiespectral",
+    "description": "Campañas multiespectrales de mayor resolución para monitoreo local.",
+    "has_data": false
+  },
+  "wetlands": {
+    "sapunta": {
+      "name": "Sapunta",
+      "indices": {
+        "ndvi": {
+          "points": [],
+          "metrics": {
+            "latest": null,
+            "historical_mean": null,
+            "seasonal_means": {},
+            "annual_summary": [],
+            "trend": null
+          }
+        },
+        "ndwi": {
+          "points": [],
+          "metrics": {
+            "latest": null,
+            "historical_mean": null,
+            "seasonal_means": {},
+            "annual_summary": [],
+            "trend": null
+          }
+        }
+      }
+    },
+    "vegas_calama": {
+      "name": "Vegas de Calama",
+      "indices": {
+        "ndvi": {
+          "points": [],
+          "metrics": {
+            "latest": null,
+            "historical_mean": null,
+            "seasonal_means": {},
+            "annual_summary": [],
+            "trend": null
+          }
+        },
+        "ndwi": {
+          "points": [],
+          "metrics": {
+            "latest": null,
+            "historical_mean": null,
+            "seasonal_means": {},
+            "annual_summary": [],
+            "trend": null
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,23 @@
+# Python
+__pycache__/
+*.py[cod]
+*.pyo
+.pytest_cache/
+*.egg-info/
+.venv/
+venv/
+env/
+
+# Server / temp
+server.out
+server.err
+*.log
+dl_log.txt
+crash.txt
+download_log.txt
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo

@@ -1,0 +1,634 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monitoreo Ambiental – Humedales Altoandinos</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.4/dist/leaflet.css">
+    <script src="https://cdn.plot.ly/plotly-2.32.0.min.js"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <style>
+        :root{
+            --bg:#0c1220;--surface:#151d2e;--surface-alt:#1c2940;--border:#2a3a52;
+            --text:#e2e8f0;--muted:#8896ab;--accent:#38bdf8;--accent-2:#22c55e;
+            --ndvi:#22c55e;--ndwi:#3b82f6;--warn:#f59e0b;--radius:12px;
+        }
+        *{box-sizing:border-box;margin:0;padding:0}
+        body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
+        .page{max-width:1560px;margin:0 auto;padding:22px 24px 42px}
+        header{display:flex;justify-content:space-between;gap:20px;align-items:flex-end;margin-bottom:18px;padding-bottom:16px;border-bottom:1px solid var(--border)}
+        h1{font-size:1.72rem;font-weight:600;letter-spacing:-.02em}
+        h1 span{color:var(--accent);font-weight:300}
+        .subtitle{color:var(--muted);font-size:.9rem;margin-top:4px}
+        .header-badges{display:flex;gap:8px;flex-wrap:wrap}
+        .badge{display:inline-flex;align-items:center;gap:6px;padding:6px 10px;border-radius:999px;border:1px solid var(--border);background:var(--surface);font-size:.72rem;text-transform:uppercase;letter-spacing:.06em}
+        .section-title{font-size:1.05rem;font-weight:500;color:var(--muted);margin-bottom:12px}
+        .toolbar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:18px}
+        .source-tabs{display:flex;gap:10px;flex-wrap:wrap}
+        .source-tab{padding:10px 14px;border-radius:999px;border:1px solid var(--border);background:var(--surface);color:var(--text);cursor:pointer;font-size:.85rem;transition:.15s}
+        .source-tab.active{border-color:var(--accent);box-shadow:0 0 0 1px rgba(56,189,248,.25) inset}
+        .source-tab.empty{border-style:dashed}
+        .selector-group{display:flex;gap:10px;flex-wrap:wrap}
+        select{padding:9px 12px;border-radius:8px;border:1px solid var(--border);background:var(--surface);color:var(--text);font-size:.86rem;min-width:180px}
+        select:focus{outline:none;border-color:var(--accent)}
+        .status{margin-bottom:16px;padding:12px 14px;border-radius:10px;border:1px solid var(--border);background:rgba(28,41,64,.55);color:var(--muted);font-size:.85rem}
+        .status.empty{border-style:dashed}
+        .cards{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;margin-bottom:26px}
+        .card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px 18px;position:relative;overflow:hidden}
+        .card::before{content:'';position:absolute;left:0;top:0;width:4px;height:100%}
+        .card.period::before{background:var(--warn)}
+        .card.area::before{background:var(--accent)}
+        .card.ndvi::before{background:var(--ndvi)}
+        .card.ndwi::before{background:var(--ndwi)}
+        .card-label{font-size:.7rem;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin-bottom:4px}
+        .card-value{font-size:1.38rem;font-weight:700}
+        .card-sub{font-size:.76rem;color:var(--muted);margin-top:4px}
+        .card-sub strong{color:var(--text);font-weight:600}
+        .grid-2{display:grid;grid-template-columns:1.2fr 1fr;gap:18px;margin-bottom:28px}
+        .panel{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px}
+        .panel-header{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:12px}
+        .helper{color:var(--muted);font-size:.8rem}
+        .map-wrap{position:relative;border-radius:10px;overflow:hidden;border:1px solid var(--border)}
+        #mapa{height:680px;background:#0d1117}
+        .map-controls{position:absolute;top:14px;left:58px;z-index:800;display:flex;gap:8px;flex-wrap:wrap}
+        .map-controls select{background:rgba(21,29,46,.95);min-width:160px}
+        .map-note{position:absolute;right:12px;top:12px;z-index:800;padding:10px 12px;max-width:280px;background:rgba(12,18,32,.92);border:1px solid var(--border);border-radius:8px;color:var(--muted);font-size:.78rem}
+        .colorbar-box{position:absolute;left:58px;bottom:24px;z-index:800;background:rgba(21,29,46,.95);border:1px solid var(--border);border-radius:8px;padding:8px 12px;display:none}
+        .colorbar-title{font-size:.68rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:4px}
+        .colorbar-gradient{height:10px;width:200px;border-radius:999px}
+        .colorbar-labels{display:flex;justify-content:space-between;font-size:.68rem;color:var(--muted);margin-top:4px}
+        .charts-controls{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}
+        .charts-row{display:grid;grid-template-columns:1fr;gap:18px}
+        .chart-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px;min-height:440px}
+        .chart-title{font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;display:flex;align-items:center;gap:8px;margin-bottom:8px}
+        .dot{width:10px;height:10px;border-radius:50%}
+        .chart-body{min-height:380px}
+        .chart-placeholder{text-align:center;color:var(--muted);padding:100px 18px;font-size:.92rem}
+        .footer{display:flex;justify-content:space-between;gap:18px;align-items:flex-start;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px 24px;flex-wrap:wrap}
+        .footer h4{font-size:.86rem;font-weight:600;margin-bottom:6px}
+        .footer p{font-size:.81rem;color:var(--muted);max-width:760px}
+        .btn{display:inline-flex;align-items:center;gap:6px;padding:9px 16px;border-radius:8px;border:1px solid var(--border);background:var(--surface-alt);color:var(--text);font-size:.82rem;cursor:pointer;transition:.15s}
+        .btn:hover{border-color:var(--accent);color:var(--accent)}
+        .preview-raster{image-rendering:pixelated;image-rendering:crisp-edges}
+        @media(max-width:1260px){.cards{grid-template-columns:repeat(3,1fr)}.grid-2{grid-template-columns:1fr}}
+        @media(max-width:760px){header{flex-direction:column;align-items:flex-start}.cards{grid-template-columns:1fr}.map-controls{left:12px;right:12px}.map-controls select{min-width:unset;width:100%}}
+    </style>
+</head>
+<body>
+<div class="page">
+    <header>
+        <div>
+            <h1>Monitoreo Ambiental <span>| Humedales Altoandinos</span></h1>
+            <p class="subtitle" id="pageSubtitle">Seguimiento histórico por fuente, humedal e índice ambiental.</p>
+        </div>
+        <div class="header-badges">
+            <div class="badge" id="rangeBadge">Histórico</div>
+            <div class="badge">NDVI</div>
+            <div class="badge">NDWI</div>
+        </div>
+    </header>
+
+    <div class="toolbar">
+        <div class="source-tabs" id="sourceTabs"></div>
+        <div class="selector-group">
+            <select id="globalWetland"></select>
+            <select id="chartView">
+                <option value="comparison">Comparar humedales</option>
+                <option value="full_series">Serie histórica</option>
+                <option value="seasonal_anomaly">Anomalías por estación</option>
+                <option value="annual_summary">Resumen anual</option>
+            </select>
+        </div>
+    </div>
+
+    <div class="status" id="sourceStatus">Cargando manifiesto de fuentes…</div>
+
+    <div class="cards">
+        <div class="card period"><div class="card-label">Período más reciente</div><div class="card-value" id="kpi-period">—</div><div class="card-sub" id="kpi-period-sub"></div></div>
+        <div class="card area"><div class="card-label">Área del AOI</div><div class="card-value" id="kpi-area">—</div><div class="card-sub" id="kpi-area-sub"></div></div>
+        <div class="card ndvi"><div class="card-label">NDVI actual vs histórico</div><div class="card-value" id="kpi-ndvi-current">—</div><div class="card-sub" id="kpi-ndvi-current-sub"></div></div>
+        <div class="card ndvi"><div class="card-label">NDVI anomalía estacional</div><div class="card-value" id="kpi-ndvi-seasonal">—</div><div class="card-sub" id="kpi-ndvi-seasonal-sub"></div></div>
+        <div class="card ndwi"><div class="card-label">NDWI actual vs histórico</div><div class="card-value" id="kpi-ndwi-current">—</div><div class="card-sub" id="kpi-ndwi-current-sub"></div></div>
+        <div class="card ndwi"><div class="card-label">NDWI anomalía estacional</div><div class="card-value" id="kpi-ndwi-seasonal">—</div><div class="card-sub" id="kpi-ndwi-seasonal-sub"></div></div>
+    </div>
+
+    <div class="grid-2">
+        <section class="panel">
+            <div class="panel-header">
+                <div>
+                    <div class="section-title">Explorador Espacial</div>
+                    <div class="helper">Raster de visualización optimizado para web y AOI del humedal activo.</div>
+                </div>
+            </div>
+            <div class="map-wrap">
+                <div class="map-controls">
+                    <select id="mapIndex">
+                        <option value="ndvi">NDVI</option>
+                        <option value="ndwi">NDWI</option>
+                    </select>
+                    <select id="mapPeriod"></select>
+                </div>
+                <div class="map-note" id="mapNote">Selecciona un período para superponer el raster.</div>
+                <div class="colorbar-box" id="colorbarBox">
+                    <div class="colorbar-title" id="cbTitle">NDVI</div>
+                    <div class="colorbar-gradient" id="cbGradient"></div>
+                    <div class="colorbar-labels"><span id="cbMin"></span><span id="cbMax"></span></div>
+                </div>
+                <div id="mapa"></div>
+            </div>
+        </section>
+
+        <section class="panel">
+            <div class="panel-header">
+                <div>
+                    <div class="section-title">Lectura Histórica</div>
+                    <div class="helper">Comparación espacial, anomalías estacionales y tendencia interanual.</div>
+                </div>
+            </div>
+            <div class="charts-row">
+                <div class="chart-card">
+                    <div class="chart-title"><span class="dot" style="background:var(--ndvi)"></span>NDVI</div>
+                    <div class="chart-body" id="ndviChart"><p class="chart-placeholder">Cargando…</p></div>
+                </div>
+                <div class="chart-card">
+                    <div class="chart-title"><span class="dot" style="background:var(--ndwi)"></span>NDWI</div>
+                    <div class="chart-body" id="ndwiChart"><p class="chart-placeholder">Cargando…</p></div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <div class="footer">
+        <div>
+            <h4>Metodología</h4>
+            <p id="methodologyText">Las capas analíticas y las previsualizaciones web se cargan por fuente. Sentinel-2 usa composiciones estacionales históricas; Dron Multiespectral queda visible con estado vacío hasta cargar campañas.</p>
+        </div>
+        <button class="btn" onclick="downloadCSV()">⬇ Descargar CSV fuente actual</button>
+    </div>
+</div>
+
+<script src="https://unpkg.com/leaflet@1.9.4/dist/leaflet.js"></script>
+<script>
+Plotly.setPlotConfig({locale:'es'});
+
+const BASE='data_static';
+const CHART_COLORS={ndvi:['#22c55e','#f59e0b','#e879f9','#38bdf8'],ndwi:['#3b82f6','#8b5cf6','#f97316','#14b8a6']};
+const CBAR={
+    ndvi:{gradient:'linear-gradient(to right,#a50026,#d73027,#f46d43,#fdae61,#fee08b,#ffffbf,#d9ef8b,#a6d96a,#66bd63,#1a9850,#006837)',label:'NDVI'},
+    ndwi:{gradient:'linear-gradient(to right,#a50026,#d73027,#f46d43,#fdae61,#fee090,#ffffbf,#e0f3f8,#abd9e9,#74add1,#4575b4,#313695)',label:'NDWI'}
+};
+const plotCfg={responsive:true,displayModeBar:false};
+const baseLayout={
+    margin:{l:52,r:16,t:18,b:52},
+    paper_bgcolor:'rgba(0,0,0,0)',
+    plot_bgcolor:'rgba(0,0,0,0)',
+    font:{color:'#c8d3e0',family:'Inter,sans-serif',size:12},
+    hovermode:'closest',
+    legend:{orientation:'h',y:-0.24,x:0.5,xanchor:'center',font:{size:11}},
+    xaxis:{gridcolor:'rgba(255,255,255,.06)'},
+    yaxis:{gridcolor:'rgba(255,255,255,.06)',zeroline:false}
+};
+
+let mapa,aoiLayer,rasterOverlay;
+const state={
+    manifest:null,
+    aoi:null,
+    datasets:{},
+    metadata:{},
+    selectedSource:null,
+    selectedWetland:null
+};
+
+window.onload=()=>{initMap();loadManifest();};
+
+function initMap(){
+    mapa=L.map('mapa',{center:[-22,-68.7],zoom:8,zoomControl:true});
+    L.control.scale({imperial:false}).addTo(mapa);
+    const dark=L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{attribution:'© CartoDB'});
+    const sat=L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',{attribution:'© Esri'});
+    const topo=L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}',{attribution:'© Esri'});
+    dark.addTo(mapa);
+    L.control.layers({'Oscuro':dark,'Satélite':sat,'Topográfico':topo},{}).addTo(mapa);
+}
+
+async function fetchJson(url){
+    const response=await fetch(url);
+    if(!response.ok) throw new Error(`No se pudo cargar ${url}`);
+    return response.json();
+}
+
+async function loadManifest(){
+    try{
+        state.manifest=await fetchJson(`${BASE}/sources_manifest.json`);
+        if(state.manifest.aoi_path){
+            state.aoi=await fetchJson(`${BASE}/${state.manifest.aoi_path}`);
+        }
+        document.getElementById('rangeBadge').textContent=`${state.manifest.year_range.start}-${state.manifest.year_range.end}`;
+        const firstSource=Object.keys(state.manifest.sources)[0];
+        if(!firstSource) throw new Error('No hay fuentes configuradas');
+        await setSource(firstSource);
+    }catch(error){
+        console.error(error);
+        const msg='Ejecuta `python export_data_ortho.py` para generar `data_static/sources_manifest.json`.';
+        document.getElementById('sourceStatus').textContent=msg;
+        document.getElementById('sourceStatus').classList.add('empty');
+        showPlaceholder('ndviChart',msg);
+        showPlaceholder('ndwiChart',msg);
+    }
+}
+
+async function setSource(sourceKey){
+    state.selectedSource=sourceKey;
+    if(!state.datasets[sourceKey]){
+        const source=state.manifest.sources[sourceKey];
+        state.datasets[sourceKey]=await fetchJson(`${BASE}/${source.timeseries_path}`);
+        state.metadata[sourceKey]=await fetchJson(`${BASE}/${source.metadata_path}`);
+    }
+    buildSourceTabs();
+    buildSelectors();
+    renderAOI();
+    renderAll();
+}
+
+function currentSource(){return state.manifest.sources[state.selectedSource]||{};}
+function currentData(){return state.datasets[state.selectedSource]||{wetlands:{}};}
+function currentMeta(){return state.metadata[state.selectedSource]||{wetlands:{},indices:{},periods:[],rasters:{},summary:{}};}
+function currentWetlands(){return Object.keys(currentMeta().wetlands||{});}
+function selectedView(){return document.getElementById('chartView').value;}
+function selectedPeriod(){return document.getElementById('mapPeriod').value;}
+function selectedIndex(){return document.getElementById('mapIndex').value;}
+function cloneLayout(){return JSON.parse(JSON.stringify(baseLayout));}
+
+function buildSourceTabs(){
+    const container=document.getElementById('sourceTabs');
+    container.innerHTML='';
+    Object.entries(state.manifest.sources).forEach(([key,source])=>{
+        const btn=document.createElement('button');
+        btn.className=`source-tab ${key===state.selectedSource?'active':''} ${source.has_data?'':'empty'}`;
+        btn.textContent=source.label;
+        btn.style.borderColor=key===state.selectedSource?(source.color||'var(--accent)'):'';
+        btn.onclick=()=>setSource(key);
+        container.appendChild(btn);
+    });
+}
+
+function buildSelectors(){
+    const wetlandSel=document.getElementById('globalWetland');
+    const wetlands=currentWetlands();
+    wetlandSel.innerHTML='';
+    wetlands.forEach(wid=>{
+        const info=currentMeta().wetlands[wid]||{};
+        wetlandSel.innerHTML+=`<option value="${wid}">${info.name||wid}</option>`;
+    });
+    if(!wetlands.includes(state.selectedWetland)){
+        state.selectedWetland=wetlands[0]||null;
+    }
+    wetlandSel.value=state.selectedWetland||'';
+    wetlandSel.onchange=()=>{
+        state.selectedWetland=wetlandSel.value||null;
+        renderAOI();
+        renderAll();
+    };
+
+    const periodSel=document.getElementById('mapPeriod');
+    periodSel.innerHTML='';
+    (currentMeta().periods||[]).forEach(period=>{
+        periodSel.innerHTML+=`<option value="${period.key}">${period.label}</option>`;
+    });
+    if(periodSel.options.length){
+        periodSel.value=periodSel.options[periodSel.options.length-1].value;
+    }
+    document.getElementById('mapIndex').onchange=()=>updateMapOverlay();
+    periodSel.onchange=()=>updateMapOverlay();
+    document.getElementById('chartView').onchange=()=>renderCharts();
+}
+
+function renderAll(){
+    updateStatus();
+    updateSubtitle();
+    updateKPIs();
+    updateMapOverlay();
+    renderCharts();
+    updateMethodology();
+}
+
+function updateSubtitle(){
+    const source=currentSource();
+    const wetlandInfo=currentMeta().wetlands[state.selectedWetland]||{};
+    const wetlandName=wetlandInfo.name||'sin humedal';
+    document.getElementById('pageSubtitle').textContent=`${source.label||'Fuente'} · ${wetlandName} · seguimiento histórico, anomalías estacionales y resumen anual.`;
+}
+
+function updateStatus(){
+    const source=currentSource();
+    const status=document.getElementById('sourceStatus');
+    const summary=source.summary||{};
+    status.classList.toggle('empty',!source.has_data);
+    if(source.has_data){
+        status.textContent=`${source.label}: ${summary.data_points||0} observaciones, ${summary.n_periods||0} períodos y ${summary.total_area_ha||0} ha monitoreadas en la fuente activa.`;
+    }else{
+        status.textContent=`${source.label}: la fuente está activa pero aún no tiene series exportadas. Puedes cargar datos y volver a ejecutar \`python export_data_ortho.py\`.`;
+    }
+}
+
+function renderAOI(){
+    if(aoiLayer){mapa.removeLayer(aoiLayer);aoiLayer=null;}
+    if(!state.aoi) return;
+    const idCol=currentMeta().aoi_id_column||'wetland_id';
+    aoiLayer=L.geoJSON(state.aoi,{
+        style:feature=>{
+            const wid=String(feature.properties[idCol]||'').toLowerCase();
+            const active=wid===state.selectedWetland;
+            const color=active?(currentSource().color||'#38bdf8'):'#94a3b8';
+            return{color,weight:active?3:2,fillColor:color,fillOpacity:active ? .18 : .07,dashArray:active?'':'6 4'};
+        },
+        onEachFeature:(feature,layer)=>{
+            const wid=String(feature.properties[idCol]||'').toLowerCase();
+            const info=currentMeta().wetlands[wid]||{};
+            const name=info.name||feature.properties.nombre||wid;
+            const html=`<div style="font-family:Inter,sans-serif;line-height:1.6"><b>${name}</b><br>Área: <b>${fmtHa(info.area_ha)}</b><br>Último período: <b>${info.last_period||'Sin datos'}</b><br>Estado: <b>${info.status||'ready'}</b></div>`;
+            layer.bindTooltip(html,{sticky:true,opacity:.95});
+        }
+    }).addTo(mapa);
+    const bounds=aoiLayer.getBounds();
+    if(bounds.isValid()) mapa.fitBounds(bounds.pad(.18));
+}
+
+function updateMapOverlay(){
+    if(rasterOverlay){mapa.removeLayer(rasterOverlay);rasterOverlay=null;}
+    const note=document.getElementById('mapNote');
+    const colorbar=document.getElementById('colorbarBox');
+    colorbar.style.display='none';
+    if(!state.selectedWetland){
+        note.textContent='No hay humedal disponible para la fuente actual.';
+        return;
+    }
+    if(!currentSource().has_data){
+        note.textContent='La fuente activa no tiene raster exportado todavía.';
+        return;
+    }
+    const rasterKey=`${state.selectedWetland}_${selectedPeriod()}_${selectedIndex()}`;
+    const raster=currentMeta().rasters?.[rasterKey];
+    if(!raster){
+        note.textContent='No existe un raster para la combinación seleccionada.';
+        return;
+    }
+    note.textContent=`${raster.index.toUpperCase()} · ${raster.season} ${raster.year} · ${raster.visual.format} ${raster.visual.display_size[0]}×${raster.visual.display_size[1]}`;
+    rasterOverlay=L.imageOverlay(`${BASE}/${raster.visual.path}`,raster.visual.bounds,{opacity:raster.visual.opacity,className:'preview-raster',interactive:false}).addTo(mapa);
+    mapa.fitBounds(raster.visual.bounds,{padding:[36,36]});
+
+    const idxMeta=currentMeta().indices?.[selectedIndex()];
+    const cbar=CBAR[selectedIndex()];
+    document.getElementById('cbGradient').style.background=cbar.gradient;
+    document.getElementById('cbTitle').textContent=cbar.label;
+    document.getElementById('cbMin').textContent=idxMeta?.vmin ?? '';
+    document.getElementById('cbMax').textContent=idxMeta?.vmax ?? '';
+    colorbar.style.display='block';
+}
+
+function getIndexEntry(indexKey){
+    return currentData().wetlands?.[state.selectedWetland]?.indices?.[indexKey]||{points:[],metrics:{}};
+}
+
+function updateKPIs(){
+    const wetlandInfo=currentMeta().wetlands?.[state.selectedWetland]||{};
+    setCard('kpi-period',wetlandInfo.last_period||'—','kpi-period-sub',currentSource().has_data?`${wetlandInfo.n_periods||0} períodos exportados`:'Fuente sin datos');
+    setCard('kpi-area',fmtHa(wetlandInfo.area_ha),'kpi-area-sub',wetlandInfo.center?`Centro ${wetlandInfo.center[0]}, ${wetlandInfo.center[1]}`:'AOI sin geometría');
+    renderMetricCard('ndvi');
+    renderMetricCard('ndwi');
+}
+
+function renderMetricCard(indexKey){
+    const indexEntry=getIndexEntry(indexKey);
+    const latest=indexEntry.metrics?.latest;
+    const trend=indexEntry.metrics?.trend;
+    const currentId=`kpi-${indexKey}-current`;
+    const currentSubId=`kpi-${indexKey}-current-sub`;
+    const seasonalId=`kpi-${indexKey}-seasonal`;
+    const seasonalSubId=`kpi-${indexKey}-seasonal-sub`;
+
+    if(!latest){
+        setCard(currentId,'—',currentSubId,'Sin histórico disponible');
+        setCard(seasonalId,'—',seasonalSubId,'Sin línea base estacional');
+        return;
+    }
+
+    const trendText=trend?`${trend.direction==='up'?'sube':'baja'} ${fmtSigned(trend.slope_per_year)}/año`:'tendencia insuficiente';
+    setCard(
+        currentId,
+        fmtValue(latest.value),
+        currentSubId,
+        `Histórico <strong>${fmtValue(latest.historical_mean)}</strong> · Anom. <strong>${fmtSigned(latest.historical_anomaly_abs)}</strong> (${fmtPct(latest.historical_anomaly_pct)}) · ${trendText}`
+    );
+    setCard(
+        seasonalId,
+        fmtSigned(latest.seasonal_anomaly_abs),
+        seasonalSubId,
+        `${latest.season_label}: base <strong>${fmtValue(latest.seasonal_mean)}</strong> · ${fmtPct(latest.seasonal_anomaly_pct)}`
+    );
+}
+
+function renderCharts(){
+    if(!currentSource().has_data){
+        const msg='Fuente activa sin datos exportados.';
+        showPlaceholder('ndviChart',msg);
+        showPlaceholder('ndwiChart',msg);
+        return;
+    }
+    renderIndexChart('ndviChart','ndvi');
+    renderIndexChart('ndwiChart','ndwi');
+}
+
+function renderIndexChart(divId,indexKey){
+    const view=selectedView();
+    if(view==='comparison'){
+        renderComparisonChart(divId,indexKey);
+        return;
+    }
+    if(!state.selectedWetland){
+        showPlaceholder(divId,'Selecciona un humedal para ver el detalle histórico.');
+        return;
+    }
+    if(view==='full_series'){
+        renderFullSeriesChart(divId,indexKey);
+    }else if(view==='seasonal_anomaly'){
+        renderSeasonalAnomalyChart(divId,indexKey);
+    }else{
+        renderAnnualSummaryChart(divId,indexKey);
+    }
+}
+
+function renderComparisonChart(divId,indexKey){
+    const traces=[];
+    currentWetlands().forEach((wid,idx)=>{
+        const entry=currentData().wetlands?.[wid]?.indices?.[indexKey];
+        const points=entry?.points||[];
+        if(!points.length) return;
+        const info=currentMeta().wetlands?.[wid]||{};
+        traces.push({
+            x:points.map(point=>point.date),
+            y:points.map(point=>point.value),
+            customdata:points.map(point=>point.label),
+            type:'scatter',
+            mode:'lines+markers',
+            name:info.name||wid,
+            line:{width:2.4,color:CHART_COLORS[indexKey][idx%CHART_COLORS[indexKey].length]},
+            marker:{size:7},
+            hovertemplate:'<b>%{fullData.name}</b><br>%{customdata}<br>%{y:.4f}<extra></extra>'
+        });
+    });
+    if(!traces.length){showPlaceholder(divId,'Sin series para comparar en la fuente activa.');return;}
+    const layout=cloneLayout();
+    layout.xaxis={...layout.xaxis,type:'date',tickformat:'%b<br>%Y'};
+    layout.yaxis={...layout.yaxis,title:{text:indexKey.toUpperCase()}};
+    layout.title={text:'Comparación multitemporal por humedal',font:{size:13,color:'#c8d3e0'}};
+    drawPlot(divId,traces,layout);
+}
+
+function renderFullSeriesChart(divId,indexKey){
+    const entry=getIndexEntry(indexKey);
+    const points=entry.points||[];
+    if(!points.length){showPlaceholder(divId,'Sin datos disponibles para este humedal.');return;}
+    const baseline=points.map(point=>entry.metrics.seasonal_means?.[point.season_key]?.mean ?? null);
+    const traces=[
+        {
+            x:points.map(point=>point.date),
+            y:points.map(point=>point.value),
+            customdata:points.map(point=>point.label),
+            type:'scatter',
+            mode:'lines+markers',
+            name:'Valor observado',
+            line:{width:2.6,color:CHART_COLORS[indexKey][0],shape:'spline'},
+            marker:{size:7},
+            hovertemplate:'<b>%{customdata}</b><br>Valor %{y:.4f}<extra></extra>'
+        },
+        {
+            x:points.map(point=>point.date),
+            y:points.map(()=>entry.metrics.historical_mean),
+            type:'scatter',
+            mode:'lines',
+            name:'Promedio histórico',
+            line:{width:1.6,color:'#cbd5e1',dash:'dash'},
+            hovertemplate:'Histórico %{y:.4f}<extra></extra>'
+        },
+        {
+            x:points.map(point=>point.date),
+            y:baseline,
+            customdata:points.map(point=>point.season_label),
+            type:'scatter',
+            mode:'lines',
+            name:'Promedio estacional',
+            line:{width:1.4,color:'#f59e0b',dash:'dot'},
+            hovertemplate:'%{customdata}: %{y:.4f}<extra></extra>'
+        }
+    ];
+    const layout=cloneLayout();
+    layout.xaxis={...layout.xaxis,type:'date',tickformat:'%b<br>%Y'};
+    layout.yaxis={...layout.yaxis,title:{text:indexKey.toUpperCase()}};
+    layout.title={text:'Serie completa vs línea base',font:{size:13,color:'#c8d3e0'}};
+    drawPlot(divId,traces,layout);
+}
+
+function renderSeasonalAnomalyChart(divId,indexKey){
+    const entry=getIndexEntry(indexKey);
+    const points=entry.points||[];
+    if(!points.length){showPlaceholder(divId,'Sin datos para calcular anomalías.');return;}
+    const anomalies=points.map(point=>{
+        const seasonalMean=entry.metrics.seasonal_means?.[point.season_key]?.mean;
+        return seasonalMean===null||seasonalMean===undefined?null:+(point.value-seasonalMean).toFixed(4);
+    });
+    const trace={
+        x:points.map(point=>point.label),
+        y:anomalies,
+        type:'bar',
+        marker:{color:anomalies.map(value=>value>=0?'#22c55e':'#ef4444')},
+        hovertemplate:'<b>%{x}</b><br>Anomalía %{y:.4f}<extra></extra>'
+    };
+    const layout=cloneLayout();
+    layout.xaxis={...layout.xaxis,type:'category',tickangle:-35};
+    layout.yaxis={...layout.yaxis,title:{text:'Anomalía'}};
+    layout.title={text:'Desvío respecto al promedio de la estación',font:{size:13,color:'#c8d3e0'}};
+    drawPlot(divId,[trace],layout);
+}
+
+function renderAnnualSummaryChart(divId,indexKey){
+    const entry=getIndexEntry(indexKey);
+    const annual=entry.metrics?.annual_summary||[];
+    if(!annual.length){showPlaceholder(divId,'Se requieren al menos dos años para resumir la tendencia anual.');return;}
+    const traces=[
+        {
+            x:annual.map(row=>row.year),
+            y:annual.map(row=>row.mean),
+            type:'bar',
+            name:'Promedio anual',
+            marker:{color:CHART_COLORS[indexKey][0]},
+            hovertemplate:'Año %{x}<br>%{y:.4f}<extra></extra>'
+        }
+    ];
+    if(entry.metrics?.trend?.line){
+        traces.push({
+            x:entry.metrics.trend.line.map(row=>row.year),
+            y:entry.metrics.trend.line.map(row=>row.value),
+            type:'scatter',
+            mode:'lines+markers',
+            name:`Tendencia ${fmtSigned(entry.metrics.trend.slope_per_year)}/año`,
+            line:{color:'#cbd5e1',dash:'dash',width:2},
+            marker:{size:6}
+        });
+    }
+    const layout=cloneLayout();
+    layout.xaxis={...layout.xaxis,type:'category'};
+    layout.yaxis={...layout.yaxis,title:{text:indexKey.toUpperCase()}};
+    layout.title={text:'Promedio anual y tendencia lineal',font:{size:13,color:'#c8d3e0'}};
+    drawPlot(divId,traces,layout);
+}
+
+function drawPlot(divId,traces,layout){
+    const div=document.getElementById(divId);
+    div.innerHTML='';
+    Plotly.newPlot(divId,traces,layout,plotCfg);
+}
+
+function showPlaceholder(divId,message){
+    Plotly.purge(divId);
+    document.getElementById(divId).innerHTML=`<p class="chart-placeholder">${message}</p>`;
+}
+
+function setCard(valueId,value,subId,sub){
+    document.getElementById(valueId).textContent=value;
+    document.getElementById(subId).innerHTML=sub;
+}
+
+function updateMethodology(){
+    const source=currentSource();
+    const sourceText=source.id==='sentinel2'
+        ? 'Sentinel-2 usa composiciones estacionales históricas de SR Harmonized y métricas derivadas contra línea base histórica y estacional.'
+        : 'Dron Multiespectral mantiene la misma estructura de AOI, métricas y series, pero puede permanecer vacío hasta incorporar campañas.';
+    document.getElementById('methodologyText').textContent=sourceText;
+}
+
+function downloadCSV(){
+    const data=currentData();
+    if(!currentSource().has_data){return;}
+    let csv='source,wetland_id,wetland_name,index,date,year,season,period_key,mean\n';
+    Object.entries(data.wetlands||{}).forEach(([wid,wetland])=>{
+        Object.entries(wetland.indices||{}).forEach(([indexKey,indexEntry])=>{
+            (indexEntry.points||[]).forEach(point=>{
+                csv+=`${state.selectedSource},${wid},"${wetland.name}",${indexKey.toUpperCase()},${point.date},${point.year},"${point.season_label}",${point.period_key},${point.value}\n`;
+            });
+        });
+    });
+    const blob=new Blob([csv],{type:'text/csv;charset=utf-8;'});
+    const a=document.createElement('a');
+    a.href=URL.createObjectURL(blob);
+    a.download=`${state.selectedSource}_timeseries.csv`;
+    a.click();
+}
+
+function fmtValue(value){return value===null||value===undefined?'—':Number(value).toFixed(4);}
+function fmtPct(value){return value===null||value===undefined?'—':`${value>0?'+':''}${Number(value).toFixed(2)}%`;}
+function fmtSigned(value){return value===null||value===undefined?'—':`${value>0?'+':''}${Number(value).toFixed(4)}`;}
+function fmtHa(value){return value===null||value===undefined?'—':`${Number(value).toFixed(1)} ha`;}
+</script>
+</body>
+</html>

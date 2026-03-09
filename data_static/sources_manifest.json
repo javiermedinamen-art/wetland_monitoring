@@ -1,0 +1,59 @@
+{
+  "generated_at": "2026-03-09T03:16:10+00:00",
+  "aoi_path": "wetlands_aoi.geojson",
+  "year_range": {
+    "start": 2017,
+    "end": 2026
+  },
+  "sources": {
+    "sentinel2": {
+      "id": "sentinel2",
+      "label": "Sentinel-2",
+      "description": "Series históricas estacionales derivadas de Sentinel-2 SR Harmonized.",
+      "color": "#38bdf8",
+      "has_data": true,
+      "timeseries_path": "sentinel2/timeseries.json",
+      "metadata_path": "sentinel2/metadata.json",
+      "csv_dir": "sentinel2/csv",
+      "status": "ready",
+      "summary": {
+        "n_wetlands": 2,
+        "n_periods": 37,
+        "data_points": 144,
+        "total_area_ha": 60.8,
+        "latest_period": "Verano 2026",
+        "available_years": [
+          2017,
+          2018,
+          2019,
+          2020,
+          2021,
+          2022,
+          2023,
+          2024,
+          2025,
+          2026
+        ]
+      }
+    },
+    "drone": {
+      "id": "drone",
+      "label": "Dron Multiespectral",
+      "description": "Campañas multiespectrales de mayor resolución para monitoreo local.",
+      "color": "#22c55e",
+      "has_data": false,
+      "timeseries_path": "drone/timeseries.json",
+      "metadata_path": "drone/metadata.json",
+      "csv_dir": "drone/csv",
+      "status": "empty",
+      "summary": {
+        "n_wetlands": 2,
+        "n_periods": 0,
+        "data_points": 0,
+        "total_area_ha": 60.8,
+        "latest_period": null,
+        "available_years": []
+      }
+    }
+  }
+}

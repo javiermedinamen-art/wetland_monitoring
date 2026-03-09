@@ -1,0 +1,63 @@
+{
+  "generated_at": "2026-03-09T03:16:28+00:00",
+  "aoi_id_column": "wetland_id",
+  "source": {
+    "id": "drone",
+    "label": "Dron Multiespectral",
+    "description": "Campañas multiespectrales de mayor resolución para monitoreo local.",
+    "color": "#22c55e",
+    "has_data": false
+  },
+  "indices": {
+    "ndvi": {
+      "label": "NDVI",
+      "description": "Índice de Vegetación de Diferencia Normalizada",
+      "vmin": -0.1,
+      "vmax": 0.6,
+      "colormap": "RdYlGn"
+    },
+    "ndwi": {
+      "label": "NDWI",
+      "description": "Índice de Agua de Diferencia Normalizada",
+      "vmin": -0.4,
+      "vmax": 0.4,
+      "colormap": "RdYlBu"
+    }
+  },
+  "wetlands": {
+    "sapunta": {
+      "name": "Sapunta",
+      "area_ha": 1.1,
+      "center": [
+        -21.295,
+        -68.772
+      ],
+      "n_periods": 0,
+      "last_period": null,
+      "available_years": [],
+      "status": "empty"
+    },
+    "vegas_calama": {
+      "name": "Vegas de Calama",
+      "area_ha": 59.7,
+      "center": [
+        -22.445,
+        -68.9682
+      ],
+      "n_periods": 0,
+      "last_period": null,
+      "available_years": [],
+      "status": "empty"
+    }
+  },
+  "rasters": {},
+  "periods": [],
+  "summary": {
+    "n_wetlands": 2,
+    "n_periods": 0,
+    "data_points": 0,
+    "total_area_ha": 60.8,
+    "latest_period": null,
+    "available_years": []
+  }
+}

@@ -1,0 +1,68 @@
+# Monitoreo de humedales altoandinos
+# ==================================
+
+shapefile_path: "data/shapefiles/aoi.geojson"
+shapefile_id_col: "wetland_id"
+shapefile_name_col: "nombre"
+
+year_start: 2017
+year_end: auto
+
+wetlands:
+  sapunta:
+    name: "Sapunta"
+    aoi_source: "data/shapefiles/sapunta/AE_SAP.shp"
+    name_field: "NAME"
+  vegas_calama:
+    name: "Vegas de Calama"
+    aoi_source: "data/shapefiles/vegas_calama/vegas_calama.shp"
+    name_field: "Name"
+
+sources:
+  sentinel2:
+    label: "Sentinel-2"
+    description: "Series históricas estacionales derivadas de Sentinel-2 SR Harmonized."
+    input_root: "data/sentinel2"
+    static_root: "data_static/sentinel2"
+    enabled: true
+    download_enabled: true
+    color: "#38bdf8"
+  drone:
+    label: "Dron Multiespectral"
+    description: "Campañas multiespectrales de mayor resolución para monitoreo local."
+    input_root: "data/drone"
+    legacy_input_roots: []
+    static_root: "data_static/drone"
+    enabled: true
+    download_enabled: false
+    color: "#22c55e"
+
+raster_visualization:
+  preview_format: "WEBP"
+  upscale_factor: 2
+  preserve_pixels: true
+  opacity: 0.9
+
+seasons:
+  verano: "Verano"
+  otono: "Otoño"
+  invierno: "Invierno"
+  primavera: "Primavera"
+
+indices:
+  ndvi:
+    label: "NDVI"
+    description: "Índice de Vegetación de Diferencia Normalizada"
+    bands: ["B8", "B4"]
+    colormap: "RdYlGn"
+    vmin: -0.1
+    vmax: 0.6
+  ndwi:
+    label: "NDWI"
+    description: "Índice de Agua de Diferencia Normalizada"
+    bands: ["B3", "B8"]
+    colormap: "RdYlBu"
+    vmin: -0.4
+    vmax: 0.4
+
+stats: ["mean"]
