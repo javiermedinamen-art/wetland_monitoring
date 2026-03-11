@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-09T03:16:10+00:00",
+  "generated_at": "2026-03-11T23:14:53+00:00",
   "aoi_path": "wetlands_aoi.geojson",
   "year_range": {
     "start": 2017,
@@ -20,6 +20,7 @@
         "n_wetlands": 2,
         "n_periods": 37,
         "data_points": 144,
+        "raster_count": 144,
         "total_area_ha": 60.8,
         "latest_period": "Verano 2026",
         "available_years": [
@@ -41,18 +42,22 @@
       "label": "Dron Multiespectral",
       "description": "Campañas multiespectrales de mayor resolución para monitoreo local.",
       "color": "#22c55e",
-      "has_data": false,
+      "has_data": true,
       "timeseries_path": "drone/timeseries.json",
       "metadata_path": "drone/metadata.json",
       "csv_dir": "drone/csv",
-      "status": "empty",
+      "status": "ready",
       "summary": {
         "n_wetlands": 2,
-        "n_periods": 0,
+        "n_periods": 6,
         "data_points": 0,
+        "raster_count": 6,
         "total_area_ha": 60.8,
-        "latest_period": null,
-        "available_years": []
+        "latest_period": "Verano 2023",
+        "available_years": [
+          2022,
+          2023
+        ]
       }
     }
   }

@@ -29,9 +29,9 @@ wetland_ortho_monitoring/
 │   │   ├── sapunta/AE_SAP.shp
 │   │   └── vegas_calama/vegas_calama.shp
 │   ├── sentinel2/
-│   │   └── {wetland_id}/{year}_{season}_{index}.tif
+│   │   └── {wetland_id}/{ndvi|ndwi}/{year}_{season}.tif
 │   └── drone/
-│       └── {wetland_id}/...
+│       └── {wetland_id}/rgb/{year}_{season}.tif
 └── data_static/
     ├── sources_manifest.json
     ├── wetlands_aoi.geojson
@@ -59,14 +59,13 @@ wetland_ortho_monitoring/
 
 ## Convención de datos
 
-Entrada principal:
+Entrada principal (estructura por índice):
 
-- `data/sentinel2/{wetland_id}/{year}_{season}_{index}.tif`
-- `data/drone/{wetland_id}/...`
+- `data/sentinel2/{wetland_id}/ndvi/{year}_{season}.tif`
+- `data/sentinel2/{wetland_id}/ndwi/{year}_{season}.tif`
+- `data/drone/{wetland_id}/rgb/{year}_{season}.tif`
 
-Compatibilidad temporal:
-
-- el exportador todavía puede leer desde rutas antiguas listadas en `legacy_input_roots` para no romper datos previos mientras migras archivos
+Para migrar datos antiguos: `python migrate_data_folders.py`
 
 Salida estática:
 

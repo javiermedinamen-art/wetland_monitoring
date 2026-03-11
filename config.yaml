@@ -27,6 +27,7 @@ sources:
     enabled: true
     download_enabled: true
     color: "#38bdf8"
+    indices: ["ndvi", "ndwi"]
   drone:
     label: "Dron Multiespectral"
     description: "Campañas multiespectrales de mayor resolución para monitoreo local."
@@ -36,12 +37,20 @@ sources:
     enabled: true
     download_enabled: false
     color: "#22c55e"
+    indices: ["ndvi", "ndwi", "rgb"]
 
 raster_visualization:
   preview_format: "WEBP"
   upscale_factor: 2
   preserve_pixels: true
   opacity: 0.9
+  clip_to_aoi: true
+  rgb_webp_quality: 58
+  rgb_max_size: 4096
+  rgb_upscale_factor: 1
+  rgb_quantize_colors: 64
+  rgb_stretch_percentiles: [2, 98]
+  rgb_context_buffer_m: 100
 
 seasons:
   verano: "Verano"
@@ -64,5 +73,9 @@ indices:
     colormap: "RdYlBu"
     vmin: -0.4
     vmax: 0.4
+  rgb:
+    label: "RGB"
+    description: "Ortofoto color verdadero"
+    visual_only: true
 
 stats: ["mean"]

@@ -21,3 +21,6 @@ download_log.txt
 .vscode/
 *.swp
 *.swo
+
+# Data (keep locally, exclude from repo)
+data/

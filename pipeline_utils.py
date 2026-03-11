@@ -1,5 +1,6 @@
 from __future__ import annotations
 
+import json
 from datetime import datetime
 from pathlib import Path
 
@@ -13,6 +14,31 @@ CONFIG_PATH = Path("config.yaml")
 def load_config(path: str | Path = CONFIG_PATH) -> dict:
     with open(path, "r", encoding="utf-8") as handle:
         return yaml.safe_load(handle)
+
+
+def load_json_if_exists(path: str | Path, default):
+    path = Path(path)
+    if not path.exists():
+        return default
+    with open(path, "r", encoding="utf-8") as handle:
+        return json.load(handle)
+
+
+def write_json(path: str | Path, payload: dict) -> None:
+    path = Path(path)
+    path.parent.mkdir(parents=True, exist_ok=True)
+    with open(path, "w", encoding="utf-8") as handle:
+        json.dump(payload, handle, ensure_ascii=False, indent=2)
+
+
+def build_file_fingerprint(path: str | Path) -> dict:
+    file_path = Path(path)
+    stat = file_path.stat()
+    return {
+        "path": file_path.as_posix(),
+        "size": stat.st_size,
+        "mtime_ns": stat.st_mtime_ns,
+    }
 
 
 def resolve_years(config: dict) -> list[int]:

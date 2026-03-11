@@ -6,14 +6,24 @@ from __future__ import annotations
 
 import json
 import sys
+from datetime import datetime, timezone
 from pathlib import Path
 
 import ee
 import requests
 
-from pipeline_utils import ensure_master_aoi, get_source_config, load_config, resolve_years
+from pipeline_utils import (
+    build_file_fingerprint,
+    ensure_master_aoi,
+    get_source_config,
+    load_config,
+    load_json_if_exists,
+    resolve_years,
+    write_json,
+)
 
 GEE_PROJECT = "ee-javiermedinam"
+DOWNLOAD_STATE_NAME = "_download_state.json"
 
 SEASON_DATE_RANGES = {
     "verano": ("{y}-01-01", "{y}-03-31"),
@@ -31,6 +41,31 @@ def load_aoi_features(path: str | Path, id_col: str) -> dict:
         for feature in data.get("features", [])
         if id_col in feature.get("properties", {})
     }
+
+
+def iso_now() -> str:
+    return datetime.now(timezone.utc).replace(microsecond=0).isoformat()
+
+
+def season_is_closed(end_date: str) -> bool:
+    return datetime.now(timezone.utc).date() > datetime.fromisoformat(end_date).date()
+
+
+def build_download_signature(feature: dict, start: str, end: str, index_name: str, index_cfg: dict) -> str:
+    return json.dumps(
+        {
+            "geometry": feature.get("geometry"),
+            "start": start,
+            "end": end,
+            "index": index_name,
+            "bands": index_cfg.get("bands", []),
+            "cloud_filter": 50,
+            "dataset": "COPERNICUS/S2_SR_HARMONIZED",
+            "project": GEE_PROJECT,
+        },
+        sort_keys=True,
+        ensure_ascii=False,
+    )
 
 
 def mask_s2_sr(image):
@@ -87,7 +122,16 @@ def main() -> None:
     master_aoi_path = ensure_master_aoi(config)
     features = load_aoi_features(master_aoi_path, config["shapefile_id_col"])
     output_root = Path(source_cfg["input_root"])
-    indices = config["indices"]
+    source_indices = source_cfg.get("indices") or list(config["indices"].keys())
+    indices = {
+        name: config["indices"][name]
+        for name in source_indices
+        if name in config["indices"]
+        and config["indices"][name].get("bands")
+        and not config["indices"][name].get("visual_only", False)
+    }
+    state_path = output_root / DOWNLOAD_STATE_NAME
+    download_state = load_json_if_exists(state_path, {"generated_at": None, "jobs": {}})
 
     ee.Initialize(project=GEE_PROJECT)
 
@@ -114,9 +158,26 @@ def main() -> None:
                 end = end_tpl.format(y=year)
 
                 for index_name, index_cfg in indices.items():
-                    output_path = output_root / wetland_id / f"{year}_{season_key}_{index_name}.tif"
-                    if output_path.exists():
+                    job_key = f"{wetland_id}:{year}:{season_key}:{index_name}"
+                    output_path = output_root / wetland_id / index_name / f"{year}_{season_key}.tif"
+                    download_signature = build_download_signature(feature, start, end, index_name, index_cfg)
+                    existing_job = download_state["jobs"].get(job_key, {})
+                    if output_path.exists() and output_path.stat().st_size > 0:
+                        download_state["jobs"][job_key] = {
+                            "status": "downloaded",
+                            "checked_at": iso_now(),
+                            "output_path": output_path.as_posix(),
+                            "file_fingerprint": build_file_fingerprint(output_path),
+                            "download_signature": download_signature,
+                        }
                         print(f"  [skip] {output_path.as_posix()}")
+                        continue
+                    if (
+                        existing_job.get("status") == "no_scenes"
+                        and existing_job.get("download_signature") == download_signature
+                        and season_is_closed(end)
+                    ):
+                        print(f"  [skip empty] {wetland_id} {year} {season_label} {index_name.upper()}")
                         continue
 
                     print(
@@ -127,10 +188,32 @@ def main() -> None:
                     image, image_count = build_composite(geometry, start, end, index_cfg["bands"])
                     if image is None:
                         print("sin escenas")
+                        download_state["jobs"][job_key] = {
+                            "status": "no_scenes",
+                            "checked_at": iso_now(),
+                            "output_path": output_path.as_posix(),
+                            "image_count": 0,
+                            "download_signature": download_signature,
+                        }
+                        download_state["generated_at"] = iso_now()
+                        write_json(state_path, download_state)
                         continue
 
                     download_image(image, feature["geometry"], output_path)
+                    download_state["jobs"][job_key] = {
+                        "status": "downloaded",
+                        "checked_at": iso_now(),
+                        "output_path": output_path.as_posix(),
+                        "image_count": image_count,
+                        "file_fingerprint": build_file_fingerprint(output_path),
+                        "download_signature": download_signature,
+                    }
+                    download_state["generated_at"] = iso_now()
+                    write_json(state_path, download_state)
                     print(f"{image_count} escenas -> {output_path.as_posix()}")
+
+    download_state["generated_at"] = iso_now()
+    write_json(state_path, download_state)
 
 
 if __name__ == "__main__":

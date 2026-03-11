@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-09T03:16:28+00:00",
+  "generated_at": "2026-03-11T23:14:54+00:00",
   "aoi_id_column": "wetland_id",
   "source": {
     "id": "sentinel2",
@@ -12,6 +12,7 @@
     "ndvi": {
       "label": "NDVI",
       "description": "Índice de Vegetación de Diferencia Normalizada",
+      "visual_only": false,
       "vmin": -0.1,
       "vmax": 0.6,
       "colormap": "RdYlGn"
@@ -19,6 +20,7 @@
     "ndwi": {
       "label": "NDWI",
       "description": "Índice de Agua de Diferencia Normalizada",
+      "visual_only": false,
       "vmin": -0.4,
       "vmax": 0.4,
       "colormap": "RdYlBu"
@@ -104,7 +106,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2017_verano_ndvi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndvi/2017_verano.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndvi/2017_verano.tif",
+        "size": 1592,
+        "mtime_ns": 1773025502139869000
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "sapunta_2017_otono_ndvi": {
       "source": "sentinel2",
@@ -137,7 +145,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2017_otono_ndvi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndvi/2017_otono.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndvi/2017_otono.tif",
+        "size": 1587,
+        "mtime_ns": 1773025511100890500
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "sapunta_2017_invierno_ndvi": {
       "source": "sentinel2",
@@ -170,7 +184,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2017_invierno_ndvi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndvi/2017_invierno.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndvi/2017_invierno.tif",
+        "size": 1587,
+        "mtime_ns": 1773025519857801100
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "sapunta_2018_verano_ndvi": {
       "source": "sentinel2",
@@ -203,7 +223,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2018_verano_ndvi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndvi/2018_verano.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndvi/2018_verano.tif",
+        "size": 1590,
+        "mtime_ns": 1773025531383491100
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "sapunta_2018_invierno_ndvi": {
       "source": "sentinel2",
@@ -236,7 +262,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2018_invierno_ndvi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndvi/2018_invierno.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndvi/2018_invierno.tif",
+        "size": 1584,
+        "mtime_ns": 1773025544911453800
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "sapunta_2018_primavera_ndvi": {
       "source": "sentinel2",
@@ -269,7 +301,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2018_primavera_ndvi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndvi/2018_primavera.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndvi/2018_primavera.tif",
+        "size": 1593,
+        "mtime_ns": 1773025555650572300
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "sapunta_2019_verano_ndvi": {
       "source": "sentinel2",
@@ -302,7 +340,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2019_verano_ndvi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndvi/2019_verano.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndvi/2019_verano.tif",
+        "size": 1590,
+        "mtime_ns": 1773025564682966000
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "sapunta_2019_otono_ndvi": {
       "source": "sentinel2",
@@ -335,7 +379,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2019_otono_ndvi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndvi/2019_otono.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndvi/2019_otono.tif",
+        "size": 1580,
+        "mtime_ns": 1773025574720560200
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "sapunta_2019_invierno_ndvi": {
       "source": "sentinel2",
@@ -368,7 +418,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2019_invierno_ndvi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndvi/2019_invierno.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndvi/2019_invierno.tif",
+        "size": 1585,
+        "mtime_ns": 1773025584323300900
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "sapunta_2019_primavera_ndvi": {
       "source": "sentinel2",
@@ -401,7 +457,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2019_primavera_ndvi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndvi/2019_primavera.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndvi/2019_primavera.tif",
+        "size": 1587,
+        "mtime_ns": 1773025592410047400
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "sapunta_2020_verano_ndvi": {
       "source": "sentinel2",
@@ -434,7 +496,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2020_verano_ndvi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndvi/2020_verano.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndvi/2020_verano.tif",
+        "size": 1577,
+        "mtime_ns": 1773025601958585600
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "sapunta_2020_otono_ndvi": {
       "source": "sentinel2",
@@ -467,7 +535,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2020_otono_ndvi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndvi/2020_otono.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndvi/2020_otono.tif",
+        "size": 1585,
+        "mtime_ns": 1773025612893049600
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "sapunta_2020_invierno_ndvi": {
       "source": "sentinel2",
@@ -500,7 +574,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2020_invierno_ndvi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndvi/2020_invierno.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndvi/2020_invierno.tif",
+        "size": 1586,
+        "mtime_ns": 1773025621615519800
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "sapunta_2020_primavera_ndvi": {
       "source": "sentinel2",
@@ -533,7 +613,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2020_primavera_ndvi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndvi/2020_primavera.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndvi/2020_primavera.tif",
+        "size": 1585,
+        "mtime_ns": 1773025630330739500
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "sapunta_2021_verano_ndvi": {
       "source": "sentinel2",
@@ -566,7 +652,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2021_verano_ndvi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndvi/2021_verano.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndvi/2021_verano.tif",
+        "size": 1588,
+        "mtime_ns": 1773025639010950100
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "sapunta_2021_otono_ndvi": {
       "source": "sentinel2",
@@ -599,7 +691,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2021_otono_ndvi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndvi/2021_otono.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndvi/2021_otono.tif",
+        "size": 1589,
+        "mtime_ns": 1773025648984279600
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "sapunta_2021_invierno_ndvi": {
       "source": "sentinel2",
@@ -632,7 +730,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2021_invierno_ndvi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndvi/2021_invierno.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndvi/2021_invierno.tif",
+        "size": 1585,
+        "mtime_ns": 1773025658818214700
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "sapunta_2021_primavera_ndvi": {
       "source": "sentinel2",
@@ -665,7 +769,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2021_primavera_ndvi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndvi/2021_primavera.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndvi/2021_primavera.tif",
+        "size": 1594,
+        "mtime_ns": 1773025666526462300
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "sapunta_2022_verano_ndvi": {
       "source": "sentinel2",
@@ -698,7 +808,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2022_verano_ndvi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndvi/2022_verano.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndvi/2022_verano.tif",
+        "size": 1590,
+        "mtime_ns": 1773025674305207500
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "sapunta_2022_otono_ndvi": {
       "source": "sentinel2",
@@ -731,7 +847,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2022_otono_ndvi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndvi/2022_otono.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndvi/2022_otono.tif",
+        "size": 1589,
+        "mtime_ns": 1773025683238266600
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "sapunta_2022_invierno_ndvi": {
       "source": "sentinel2",
@@ -764,7 +886,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2022_invierno_ndvi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndvi/2022_invierno.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndvi/2022_invierno.tif",
+        "size": 1584,
+        "mtime_ns": 1773025690168023600
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "sapunta_2022_primavera_ndvi": {
       "source": "sentinel2",
@@ -797,7 +925,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2022_primavera_ndvi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndvi/2022_primavera.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndvi/2022_primavera.tif",
+        "size": 1578,
+        "mtime_ns": 1773025697937220800
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "sapunta_2023_verano_ndvi": {
       "source": "sentinel2",
@@ -830,7 +964,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2023_verano_ndvi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndvi/2023_verano.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndvi/2023_verano.tif",
+        "size": 1586,
+        "mtime_ns": 1773025708303866600
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "sapunta_2023_otono_ndvi": {
       "source": "sentinel2",
@@ -863,7 +1003,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2023_otono_ndvi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndvi/2023_otono.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndvi/2023_otono.tif",
+        "size": 1589,
+        "mtime_ns": 1773025715880832400
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "sapunta_2023_invierno_ndvi": {
       "source": "sentinel2",
@@ -896,7 +1042,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2023_invierno_ndvi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndvi/2023_invierno.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndvi/2023_invierno.tif",
+        "size": 1585,
+        "mtime_ns": 1773025724452770000
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "sapunta_2023_primavera_ndvi": {
       "source": "sentinel2",
@@ -929,7 +1081,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2023_primavera_ndvi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndvi/2023_primavera.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndvi/2023_primavera.tif",
+        "size": 1578,
+        "mtime_ns": 1773025732962185000
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "sapunta_2024_verano_ndvi": {
       "source": "sentinel2",
@@ -962,7 +1120,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2024_verano_ndvi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndvi/2024_verano.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndvi/2024_verano.tif",
+        "size": 1586,
+        "mtime_ns": 1773025742706793600
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "sapunta_2024_otono_ndvi": {
       "source": "sentinel2",
@@ -995,7 +1159,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2024_otono_ndvi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndvi/2024_otono.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndvi/2024_otono.tif",
+        "size": 1576,
+        "mtime_ns": 1773025751113859400
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "sapunta_2024_invierno_ndvi": {
       "source": "sentinel2",
@@ -1028,7 +1198,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2024_invierno_ndvi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndvi/2024_invierno.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndvi/2024_invierno.tif",
+        "size": 1577,
+        "mtime_ns": 1773025758980788600
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "sapunta_2024_primavera_ndvi": {
       "source": "sentinel2",
@@ -1061,7 +1237,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2024_primavera_ndvi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndvi/2024_primavera.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndvi/2024_primavera.tif",
+        "size": 1583,
+        "mtime_ns": 1773025769152899200
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "sapunta_2025_verano_ndvi": {
       "source": "sentinel2",
@@ -1094,7 +1276,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2025_verano_ndvi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndvi/2025_verano.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndvi/2025_verano.tif",
+        "size": 1584,
+        "mtime_ns": 1773025779002985500
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "sapunta_2025_otono_ndvi": {
       "source": "sentinel2",
@@ -1127,7 +1315,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2025_otono_ndvi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndvi/2025_otono.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndvi/2025_otono.tif",
+        "size": 1584,
+        "mtime_ns": 1773025787216466000
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "sapunta_2025_invierno_ndvi": {
       "source": "sentinel2",
@@ -1160,7 +1354,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2025_invierno_ndvi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndvi/2025_invierno.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndvi/2025_invierno.tif",
+        "size": 1587,
+        "mtime_ns": 1773025796281774000
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "sapunta_2025_primavera_ndvi": {
       "source": "sentinel2",
@@ -1193,7 +1393,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2025_primavera_ndvi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndvi/2025_primavera.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndvi/2025_primavera.tif",
+        "size": 1586,
+        "mtime_ns": 1773025806085229300
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "sapunta_2026_verano_ndvi": {
       "source": "sentinel2",
@@ -1226,7 +1432,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2026_verano_ndvi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndvi/2026_verano.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndvi/2026_verano.tif",
+        "size": 1593,
+        "mtime_ns": 1773025817357488500
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "sapunta_2017_verano_ndwi": {
       "source": "sentinel2",
@@ -1259,7 +1471,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2017_verano_ndwi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndwi/2017_verano.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndwi/2017_verano.tif",
+        "size": 1588,
+        "mtime_ns": 1773025506390732100
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "sapunta_2017_otono_ndwi": {
       "source": "sentinel2",
@@ -1292,7 +1510,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2017_otono_ndwi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndwi/2017_otono.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndwi/2017_otono.tif",
+        "size": 1575,
+        "mtime_ns": 1773025515192458000
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "sapunta_2017_invierno_ndwi": {
       "source": "sentinel2",
@@ -1325,7 +1549,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2017_invierno_ndwi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndwi/2017_invierno.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndwi/2017_invierno.tif",
+        "size": 1568,
+        "mtime_ns": 1773025524750008100
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "sapunta_2018_verano_ndwi": {
       "source": "sentinel2",
@@ -1358,7 +1588,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2018_verano_ndwi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndwi/2018_verano.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndwi/2018_verano.tif",
+        "size": 1581,
+        "mtime_ns": 1773025536677987600
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "sapunta_2018_invierno_ndwi": {
       "source": "sentinel2",
@@ -1391,7 +1627,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2018_invierno_ndwi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndwi/2018_invierno.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndwi/2018_invierno.tif",
+        "size": 1568,
+        "mtime_ns": 1773025549485726800
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "sapunta_2018_primavera_ndwi": {
       "source": "sentinel2",
@@ -1424,7 +1666,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2018_primavera_ndwi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndwi/2018_primavera.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndwi/2018_primavera.tif",
+        "size": 1573,
+        "mtime_ns": 1773025559234398000
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "sapunta_2019_verano_ndwi": {
       "source": "sentinel2",
@@ -1457,7 +1705,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2019_verano_ndwi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndwi/2019_verano.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndwi/2019_verano.tif",
+        "size": 1574,
+        "mtime_ns": 1773025569555975600
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "sapunta_2019_otono_ndwi": {
       "source": "sentinel2",
@@ -1490,7 +1744,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2019_otono_ndwi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndwi/2019_otono.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndwi/2019_otono.tif",
+        "size": 1563,
+        "mtime_ns": 1773025579099639100
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "sapunta_2019_invierno_ndwi": {
       "source": "sentinel2",
@@ -1523,7 +1783,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2019_invierno_ndwi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndwi/2019_invierno.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndwi/2019_invierno.tif",
+        "size": 1569,
+        "mtime_ns": 1773025588692738400
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "sapunta_2019_primavera_ndwi": {
       "source": "sentinel2",
@@ -1556,7 +1822,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2019_primavera_ndwi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndwi/2019_primavera.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndwi/2019_primavera.tif",
+        "size": 1572,
+        "mtime_ns": 1773025597184647200
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "sapunta_2020_verano_ndwi": {
       "source": "sentinel2",
@@ -1589,7 +1861,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2020_verano_ndwi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndwi/2020_verano.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndwi/2020_verano.tif",
+        "size": 1581,
+        "mtime_ns": 1773025605813352200
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "sapunta_2020_otono_ndwi": {
       "source": "sentinel2",
@@ -1622,7 +1900,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2020_otono_ndwi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndwi/2020_otono.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndwi/2020_otono.tif",
+        "size": 1575,
+        "mtime_ns": 1773025617520200500
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "sapunta_2020_invierno_ndwi": {
       "source": "sentinel2",
@@ -1655,7 +1939,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2020_invierno_ndwi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndwi/2020_invierno.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndwi/2020_invierno.tif",
+        "size": 1576,
+        "mtime_ns": 1773025625008290700
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "sapunta_2020_primavera_ndwi": {
       "source": "sentinel2",
@@ -1688,7 +1978,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2020_primavera_ndwi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndwi/2020_primavera.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndwi/2020_primavera.tif",
+        "size": 1566,
+        "mtime_ns": 1773025634761663000
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "sapunta_2021_verano_ndwi": {
       "source": "sentinel2",
@@ -1721,7 +2017,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2021_verano_ndwi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndwi/2021_verano.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndwi/2021_verano.tif",
+        "size": 1596,
+        "mtime_ns": 1773025644281153700
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "sapunta_2021_otono_ndwi": {
       "source": "sentinel2",
@@ -1754,7 +2056,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2021_otono_ndwi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndwi/2021_otono.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndwi/2021_otono.tif",
+        "size": 1585,
+        "mtime_ns": 1773025654301781900
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "sapunta_2021_invierno_ndwi": {
       "source": "sentinel2",
@@ -1787,7 +2095,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2021_invierno_ndwi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndwi/2021_invierno.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndwi/2021_invierno.tif",
+        "size": 1567,
+        "mtime_ns": 1773025662709618300
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "sapunta_2021_primavera_ndwi": {
       "source": "sentinel2",
@@ -1820,7 +2134,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2021_primavera_ndwi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndwi/2021_primavera.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndwi/2021_primavera.tif",
+        "size": 1576,
+        "mtime_ns": 1773025670369795800
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "sapunta_2022_verano_ndwi": {
       "source": "sentinel2",
@@ -1853,7 +2173,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2022_verano_ndwi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndwi/2022_verano.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndwi/2022_verano.tif",
+        "size": 1589,
+        "mtime_ns": 1773025679456060800
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "sapunta_2022_otono_ndwi": {
       "source": "sentinel2",
@@ -1886,7 +2212,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2022_otono_ndwi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndwi/2022_otono.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndwi/2022_otono.tif",
+        "size": 1565,
+        "mtime_ns": 1773025686888435700
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "sapunta_2022_invierno_ndwi": {
       "source": "sentinel2",
@@ -1919,7 +2251,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2022_invierno_ndwi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndwi/2022_invierno.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndwi/2022_invierno.tif",
+        "size": 1567,
+        "mtime_ns": 1773025694677558200
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "sapunta_2022_primavera_ndwi": {
       "source": "sentinel2",
@@ -1952,7 +2290,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2022_primavera_ndwi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndwi/2022_primavera.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndwi/2022_primavera.tif",
+        "size": 1563,
+        "mtime_ns": 1773025702379154500
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "sapunta_2023_verano_ndwi": {
       "source": "sentinel2",
@@ -1985,7 +2329,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2023_verano_ndwi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndwi/2023_verano.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndwi/2023_verano.tif",
+        "size": 1566,
+        "mtime_ns": 1773025712647050900
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "sapunta_2023_otono_ndwi": {
       "source": "sentinel2",
@@ -2018,7 +2368,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2023_otono_ndwi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndwi/2023_otono.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndwi/2023_otono.tif",
+        "size": 1574,
+        "mtime_ns": 1773025719472498300
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "sapunta_2023_invierno_ndwi": {
       "source": "sentinel2",
@@ -2051,7 +2407,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2023_invierno_ndwi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndwi/2023_invierno.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndwi/2023_invierno.tif",
+        "size": 1571,
+        "mtime_ns": 1773025728672613000
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "sapunta_2023_primavera_ndwi": {
       "source": "sentinel2",
@@ -2084,7 +2446,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2023_primavera_ndwi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndwi/2023_primavera.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndwi/2023_primavera.tif",
+        "size": 1570,
+        "mtime_ns": 1773025737305504700
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "sapunta_2024_verano_ndwi": {
       "source": "sentinel2",
@@ -2117,7 +2485,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2024_verano_ndwi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndwi/2024_verano.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndwi/2024_verano.tif",
+        "size": 1582,
+        "mtime_ns": 1773025747574284400
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "sapunta_2024_otono_ndwi": {
       "source": "sentinel2",
@@ -2150,7 +2524,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2024_otono_ndwi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndwi/2024_otono.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndwi/2024_otono.tif",
+        "size": 1566,
+        "mtime_ns": 1773025754991985800
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "sapunta_2024_invierno_ndwi": {
       "source": "sentinel2",
@@ -2183,7 +2563,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2024_invierno_ndwi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndwi/2024_invierno.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndwi/2024_invierno.tif",
+        "size": 1563,
+        "mtime_ns": 1773025763857469400
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "sapunta_2024_primavera_ndwi": {
       "source": "sentinel2",
@@ -2216,7 +2602,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2024_primavera_ndwi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndwi/2024_primavera.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndwi/2024_primavera.tif",
+        "size": 1561,
+        "mtime_ns": 1773025773939286500
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "sapunta_2025_verano_ndwi": {
       "source": "sentinel2",
@@ -2249,7 +2641,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2025_verano_ndwi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndwi/2025_verano.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndwi/2025_verano.tif",
+        "size": 1575,
+        "mtime_ns": 1773025783869532000
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "sapunta_2025_otono_ndwi": {
       "source": "sentinel2",
@@ -2282,7 +2680,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2025_otono_ndwi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndwi/2025_otono.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndwi/2025_otono.tif",
+        "size": 1577,
+        "mtime_ns": 1773025791594006300
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "sapunta_2025_invierno_ndwi": {
       "source": "sentinel2",
@@ -2315,7 +2719,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2025_invierno_ndwi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndwi/2025_invierno.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndwi/2025_invierno.tif",
+        "size": 1574,
+        "mtime_ns": 1773025801231413000
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "sapunta_2025_primavera_ndwi": {
       "source": "sentinel2",
@@ -2348,7 +2758,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2025_primavera_ndwi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndwi/2025_primavera.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndwi/2025_primavera.tif",
+        "size": 1579,
+        "mtime_ns": 1773025811933829200
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "sapunta_2026_verano_ndwi": {
       "source": "sentinel2",
@@ -2381,7 +2797,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/sapunta/2026_verano_ndwi.tif"
+      "analytic_path": "data/sentinel2/sapunta/ndwi/2026_verano.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/sapunta/ndwi/2026_verano.tif",
+        "size": 1598,
+        "mtime_ns": 1773025820372527100
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "vegas_calama_2017_verano_ndvi": {
       "source": "sentinel2",
@@ -2414,7 +2836,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2017_verano_ndvi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndvi/2017_verano.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndvi/2017_verano.tif",
+        "size": 26491,
+        "mtime_ns": 1773025831425284000
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "vegas_calama_2017_otono_ndvi": {
       "source": "sentinel2",
@@ -2447,7 +2875,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2017_otono_ndvi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndvi/2017_otono.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndvi/2017_otono.tif",
+        "size": 26307,
+        "mtime_ns": 1773025838490061900
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "vegas_calama_2017_invierno_ndvi": {
       "source": "sentinel2",
@@ -2480,7 +2914,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2017_invierno_ndvi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndvi/2017_invierno.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndvi/2017_invierno.tif",
+        "size": 26128,
+        "mtime_ns": 1773025844149063700
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "vegas_calama_2017_primavera_ndvi": {
       "source": "sentinel2",
@@ -2513,7 +2953,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2017_primavera_ndvi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndvi/2017_primavera.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndvi/2017_primavera.tif",
+        "size": 26212,
+        "mtime_ns": 1773025853975216500
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "vegas_calama_2018_verano_ndvi": {
       "source": "sentinel2",
@@ -2546,7 +2992,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2018_verano_ndvi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndvi/2018_verano.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndvi/2018_verano.tif",
+        "size": 26404,
+        "mtime_ns": 1773025859471996500
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "vegas_calama_2018_otono_ndvi": {
       "source": "sentinel2",
@@ -2579,7 +3031,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2018_otono_ndvi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndvi/2018_otono.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndvi/2018_otono.tif",
+        "size": 26216,
+        "mtime_ns": 1773025864020398000
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "vegas_calama_2018_invierno_ndvi": {
       "source": "sentinel2",
@@ -2612,7 +3070,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2018_invierno_ndvi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndvi/2018_invierno.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndvi/2018_invierno.tif",
+        "size": 26080,
+        "mtime_ns": 1773025869192084700
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "vegas_calama_2018_primavera_ndvi": {
       "source": "sentinel2",
@@ -2645,7 +3109,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2018_primavera_ndvi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndvi/2018_primavera.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndvi/2018_primavera.tif",
+        "size": 26195,
+        "mtime_ns": 1773025875931951500
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "vegas_calama_2019_verano_ndvi": {
       "source": "sentinel2",
@@ -2678,7 +3148,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2019_verano_ndvi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndvi/2019_verano.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndvi/2019_verano.tif",
+        "size": 26426,
+        "mtime_ns": 1773025883728262700
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "vegas_calama_2019_otono_ndvi": {
       "source": "sentinel2",
@@ -2711,7 +3187,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2019_otono_ndvi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndvi/2019_otono.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndvi/2019_otono.tif",
+        "size": 26296,
+        "mtime_ns": 1773025889584358500
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "vegas_calama_2019_invierno_ndvi": {
       "source": "sentinel2",
@@ -2744,7 +3226,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2019_invierno_ndvi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndvi/2019_invierno.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndvi/2019_invierno.tif",
+        "size": 26124,
+        "mtime_ns": 1773025900171413300
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "vegas_calama_2019_primavera_ndvi": {
       "source": "sentinel2",
@@ -2777,7 +3265,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2019_primavera_ndvi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndvi/2019_primavera.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndvi/2019_primavera.tif",
+        "size": 26250,
+        "mtime_ns": 1773025907225196900
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "vegas_calama_2020_verano_ndvi": {
       "source": "sentinel2",
@@ -2810,7 +3304,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2020_verano_ndvi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndvi/2020_verano.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndvi/2020_verano.tif",
+        "size": 26538,
+        "mtime_ns": 1773025916023478400
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "vegas_calama_2020_otono_ndvi": {
       "source": "sentinel2",
@@ -2843,7 +3343,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2020_otono_ndvi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndvi/2020_otono.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndvi/2020_otono.tif",
+        "size": 26300,
+        "mtime_ns": 1773025924112144900
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "vegas_calama_2020_invierno_ndvi": {
       "source": "sentinel2",
@@ -2876,7 +3382,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2020_invierno_ndvi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndvi/2020_invierno.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndvi/2020_invierno.tif",
+        "size": 26109,
+        "mtime_ns": 1773025932498671300
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "vegas_calama_2020_primavera_ndvi": {
       "source": "sentinel2",
@@ -2909,7 +3421,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2020_primavera_ndvi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndvi/2020_primavera.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndvi/2020_primavera.tif",
+        "size": 26204,
+        "mtime_ns": 1773025939215810100
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "vegas_calama_2021_verano_ndvi": {
       "source": "sentinel2",
@@ -2942,7 +3460,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2021_verano_ndvi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndvi/2021_verano.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndvi/2021_verano.tif",
+        "size": 26426,
+        "mtime_ns": 1773025947599491300
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "vegas_calama_2021_otono_ndvi": {
       "source": "sentinel2",
@@ -2975,7 +3499,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2021_otono_ndvi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndvi/2021_otono.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndvi/2021_otono.tif",
+        "size": 26326,
+        "mtime_ns": 1773025955506001300
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "vegas_calama_2021_invierno_ndvi": {
       "source": "sentinel2",
@@ -3008,7 +3538,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2021_invierno_ndvi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndvi/2021_invierno.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndvi/2021_invierno.tif",
+        "size": 26137,
+        "mtime_ns": 1773025961776880700
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "vegas_calama_2021_primavera_ndvi": {
       "source": "sentinel2",
@@ -3041,7 +3577,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2021_primavera_ndvi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndvi/2021_primavera.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndvi/2021_primavera.tif",
+        "size": 26222,
+        "mtime_ns": 1773025969201162300
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "vegas_calama_2022_verano_ndvi": {
       "source": "sentinel2",
@@ -3074,7 +3616,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2022_verano_ndvi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndvi/2022_verano.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndvi/2022_verano.tif",
+        "size": 26486,
+        "mtime_ns": 1773025991540321900
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "vegas_calama_2022_otono_ndvi": {
       "source": "sentinel2",
@@ -3107,7 +3655,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2022_otono_ndvi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndvi/2022_otono.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndvi/2022_otono.tif",
+        "size": 26260,
+        "mtime_ns": 1773026000381992500
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "vegas_calama_2022_invierno_ndvi": {
       "source": "sentinel2",
@@ -3140,7 +3694,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2022_invierno_ndvi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndvi/2022_invierno.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndvi/2022_invierno.tif",
+        "size": 26117,
+        "mtime_ns": 1773026009045118000
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "vegas_calama_2022_primavera_ndvi": {
       "source": "sentinel2",
@@ -3173,7 +3733,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2022_primavera_ndvi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndvi/2022_primavera.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndvi/2022_primavera.tif",
+        "size": 26087,
+        "mtime_ns": 1773026017188126300
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "vegas_calama_2023_verano_ndvi": {
       "source": "sentinel2",
@@ -3206,7 +3772,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2023_verano_ndvi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndvi/2023_verano.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndvi/2023_verano.tif",
+        "size": 26465,
+        "mtime_ns": 1773026024002445000
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "vegas_calama_2023_otono_ndvi": {
       "source": "sentinel2",
@@ -3239,7 +3811,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2023_otono_ndvi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndvi/2023_otono.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndvi/2023_otono.tif",
+        "size": 26272,
+        "mtime_ns": 1773026032546861500
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "vegas_calama_2023_invierno_ndvi": {
       "source": "sentinel2",
@@ -3272,7 +3850,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2023_invierno_ndvi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndvi/2023_invierno.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndvi/2023_invierno.tif",
+        "size": 26129,
+        "mtime_ns": 1773026039225895900
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "vegas_calama_2023_primavera_ndvi": {
       "source": "sentinel2",
@@ -3305,7 +3889,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2023_primavera_ndvi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndvi/2023_primavera.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndvi/2023_primavera.tif",
+        "size": 26242,
+        "mtime_ns": 1773026045808648200
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "vegas_calama_2024_verano_ndvi": {
       "source": "sentinel2",
@@ -3338,7 +3928,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2024_verano_ndvi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndvi/2024_verano.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndvi/2024_verano.tif",
+        "size": 26524,
+        "mtime_ns": 1773026053479323300
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "vegas_calama_2024_otono_ndvi": {
       "source": "sentinel2",
@@ -3371,7 +3967,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2024_otono_ndvi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndvi/2024_otono.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndvi/2024_otono.tif",
+        "size": 26324,
+        "mtime_ns": 1773026062674571600
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "vegas_calama_2024_invierno_ndvi": {
       "source": "sentinel2",
@@ -3404,7 +4006,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2024_invierno_ndvi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndvi/2024_invierno.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndvi/2024_invierno.tif",
+        "size": 26105,
+        "mtime_ns": 1773026071893084900
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "vegas_calama_2024_primavera_ndvi": {
       "source": "sentinel2",
@@ -3437,7 +4045,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2024_primavera_ndvi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndvi/2024_primavera.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndvi/2024_primavera.tif",
+        "size": 26160,
+        "mtime_ns": 1773026078738739500
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "vegas_calama_2025_verano_ndvi": {
       "source": "sentinel2",
@@ -3470,7 +4084,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2025_verano_ndvi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndvi/2025_verano.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndvi/2025_verano.tif",
+        "size": 26546,
+        "mtime_ns": 1773026089130421200
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "vegas_calama_2025_otono_ndvi": {
       "source": "sentinel2",
@@ -3503,7 +4123,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2025_otono_ndvi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndvi/2025_otono.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndvi/2025_otono.tif",
+        "size": 26293,
+        "mtime_ns": 1773026097185106500
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "vegas_calama_2025_invierno_ndvi": {
       "source": "sentinel2",
@@ -3536,7 +4162,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2025_invierno_ndvi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndvi/2025_invierno.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndvi/2025_invierno.tif",
+        "size": 26088,
+        "mtime_ns": 1773026105534854500
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "vegas_calama_2025_primavera_ndvi": {
       "source": "sentinel2",
@@ -3569,7 +4201,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2025_primavera_ndvi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndvi/2025_primavera.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndvi/2025_primavera.tif",
+        "size": 26156,
+        "mtime_ns": 1773026117775314800
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "vegas_calama_2026_verano_ndvi": {
       "source": "sentinel2",
@@ -3602,7 +4240,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2026_verano_ndvi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndvi/2026_verano.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndvi/2026_verano.tif",
+        "size": 26584,
+        "mtime_ns": 1773026124279869000
+      },
+      "export_signature": "{\"colormap\": \"RdYlGn\", \"index\": \"ndvi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.6, \"vmin\": -0.1}"
     },
     "vegas_calama_2017_verano_ndwi": {
       "source": "sentinel2",
@@ -3635,7 +4279,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2017_verano_ndwi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndwi/2017_verano.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndwi/2017_verano.tif",
+        "size": 26004,
+        "mtime_ns": 1773025834856214000
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "vegas_calama_2017_otono_ndwi": {
       "source": "sentinel2",
@@ -3668,7 +4318,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2017_otono_ndwi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndwi/2017_otono.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndwi/2017_otono.tif",
+        "size": 25915,
+        "mtime_ns": 1773025842206687900
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "vegas_calama_2017_invierno_ndwi": {
       "source": "sentinel2",
@@ -3701,7 +4357,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2017_invierno_ndwi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndwi/2017_invierno.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndwi/2017_invierno.tif",
+        "size": 25730,
+        "mtime_ns": 1773025850887729800
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "vegas_calama_2017_primavera_ndwi": {
       "source": "sentinel2",
@@ -3734,7 +4396,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2017_primavera_ndwi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndwi/2017_primavera.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndwi/2017_primavera.tif",
+        "size": 25655,
+        "mtime_ns": 1773025856701276100
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "vegas_calama_2018_verano_ndwi": {
       "source": "sentinel2",
@@ -3767,7 +4435,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2018_verano_ndwi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndwi/2018_verano.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndwi/2018_verano.tif",
+        "size": 25920,
+        "mtime_ns": 1773025861252255500
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "vegas_calama_2018_otono_ndwi": {
       "source": "sentinel2",
@@ -3800,7 +4474,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2018_otono_ndwi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndwi/2018_otono.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndwi/2018_otono.tif",
+        "size": 25814,
+        "mtime_ns": 1773025865869785900
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "vegas_calama_2018_invierno_ndwi": {
       "source": "sentinel2",
@@ -3833,7 +4513,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2018_invierno_ndwi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndwi/2018_invierno.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndwi/2018_invierno.tif",
+        "size": 25613,
+        "mtime_ns": 1773025871881288500
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "vegas_calama_2018_primavera_ndwi": {
       "source": "sentinel2",
@@ -3866,7 +4552,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2018_primavera_ndwi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndwi/2018_primavera.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndwi/2018_primavera.tif",
+        "size": 25680,
+        "mtime_ns": 1773025880109719200
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "vegas_calama_2019_verano_ndwi": {
       "source": "sentinel2",
@@ -3899,7 +4591,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2019_verano_ndwi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndwi/2019_verano.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndwi/2019_verano.tif",
+        "size": 25955,
+        "mtime_ns": 1773025886103327700
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "vegas_calama_2019_otono_ndwi": {
       "source": "sentinel2",
@@ -3932,7 +4630,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2019_otono_ndwi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndwi/2019_otono.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndwi/2019_otono.tif",
+        "size": 25916,
+        "mtime_ns": 1773025892868260000
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "vegas_calama_2019_invierno_ndwi": {
       "source": "sentinel2",
@@ -3965,7 +4669,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2019_invierno_ndwi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndwi/2019_invierno.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndwi/2019_invierno.tif",
+        "size": 25682,
+        "mtime_ns": 1773025904606829600
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "vegas_calama_2019_primavera_ndwi": {
       "source": "sentinel2",
@@ -3998,7 +4708,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2019_primavera_ndwi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndwi/2019_primavera.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndwi/2019_primavera.tif",
+        "size": 25718,
+        "mtime_ns": 1773025912286773000
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "vegas_calama_2020_verano_ndwi": {
       "source": "sentinel2",
@@ -4031,7 +4747,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2020_verano_ndwi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndwi/2020_verano.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndwi/2020_verano.tif",
+        "size": 25988,
+        "mtime_ns": 1773025919582075400
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "vegas_calama_2020_otono_ndwi": {
       "source": "sentinel2",
@@ -4064,7 +4786,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2020_otono_ndwi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndwi/2020_otono.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndwi/2020_otono.tif",
+        "size": 25927,
+        "mtime_ns": 1773025928693342900
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "vegas_calama_2020_invierno_ndwi": {
       "source": "sentinel2",
@@ -4097,7 +4825,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2020_invierno_ndwi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndwi/2020_invierno.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndwi/2020_invierno.tif",
+        "size": 25617,
+        "mtime_ns": 1773025935439307200
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "vegas_calama_2020_primavera_ndwi": {
       "source": "sentinel2",
@@ -4130,7 +4864,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2020_primavera_ndwi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndwi/2020_primavera.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndwi/2020_primavera.tif",
+        "size": 25618,
+        "mtime_ns": 1773025943423065100
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "vegas_calama_2021_verano_ndwi": {
       "source": "sentinel2",
@@ -4163,7 +4903,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2021_verano_ndwi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndwi/2021_verano.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndwi/2021_verano.tif",
+        "size": 25901,
+        "mtime_ns": 1773025952361158800
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "vegas_calama_2021_otono_ndwi": {
       "source": "sentinel2",
@@ -4196,7 +4942,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2021_otono_ndwi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndwi/2021_otono.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndwi/2021_otono.tif",
+        "size": 25946,
+        "mtime_ns": 1773025958776913100
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "vegas_calama_2021_invierno_ndwi": {
       "source": "sentinel2",
@@ -4229,7 +4981,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2021_invierno_ndwi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndwi/2021_invierno.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndwi/2021_invierno.tif",
+        "size": 25727,
+        "mtime_ns": 1773025965339878200
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "vegas_calama_2021_primavera_ndwi": {
       "source": "sentinel2",
@@ -4262,7 +5020,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2021_primavera_ndwi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndwi/2021_primavera.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndwi/2021_primavera.tif",
+        "size": 25659,
+        "mtime_ns": 1773025972129846400
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "vegas_calama_2022_verano_ndwi": {
       "source": "sentinel2",
@@ -4295,7 +5059,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2022_verano_ndwi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndwi/2022_verano.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndwi/2022_verano.tif",
+        "size": 25945,
+        "mtime_ns": 1773025997656145200
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "vegas_calama_2022_otono_ndwi": {
       "source": "sentinel2",
@@ -4328,7 +5098,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2022_otono_ndwi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndwi/2022_otono.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndwi/2022_otono.tif",
+        "size": 25842,
+        "mtime_ns": 1773026005136540300
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "vegas_calama_2022_invierno_ndwi": {
       "source": "sentinel2",
@@ -4361,7 +5137,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2022_invierno_ndwi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndwi/2022_invierno.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndwi/2022_invierno.tif",
+        "size": 25547,
+        "mtime_ns": 1773026014161086000
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "vegas_calama_2022_primavera_ndwi": {
       "source": "sentinel2",
@@ -4394,7 +5176,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2022_primavera_ndwi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndwi/2022_primavera.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndwi/2022_primavera.tif",
+        "size": 25505,
+        "mtime_ns": 1773026021237747300
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "vegas_calama_2023_verano_ndwi": {
       "source": "sentinel2",
@@ -4427,7 +5215,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2023_verano_ndwi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndwi/2023_verano.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndwi/2023_verano.tif",
+        "size": 25953,
+        "mtime_ns": 1773026028643725500
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "vegas_calama_2023_otono_ndwi": {
       "source": "sentinel2",
@@ -4460,7 +5254,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2023_otono_ndwi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndwi/2023_otono.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndwi/2023_otono.tif",
+        "size": 25836,
+        "mtime_ns": 1773026035944210900
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "vegas_calama_2023_invierno_ndwi": {
       "source": "sentinel2",
@@ -4493,7 +5293,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2023_invierno_ndwi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndwi/2023_invierno.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndwi/2023_invierno.tif",
+        "size": 25552,
+        "mtime_ns": 1773026042427888800
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "vegas_calama_2023_primavera_ndwi": {
       "source": "sentinel2",
@@ -4526,7 +5332,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2023_primavera_ndwi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndwi/2023_primavera.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndwi/2023_primavera.tif",
+        "size": 25698,
+        "mtime_ns": 1773026049456337500
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "vegas_calama_2024_verano_ndwi": {
       "source": "sentinel2",
@@ -4559,7 +5371,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2024_verano_ndwi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndwi/2024_verano.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndwi/2024_verano.tif",
+        "size": 25960,
+        "mtime_ns": 1773026056729188300
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "vegas_calama_2024_otono_ndwi": {
       "source": "sentinel2",
@@ -4592,7 +5410,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2024_otono_ndwi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndwi/2024_otono.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndwi/2024_otono.tif",
+        "size": 25887,
+        "mtime_ns": 1773026066799269300
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "vegas_calama_2024_invierno_ndwi": {
       "source": "sentinel2",
@@ -4625,7 +5449,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2024_invierno_ndwi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndwi/2024_invierno.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndwi/2024_invierno.tif",
+        "size": 25471,
+        "mtime_ns": 1773026075487430300
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "vegas_calama_2024_primavera_ndwi": {
       "source": "sentinel2",
@@ -4658,7 +5488,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2024_primavera_ndwi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndwi/2024_primavera.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndwi/2024_primavera.tif",
+        "size": 25610,
+        "mtime_ns": 1773026083430583600
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "vegas_calama_2025_verano_ndwi": {
       "source": "sentinel2",
@@ -4691,7 +5527,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2025_verano_ndwi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndwi/2025_verano.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndwi/2025_verano.tif",
+        "size": 25932,
+        "mtime_ns": 1773026092744537100
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "vegas_calama_2025_otono_ndwi": {
       "source": "sentinel2",
@@ -4724,7 +5566,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2025_otono_ndwi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndwi/2025_otono.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndwi/2025_otono.tif",
+        "size": 25847,
+        "mtime_ns": 1773026101427503300
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "vegas_calama_2025_invierno_ndwi": {
       "source": "sentinel2",
@@ -4757,7 +5605,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2025_invierno_ndwi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndwi/2025_invierno.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndwi/2025_invierno.tif",
+        "size": 25584,
+        "mtime_ns": 1773026110084456700
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "vegas_calama_2025_primavera_ndwi": {
       "source": "sentinel2",
@@ -4790,7 +5644,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2025_primavera_ndwi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndwi/2025_primavera.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndwi/2025_primavera.tif",
+        "size": 25680,
+        "mtime_ns": 1773026121267602000
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     },
     "vegas_calama_2026_verano_ndwi": {
       "source": "sentinel2",
@@ -4823,7 +5683,13 @@
         "render_mode": "pixelated",
         "opacity": 0.9
       },
-      "analytic_path": "data/sentinel2/vegas_calama/2026_verano_ndwi.tif"
+      "analytic_path": "data/sentinel2/vegas_calama/ndwi/2026_verano.tif",
+      "source_fingerprint": {
+        "path": "data/sentinel2/vegas_calama/ndwi/2026_verano.tif",
+        "size": 25986,
+        "mtime_ns": 1773026126643281700
+      },
+      "export_signature": "{\"colormap\": \"RdYlBu\", \"index\": \"ndwi\", \"mode\": \"analytic_preview\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}, \"vmax\": 0.4, \"vmin\": -0.4}"
     }
   },
   "periods": [
@@ -4980,6 +5846,7 @@
     "n_wetlands": 2,
     "n_periods": 37,
     "data_points": 144,
+    "raster_count": 144,
     "total_area_ha": 60.8,
     "latest_period": "Verano 2026",
     "available_years": [

@@ -17,21 +17,27 @@
         body{font-family:'Inter',system-ui,sans-serif;background:var(--bg);color:var(--text);line-height:1.5}
         .page{max-width:1560px;margin:0 auto;padding:22px 24px 42px}
         header{display:flex;justify-content:space-between;gap:20px;align-items:flex-end;margin-bottom:18px;padding-bottom:16px;border-bottom:1px solid var(--border)}
-        h1{font-size:1.72rem;font-weight:600;letter-spacing:-.02em}
+        h1{font-size:2.1rem;font-weight:600;letter-spacing:-.02em}
         h1 span{color:var(--accent);font-weight:300}
-        .subtitle{color:var(--muted);font-size:.9rem;margin-top:4px}
-        .header-badges{display:flex;gap:8px;flex-wrap:wrap}
-        .badge{display:inline-flex;align-items:center;gap:6px;padding:6px 10px;border-radius:999px;border:1px solid var(--border);background:var(--surface);font-size:.72rem;text-transform:uppercase;letter-spacing:.06em}
-        .section-title{font-size:1.05rem;font-weight:500;color:var(--muted);margin-bottom:12px}
-        .toolbar{display:flex;flex-wrap:wrap;gap:12px;align-items:center;margin-bottom:18px}
-        .source-tabs{display:flex;gap:10px;flex-wrap:wrap}
-        .source-tab{padding:10px 14px;border-radius:999px;border:1px solid var(--border);background:var(--surface);color:var(--text);cursor:pointer;font-size:.85rem;transition:.15s}
-        .source-tab.active{border-color:var(--accent);box-shadow:0 0 0 1px rgba(56,189,248,.25) inset}
-        .source-tab.empty{border-style:dashed}
+        .subtitle{color:var(--muted);font-size:1rem;margin-top:6px}
+        .section-title{font-size:1.28rem;font-weight:600;color:var(--text);margin-bottom:10px}
+        .toolbar{display:flex;flex-wrap:wrap;justify-content:space-between;align-items:flex-end;gap:20px;margin-bottom:18px}
+        .toolbar-primary{display:flex;flex-wrap:wrap;gap:24px;align-items:flex-end}
+        .platform-selector-wrap{display:flex;flex-direction:column;gap:8px}
+        .source-tabs{display:flex;gap:14px;flex-wrap:wrap;align-items:center}
+        .source-tab{padding:15px 28px;border-radius:10px;border:2px solid var(--border);background:var(--surface);color:var(--text);cursor:pointer;font-size:1.14rem;font-weight:600;transition:.2s}
+        .source-tab:hover{border-color:var(--muted);background:var(--surface-alt)}
+        .source-tab.active{color:var(--accent);border-color:var(--accent);box-shadow:0 0 0 2px rgba(56,189,248,.25);background:rgba(56,189,248,.1)}
+        .source-tab.empty{border-style:dashed;opacity:.85}
+        .wetland-selector-wrap{display:flex;flex-direction:column;gap:8px;margin-left:auto}
+        .selector-label{font-size:.8rem;text-transform:uppercase;letter-spacing:.08em;color:var(--muted);font-weight:600}
+        .platform-selector-wrap .selector-label,.wetland-selector-wrap .selector-label{margin-bottom:0}
+        .wetland-selector-wrap select{padding:14px 20px;border-radius:10px;border:2px solid var(--border);background:var(--surface);color:var(--text);font-size:1.12rem;min-width:280px;font-weight:600;transition:.2s}
+        .wetland-selector-wrap select:focus{border-color:var(--accent);box-shadow:0 0 0 2px rgba(56,189,248,.15)}
         .selector-group{display:flex;gap:10px;flex-wrap:wrap}
-        select{padding:9px 12px;border-radius:8px;border:1px solid var(--border);background:var(--surface);color:var(--text);font-size:.86rem;min-width:180px}
+        select{padding:11px 14px;border-radius:8px;border:1px solid var(--border);background:var(--surface);color:var(--text);font-size:.94rem;min-width:180px}
         select:focus{outline:none;border-color:var(--accent)}
-        .status{margin-bottom:16px;padding:12px 14px;border-radius:10px;border:1px solid var(--border);background:rgba(28,41,64,.55);color:var(--muted);font-size:.85rem}
+        .status{margin-bottom:16px;padding:14px 16px;border-radius:10px;border:1px solid var(--border);background:rgba(28,41,64,.55);color:var(--muted);font-size:.95rem}
         .status.empty{border-style:dashed}
         .cards{display:grid;grid-template-columns:repeat(6,1fr);gap:14px;margin-bottom:26px}
         .card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px 18px;position:relative;overflow:hidden}
@@ -40,64 +46,58 @@
         .card.area::before{background:var(--accent)}
         .card.ndvi::before{background:var(--ndvi)}
         .card.ndwi::before{background:var(--ndwi)}
-        .card-label{font-size:.7rem;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin-bottom:4px}
-        .card-value{font-size:1.38rem;font-weight:700}
-        .card-sub{font-size:.76rem;color:var(--muted);margin-top:4px}
+        .card-label{font-size:.78rem;text-transform:uppercase;letter-spacing:.07em;color:var(--muted);margin-bottom:6px}
+        .card-value{font-size:1.56rem;font-weight:700}
+        .card-sub{font-size:.84rem;color:var(--muted);margin-top:6px}
         .card-sub strong{color:var(--text);font-weight:600}
-        .grid-2{display:grid;grid-template-columns:1.2fr 1fr;gap:18px;margin-bottom:28px}
-        .panel{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px}
+        .panel{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:18px}
+        .map-panel{margin-bottom:18px}
+        .charts-panel{margin-bottom:28px}
+        .charts-grid{display:grid;grid-template-columns:1fr 1fr;gap:18px}
         .panel-header{display:flex;justify-content:space-between;gap:12px;align-items:center;margin-bottom:12px}
-        .helper{color:var(--muted);font-size:.8rem}
+        .helper{color:var(--muted);font-size:.92rem}
         .map-wrap{position:relative;border-radius:10px;overflow:hidden;border:1px solid var(--border)}
-        #mapa{height:680px;background:#0d1117}
+        #mapa{height:720px;background:#0d1117}
         .map-controls{position:absolute;top:14px;left:58px;z-index:800;display:flex;gap:8px;flex-wrap:wrap}
         .map-controls select{background:rgba(21,29,46,.95);min-width:160px}
-        .map-note{position:absolute;right:12px;top:12px;z-index:800;padding:10px 12px;max-width:280px;background:rgba(12,18,32,.92);border:1px solid var(--border);border-radius:8px;color:var(--muted);font-size:.78rem}
-        .colorbar-box{position:absolute;left:58px;bottom:24px;z-index:800;background:rgba(21,29,46,.95);border:1px solid var(--border);border-radius:8px;padding:8px 12px;display:none}
-        .colorbar-title{font-size:.68rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);margin-bottom:4px}
-        .colorbar-gradient{height:10px;width:200px;border-radius:999px}
-        .colorbar-labels{display:flex;justify-content:space-between;font-size:.68rem;color:var(--muted);margin-top:4px}
-        .charts-controls{display:flex;gap:10px;flex-wrap:wrap;margin-bottom:14px}
-        .charts-row{display:grid;grid-template-columns:1fr;gap:18px}
-        .chart-card{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:16px;min-height:440px}
-        .chart-title{font-size:.78rem;text-transform:uppercase;letter-spacing:.05em;display:flex;align-items:center;gap:8px;margin-bottom:8px}
+        .map-note{position:absolute;right:12px;top:12px;z-index:800;padding:12px 14px;max-width:340px;background:rgba(12,18,32,.92);border:1px solid var(--border);border-radius:8px;color:var(--muted);font-size:.86rem}
+        .colorbar-box{position:absolute;left:16px;top:50%;transform:translateY(-50%);z-index:800;background:rgba(21,29,46,.95);border:1px solid var(--border);border-radius:12px;padding:16px 14px;display:none;align-items:center;flex-direction:column;gap:12px;min-width:100px}
+        .colorbar-title{font-size:.94rem;text-transform:uppercase;letter-spacing:.06em;color:var(--muted);text-align:center;font-weight:600}
+        .colorbar-scale{display:flex;flex-direction:column;align-items:center;gap:10px}
+        .colorbar-gradient{height:280px;width:18px;border-radius:999px}
+        .colorbar-scale span{font-size:.9rem;color:var(--muted);font-weight:500}
+        .charts-controls-inline{display:flex;align-items:center;gap:12px;margin-bottom:14px;padding-bottom:12px;border-bottom:1px solid var(--border)}
+        .charts-controls-inline .selector-label{margin-bottom:0}
+        .charts-controls-inline select{padding:10px 14px;font-size:1rem}
+        .chart-card{background:var(--surface-alt);border:1px solid var(--border);border-radius:var(--radius);padding:18px;min-height:460px}
+        .chart-title{font-size:.92rem;text-transform:uppercase;letter-spacing:.05em;display:flex;align-items:center;gap:8px;margin-bottom:10px}
         .dot{width:10px;height:10px;border-radius:50%}
         .chart-body{min-height:380px}
-        .chart-placeholder{text-align:center;color:var(--muted);padding:100px 18px;font-size:.92rem}
+        .chart-placeholder{text-align:center;color:var(--muted);padding:100px 18px;font-size:1rem}
         .footer{display:flex;justify-content:space-between;gap:18px;align-items:flex-start;background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:20px 24px;flex-wrap:wrap}
-        .footer h4{font-size:.86rem;font-weight:600;margin-bottom:6px}
-        .footer p{font-size:.81rem;color:var(--muted);max-width:760px}
-        .btn{display:inline-flex;align-items:center;gap:6px;padding:9px 16px;border-radius:8px;border:1px solid var(--border);background:var(--surface-alt);color:var(--text);font-size:.82rem;cursor:pointer;transition:.15s}
+        .footer h4{font-size:1rem;font-weight:600;margin-bottom:6px}
+        .footer p{font-size:.9rem;color:var(--muted);max-width:760px}
+        .btn{display:inline-flex;align-items:center;gap:6px;padding:10px 16px;border-radius:8px;border:1px solid var(--border);background:var(--surface-alt);color:var(--text);font-size:.92rem;cursor:pointer;transition:.15s}
         .btn:hover{border-color:var(--accent);color:var(--accent)}
         .preview-raster{image-rendering:pixelated;image-rendering:crisp-edges}
-        @media(max-width:1260px){.cards{grid-template-columns:repeat(3,1fr)}.grid-2{grid-template-columns:1fr}}
+        @media(max-width:1260px){.cards{grid-template-columns:repeat(3,1fr)}.charts-grid{grid-template-columns:1fr}}
         @media(max-width:760px){header{flex-direction:column;align-items:flex-start}.cards{grid-template-columns:1fr}.map-controls{left:12px;right:12px}.map-controls select{min-width:unset;width:100%}}
     </style>
 </head>
 <body>
 <div class="page">
     <header>
-        <div>
-            <h1>Monitoreo Ambiental <span>| Humedales Altoandinos</span></h1>
-            <p class="subtitle" id="pageSubtitle">Seguimiento histórico por fuente, humedal e índice ambiental.</p>
-        </div>
-        <div class="header-badges">
-            <div class="badge" id="rangeBadge">Histórico</div>
-            <div class="badge">NDVI</div>
-            <div class="badge">NDWI</div>
-        </div>
+        <h1>Monitoreo Ambiental <span>| Humedales Altoandinos</span></h1>
     </header>
 
     <div class="toolbar">
-        <div class="source-tabs" id="sourceTabs"></div>
-        <div class="selector-group">
+        <div class="platform-selector-wrap">
+            <label class="selector-label">Plataforma</label>
+            <div class="source-tabs" id="sourceTabs"></div>
+        </div>
+        <div class="wetland-selector-wrap">
+            <label class="selector-label">Humedal</label>
             <select id="globalWetland"></select>
-            <select id="chartView">
-                <option value="comparison">Comparar humedales</option>
-                <option value="full_series">Serie histórica</option>
-                <option value="seasonal_anomaly">Anomalías por estación</option>
-                <option value="annual_summary">Resumen anual</option>
-            </select>
         </div>
     </div>
 
@@ -112,8 +112,7 @@
         <div class="card ndwi"><div class="card-label">NDWI anomalía estacional</div><div class="card-value" id="kpi-ndwi-seasonal">—</div><div class="card-sub" id="kpi-ndwi-seasonal-sub"></div></div>
     </div>
 
-    <div class="grid-2">
-        <section class="panel">
+    <section class="panel map-panel">
             <div class="panel-header">
                 <div>
                     <div class="section-title">Explorador Espacial</div>
@@ -122,30 +121,40 @@
             </div>
             <div class="map-wrap">
                 <div class="map-controls">
-                    <select id="mapIndex">
-                        <option value="ndvi">NDVI</option>
-                        <option value="ndwi">NDWI</option>
-                    </select>
-                    <select id="mapPeriod"></select>
+                    <select id="mapIndex"></select>
+                    <select id="mapYear"></select>
+                    <select id="mapSeason"></select>
                 </div>
                 <div class="map-note" id="mapNote">Selecciona un período para superponer el raster.</div>
                 <div class="colorbar-box" id="colorbarBox">
                     <div class="colorbar-title" id="cbTitle">NDVI</div>
-                    <div class="colorbar-gradient" id="cbGradient"></div>
-                    <div class="colorbar-labels"><span id="cbMin"></span><span id="cbMax"></span></div>
+                    <div class="colorbar-scale">
+                        <span id="cbMax"></span>
+                        <div class="colorbar-gradient" id="cbGradient"></div>
+                        <span id="cbMin"></span>
+                    </div>
                 </div>
                 <div id="mapa"></div>
             </div>
-        </section>
+    </section>
 
-        <section class="panel">
+    <section class="panel charts-panel">
             <div class="panel-header">
                 <div>
                     <div class="section-title">Lectura Histórica</div>
                     <div class="helper">Comparación espacial, anomalías estacionales y tendencia interanual.</div>
                 </div>
             </div>
-            <div class="charts-row">
+            <div class="charts-controls charts-controls-inline">
+                <label class="selector-label">Modo de gráfico</label>
+                <select id="chartView">
+                    <option value="comparison">Comparar humedales</option>
+                    <option value="full_series">Serie histórica</option>
+                    <option value="seasonal_anomaly">Anomalías por estación</option>
+                    <option value="annual_summary">Resumen anual</option>
+                </select>
+            </div>
+            <div class="charts-grid">
                 <div class="chart-card">
                     <div class="chart-title"><span class="dot" style="background:var(--ndvi)"></span>NDVI</div>
                     <div class="chart-body" id="ndviChart"><p class="chart-placeholder">Cargando…</p></div>
@@ -155,8 +164,7 @@
                     <div class="chart-body" id="ndwiChart"><p class="chart-placeholder">Cargando…</p></div>
                 </div>
             </div>
-        </section>
-    </div>
+    </section>
 
     <div class="footer">
         <div>
@@ -174,8 +182,8 @@ Plotly.setPlotConfig({locale:'es'});
 const BASE='data_static';
 const CHART_COLORS={ndvi:['#22c55e','#f59e0b','#e879f9','#38bdf8'],ndwi:['#3b82f6','#8b5cf6','#f97316','#14b8a6']};
 const CBAR={
-    ndvi:{gradient:'linear-gradient(to right,#a50026,#d73027,#f46d43,#fdae61,#fee08b,#ffffbf,#d9ef8b,#a6d96a,#66bd63,#1a9850,#006837)',label:'NDVI'},
-    ndwi:{gradient:'linear-gradient(to right,#a50026,#d73027,#f46d43,#fdae61,#fee090,#ffffbf,#e0f3f8,#abd9e9,#74add1,#4575b4,#313695)',label:'NDWI'}
+    ndvi:{gradient:'linear-gradient(to top,#a50026,#d73027,#f46d43,#fdae61,#fee08b,#ffffbf,#d9ef8b,#a6d96a,#66bd63,#1a9850,#006837)',label:'NDVI'},
+    ndwi:{gradient:'linear-gradient(to top,#a50026,#d73027,#f46d43,#fdae61,#fee090,#ffffbf,#e0f3f8,#abd9e9,#74add1,#4575b4,#313695)',label:'NDWI'}
 };
 const plotCfg={responsive:true,displayModeBar:false};
 const baseLayout={
@@ -202,11 +210,11 @@ const state={
 window.onload=()=>{initMap();loadManifest();};
 
 function initMap(){
-    mapa=L.map('mapa',{center:[-22,-68.7],zoom:8,zoomControl:true});
+    mapa=L.map('mapa',{center:[-22,-68.7],zoom:8,zoomControl:true,maxZoom:24});
     L.control.scale({imperial:false}).addTo(mapa);
-    const dark=L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{attribution:'© CartoDB'});
-    const sat=L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',{attribution:'© Esri'});
-    const topo=L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}',{attribution:'© Esri'});
+    const dark=L.tileLayer('https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png',{attribution:'© CartoDB',maxZoom:24,maxNativeZoom:20});
+    const sat=L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Imagery/MapServer/tile/{z}/{y}/{x}',{attribution:'© Esri',maxZoom:24,maxNativeZoom:19});
+    const topo=L.tileLayer('https://server.arcgisonline.com/ArcGIS/rest/services/World_Topo_Map/MapServer/tile/{z}/{y}/{x}',{attribution:'© Esri',maxZoom:24,maxNativeZoom:19});
     dark.addTo(mapa);
     L.control.layers({'Oscuro':dark,'Satélite':sat,'Topográfico':topo},{}).addTo(mapa);
 }
@@ -223,7 +231,6 @@ async function loadManifest(){
         if(state.manifest.aoi_path){
             state.aoi=await fetchJson(`${BASE}/${state.manifest.aoi_path}`);
         }
-        document.getElementById('rangeBadge').textContent=`${state.manifest.year_range.start}-${state.manifest.year_range.end}`;
         const firstSource=Object.keys(state.manifest.sources)[0];
         if(!firstSource) throw new Error('No hay fuentes configuradas');
         await setSource(firstSource);
@@ -255,7 +262,10 @@ function currentData(){return state.datasets[state.selectedSource]||{wetlands:{}
 function currentMeta(){return state.metadata[state.selectedSource]||{wetlands:{},indices:{},periods:[],rasters:{},summary:{}};}
 function currentWetlands(){return Object.keys(currentMeta().wetlands||{});}
 function selectedView(){return document.getElementById('chartView').value;}
-function selectedPeriod(){return document.getElementById('mapPeriod').value;}
+function selectedPeriod(){
+    const y=document.getElementById('mapYear').value;
+    const s=document.getElementById('mapSeason').value;
+    return s||(y?`${y}_verano`:'');}
 function selectedIndex(){return document.getElementById('mapIndex').value;}
 function cloneLayout(){return JSON.parse(JSON.stringify(baseLayout));}
 
@@ -266,10 +276,21 @@ function buildSourceTabs(){
         const btn=document.createElement('button');
         btn.className=`source-tab ${key===state.selectedSource?'active':''} ${source.has_data?'':'empty'}`;
         btn.textContent=source.label;
-        btn.style.borderColor=key===state.selectedSource?(source.color||'var(--accent)'):'';
+        btn.style.borderColor=key===state.selectedSource?'var(--accent)':'';
         btn.onclick=()=>setSource(key);
         container.appendChild(btn);
     });
+}
+
+function pickDefaultWetland(){
+    const wetlands=currentWetlands();
+    if(!wetlands.length) return null;
+    const withData=wetlands.filter(wid=>{
+        const info=currentMeta().wetlands[wid]||{};
+        return (info.n_periods||0)>0||info.status==='ready';
+    });
+    const candidates=withData.length?withData:wetlands;
+    return state.selectedWetland&&candidates.includes(state.selectedWetland)?state.selectedWetland:candidates[0];
 }
 
 function buildSelectors(){
@@ -280,9 +301,7 @@ function buildSelectors(){
         const info=currentMeta().wetlands[wid]||{};
         wetlandSel.innerHTML+=`<option value="${wid}">${info.name||wid}</option>`;
     });
-    if(!wetlands.includes(state.selectedWetland)){
-        state.selectedWetland=wetlands[0]||null;
-    }
+    state.selectedWetland=pickDefaultWetland();
     wetlandSel.value=state.selectedWetland||'';
     wetlandSel.onchange=()=>{
         state.selectedWetland=wetlandSel.value||null;
@@ -290,16 +309,43 @@ function buildSelectors(){
         renderAll();
     };
 
-    const periodSel=document.getElementById('mapPeriod');
-    periodSel.innerHTML='';
-    (currentMeta().periods||[]).forEach(period=>{
-        periodSel.innerHTML+=`<option value="${period.key}">${period.label}</option>`;
+    const mapIndexSel=document.getElementById('mapIndex');
+    const indices=currentMeta().indices||{};
+    mapIndexSel.innerHTML='';
+    Object.entries(indices).forEach(([key,meta])=>{
+        mapIndexSel.innerHTML+=`<option value="${key}">${meta.label||key.toUpperCase()}</option>`;
     });
-    if(periodSel.options.length){
-        periodSel.value=periodSel.options[periodSel.options.length-1].value;
+    const preferredIndex=state.selectedSource==='drone'&&indices.rgb?'rgb':(Object.keys(indices)[0]||'');
+    if(preferredIndex){
+        mapIndexSel.value=preferredIndex;
     }
-    document.getElementById('mapIndex').onchange=()=>updateMapOverlay();
-    periodSel.onchange=()=>updateMapOverlay();
+
+    const years=currentMeta().summary?.available_years||[];
+    const yearSel=document.getElementById('mapYear');
+    yearSel.innerHTML='';
+    years.forEach(y=>{yearSel.innerHTML+=`<option value="${y}">${y}</option>`;});
+    const lastPeriod=(currentMeta().periods||[]).slice(-1)[0];
+    const lastYear=lastPeriod?parseInt(lastPeriod.key.split('_')[0],10):null;
+    if(years.length&&!yearSel.value)yearSel.value=String(lastYear||years[years.length-1]);
+
+    const seasonSel=document.getElementById('mapSeason');
+    function fillSeasonForYear(yr){
+        const periods=(currentMeta().periods||[]).filter(p=>String(p.key).startsWith(yr+'_'));
+        seasonSel.innerHTML='';
+        periods.forEach(p=>{
+            const seasonLabel=p.label.replace(/\s*\d{4}$/,'').trim();
+            seasonSel.innerHTML+=`<option value="${p.key}">${seasonLabel}</option>`;
+        });
+        if(periods.length){
+            const prevVal=seasonSel.value;
+            const stillValid=periods.some(p=>p.key===prevVal);
+            seasonSel.value=stillValid?prevVal:periods[periods.length-1].key;
+        }
+    }
+    fillSeasonForYear(yearSel.value||years[0]);
+    yearSel.onchange=()=>{fillSeasonForYear(yearSel.value);updateMapOverlay();};
+    seasonSel.onchange=()=>updateMapOverlay();
+    mapIndexSel.onchange=()=>updateMapOverlay();
     document.getElementById('chartView').onchange=()=>renderCharts();
 }
 
@@ -312,12 +358,7 @@ function renderAll(){
     updateMethodology();
 }
 
-function updateSubtitle(){
-    const source=currentSource();
-    const wetlandInfo=currentMeta().wetlands[state.selectedWetland]||{};
-    const wetlandName=wetlandInfo.name||'sin humedal';
-    document.getElementById('pageSubtitle').textContent=`${source.label||'Fuente'} · ${wetlandName} · seguimiento histórico, anomalías estacionales y resumen anual.`;
-}
+function updateSubtitle(){}
 
 function updateStatus(){
     const source=currentSource();
@@ -325,7 +366,11 @@ function updateStatus(){
     const summary=source.summary||{};
     status.classList.toggle('empty',!source.has_data);
     if(source.has_data){
-        status.textContent=`${source.label}: ${summary.data_points||0} observaciones, ${summary.n_periods||0} períodos y ${summary.total_area_ha||0} ha monitoreadas en la fuente activa.`;
+        if((summary.data_points||0)===0&&(summary.raster_count||0)>0){
+            status.textContent=`${source.label}: ${summary.raster_count||0} rasteres web y ${summary.n_periods||0} períodos disponibles para visualización en la fuente activa.`;
+        }else{
+            status.textContent=`${source.label}: ${summary.data_points||0} observaciones, ${summary.n_periods||0} períodos y ${summary.total_area_ha||0} ha monitoreadas en la fuente activa.`;
+        }
     }else{
         status.textContent=`${source.label}: la fuente está activa pero aún no tiene series exportadas. Puedes cargar datos y volver a ejecutar \`python export_data_ortho.py\`.`;
     }
@@ -340,7 +385,7 @@ function renderAOI(){
             const wid=String(feature.properties[idCol]||'').toLowerCase();
             const active=wid===state.selectedWetland;
             const color=active?(currentSource().color||'#38bdf8'):'#94a3b8';
-            return{color,weight:active?3:2,fillColor:color,fillOpacity:active ? .18 : .07,dashArray:active?'':'6 4'};
+            return{color,weight:active?3:2,fillColor:color,fillOpacity:0,dashArray:active?'':'6 4'};
         },
         onEachFeature:(feature,layer)=>{
             const wid=String(feature.properties[idCol]||'').toLowerCase();
@@ -350,8 +395,17 @@ function renderAOI(){
             layer.bindTooltip(html,{sticky:true,opacity:.95});
         }
     }).addTo(mapa);
-    const bounds=aoiLayer.getBounds();
-    if(bounds.isValid()) mapa.fitBounds(bounds.pad(.18));
+    let fitBounds=aoiLayer.getBounds();
+    if(state.selectedWetland){
+        aoiLayer.eachLayer(layer=>{
+            const wid=String(layer.feature.properties[idCol]||'').toLowerCase();
+            if(wid===state.selectedWetland){
+                const b=layer.getBounds();
+                if(b.isValid()) fitBounds=b;
+            }
+        });
+    }
+    if(fitBounds.isValid()) mapa.fitBounds(fitBounds.pad(.18));
 }
 
 function updateMapOverlay(){
@@ -374,16 +428,23 @@ function updateMapOverlay(){
         return;
     }
     note.textContent=`${raster.index.toUpperCase()} · ${raster.season} ${raster.year} · ${raster.visual.format} ${raster.visual.display_size[0]}×${raster.visual.display_size[1]}`;
-    rasterOverlay=L.imageOverlay(`${BASE}/${raster.visual.path}`,raster.visual.bounds,{opacity:raster.visual.opacity,className:'preview-raster',interactive:false}).addTo(mapa);
+    const imgClass=raster.visual.render_mode==='smooth'?'':'preview-raster';
+    rasterOverlay=L.imageOverlay(`${BASE}/${raster.visual.path}`,raster.visual.bounds,{opacity:raster.visual.opacity,className:imgClass,interactive:false}).addTo(mapa);
     mapa.fitBounds(raster.visual.bounds,{padding:[36,36]});
 
-    const idxMeta=currentMeta().indices?.[selectedIndex()];
-    const cbar=CBAR[selectedIndex()];
-    document.getElementById('cbGradient').style.background=cbar.gradient;
-    document.getElementById('cbTitle').textContent=cbar.label;
-    document.getElementById('cbMin').textContent=idxMeta?.vmin ?? '';
-    document.getElementById('cbMax').textContent=idxMeta?.vmax ?? '';
-    colorbar.style.display='block';
+    const idx=selectedIndex();
+    const idxMeta=currentMeta().indices?.[idx];
+    const isVisualOnly=idxMeta?.visual_only;
+    if(!isVisualOnly&&CBAR[idx]){
+        const cbar=CBAR[idx];
+        document.getElementById('cbGradient').style.background=cbar.gradient;
+        document.getElementById('cbTitle').textContent=cbar.label;
+        document.getElementById('cbMin').textContent=idxMeta?.vmin ?? '';
+        document.getElementById('cbMax').textContent=idxMeta?.vmax ?? '';
+        colorbar.style.display='block';
+    }else{
+        colorbar.style.display='none';
+    }
 }
 
 function getIndexEntry(indexKey){
@@ -603,7 +664,7 @@ function updateMethodology(){
     const source=currentSource();
     const sourceText=source.id==='sentinel2'
         ? 'Sentinel-2 usa composiciones estacionales históricas de SR Harmonized y métricas derivadas contra línea base histórica y estacional.'
-        : 'Dron Multiespectral mantiene la misma estructura de AOI, métricas y series, pero puede permanecer vacío hasta incorporar campañas.';
+        : 'Dron Multiespectral exporta previsualizaciones RGB web recortadas al AOI, remuestreadas y comprimidas para visualización rápida; las series analíticas pueden agregarse después.';
     document.getElementById('methodologyText').textContent=sourceText;
 }
 

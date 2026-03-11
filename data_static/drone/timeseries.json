@@ -3,7 +3,7 @@
     "id": "drone",
     "label": "Dron Multiespectral",
     "description": "Campañas multiespectrales de mayor resolución para monitoreo local.",
-    "has_data": false
+    "has_data": true
   },
   "wetlands": {
     "sapunta": {
@@ -20,6 +20,16 @@
           }
         },
         "ndwi": {
+          "points": [],
+          "metrics": {
+            "latest": null,
+            "historical_mean": null,
+            "seasonal_means": {},
+            "annual_summary": [],
+            "trend": null
+          }
+        },
+        "rgb": {
           "points": [],
           "metrics": {
             "latest": null,
@@ -45,6 +55,16 @@
           }
         },
         "ndwi": {
+          "points": [],
+          "metrics": {
+            "latest": null,
+            "historical_mean": null,
+            "seasonal_means": {},
+            "annual_summary": [],
+            "trend": null
+          }
+        },
+        "rgb": {
           "points": [],
           "metrics": {
             "latest": null,
