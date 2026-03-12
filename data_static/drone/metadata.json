@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-11T23:16:55+00:00",
+  "generated_at": "2026-03-12T01:38:04+00:00",
   "aoi_id_column": "wetland_id",
   "source": {
     "id": "drone",
@@ -39,11 +39,14 @@
         -21.295,
         -68.772
       ],
-      "n_periods": 6,
-      "last_period": "Verano 2023",
+      "n_periods": 16,
+      "last_period": "Verano 2026",
       "available_years": [
         2022,
-        2023
+        2023,
+        2024,
+        2025,
+        2026
       ],
       "status": "ready"
     },
@@ -294,6 +297,396 @@
         "mtime_ns": 1773270372259791600
       },
       "export_signature": "{\"buffer_m\": 100.0, \"index\": \"rgb\", \"mode\": \"rgb_visual\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}}"
+    },
+    "sapunta_2023_primavera_rgb": {
+      "source": "drone",
+      "wetland_id": "sapunta",
+      "index": "rgb",
+      "year": 2023,
+      "season": "Primavera",
+      "period_key": "2023_primavera",
+      "visual": {
+        "path": "drone/rasters/sapunta_2023_primavera_rgb.webp",
+        "bounds": [
+          [
+            -21.296380937482763,
+            -68.77475053549169
+          ],
+          [
+            -21.293635540956505,
+            -68.76905814275439
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          25442,
+          13066
+        ],
+        "display_size": [
+          4096,
+          2104
+        ],
+        "render_mode": "smooth",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/drone/sapunta/rgb/2023_primavera.tiff",
+      "source_fingerprint": {
+        "path": "data/drone/sapunta/rgb/2023_primavera.tiff",
+        "size": 1150119472,
+        "mtime_ns": 1773277510153293700
+      },
+      "export_signature": "{\"buffer_m\": 100.0, \"index\": \"rgb\", \"mode\": \"rgb_visual\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}}"
+    },
+    "sapunta_2024_verano_rgb": {
+      "source": "drone",
+      "wetland_id": "sapunta",
+      "index": "rgb",
+      "year": 2024,
+      "season": "Verano",
+      "period_key": "2024_verano",
+      "visual": {
+        "path": "drone/rasters/sapunta_2024_verano_rgb.webp",
+        "bounds": [
+          [
+            -21.29638088061759,
+            -68.77475064387512
+          ],
+          [
+            -21.29360241170097,
+            -68.76905813967292
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          26520,
+          13784
+        ],
+        "display_size": [
+          4096,
+          2129
+        ],
+        "render_mode": "smooth",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/drone/sapunta/rgb/2024_verano.tif",
+      "source_fingerprint": {
+        "path": "data/drone/sapunta/rgb/2024_verano.tif",
+        "size": 1279479031,
+        "mtime_ns": 1773277921095418700
+      },
+      "export_signature": "{\"buffer_m\": 100.0, \"index\": \"rgb\", \"mode\": \"rgb_visual\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}}"
+    },
+    "sapunta_2024_otono_rgb": {
+      "source": "drone",
+      "wetland_id": "sapunta",
+      "index": "rgb",
+      "year": 2024,
+      "season": "Otoño",
+      "period_key": "2024_otono",
+      "visual": {
+        "path": "drone/rasters/sapunta_2024_otono_rgb.webp",
+        "bounds": [
+          [
+            -21.296380857278155,
+            -68.77475058963849
+          ],
+          [
+            -21.2935913928628,
+            -68.76905825855154
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          27932,
+          14576
+        ],
+        "display_size": [
+          4096,
+          2137
+        ],
+        "render_mode": "smooth",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/drone/sapunta/rgb/2024_otoño.tif",
+      "source_fingerprint": {
+        "path": "data/drone/sapunta/rgb/2024_otoño.tif",
+        "size": 1477723844,
+        "mtime_ns": 1773277737775622800
+      },
+      "export_signature": "{\"buffer_m\": 100.0, \"index\": \"rgb\", \"mode\": \"rgb_visual\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}}"
+    },
+    "sapunta_2024_invierno_rgb": {
+      "source": "drone",
+      "wetland_id": "sapunta",
+      "index": "rgb",
+      "year": 2024,
+      "season": "Invierno",
+      "period_key": "2024_invierno",
+      "visual": {
+        "path": "drone/rasters/sapunta_2024_invierno_rgb.webp",
+        "bounds": [
+          [
+            -21.29638076099179,
+            -68.77475101759495
+          ],
+          [
+            -21.293446926980643,
+            -68.76905812177046
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          17898,
+          9824
+        ],
+        "display_size": [
+          4096,
+          2248
+        ],
+        "render_mode": "smooth",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/drone/sapunta/rgb/2024_invierno.tif",
+      "source_fingerprint": {
+        "path": "data/drone/sapunta/rgb/2024_invierno.tif",
+        "size": 789739858,
+        "mtime_ns": 1773277605022812600
+      },
+      "export_signature": "{\"buffer_m\": 100.0, \"index\": \"rgb\", \"mode\": \"rgb_visual\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}}"
+    },
+    "sapunta_2024_primavera_rgb": {
+      "source": "drone",
+      "wetland_id": "sapunta",
+      "index": "rgb",
+      "year": 2024,
+      "season": "Primavera",
+      "period_key": "2024_primavera",
+      "visual": {
+        "path": "drone/rasters/sapunta_2024_primavera_rgb.webp",
+        "bounds": [
+          [
+            -21.296380870769646,
+            -68.77475090212441
+          ],
+          [
+            -21.293446883710853,
+            -68.76905825135537
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          19443,
+          10673
+        ],
+        "display_size": [
+          4096,
+          2248
+        ],
+        "render_mode": "smooth",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/drone/sapunta/rgb/2024_primavera.tif",
+      "source_fingerprint": {
+        "path": "data/drone/sapunta/rgb/2024_primavera.tif",
+        "size": 715147677,
+        "mtime_ns": 1773277809112842900
+      },
+      "export_signature": "{\"buffer_m\": 100.0, \"index\": \"rgb\", \"mode\": \"rgb_visual\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}}"
+    },
+    "sapunta_2025_verano_rgb": {
+      "source": "drone",
+      "wetland_id": "sapunta",
+      "index": "rgb",
+      "year": 2025,
+      "season": "Verano",
+      "period_key": "2025_verano",
+      "visual": {
+        "path": "drone/rasters/sapunta_2025_verano_rgb.webp",
+        "bounds": [
+          [
+            -21.296380935811243,
+            -68.77475117903606
+          ],
+          [
+            -21.29344653274111,
+            -68.76905820883312
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          10472,
+          5749
+        ],
+        "display_size": [
+          4096,
+          2249
+        ],
+        "render_mode": "smooth",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/drone/sapunta/rgb/2025_verano.tif",
+      "source_fingerprint": {
+        "path": "data/drone/sapunta/rgb/2025_verano.tif",
+        "size": 816431232,
+        "mtime_ns": 1773279017087950800
+      },
+      "export_signature": "{\"buffer_m\": 100.0, \"index\": \"rgb\", \"mode\": \"rgb_visual\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}}"
+    },
+    "sapunta_2025_otono_rgb": {
+      "source": "drone",
+      "wetland_id": "sapunta",
+      "index": "rgb",
+      "year": 2025,
+      "season": "Otoño",
+      "period_key": "2025_otono",
+      "visual": {
+        "path": "drone/rasters/sapunta_2025_otono_rgb.webp",
+        "bounds": [
+          [
+            -21.296380858159374,
+            -68.77475088402471
+          ],
+          [
+            -21.29344686198967,
+            -68.76905800546197
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          16578,
+          9100
+        ],
+        "display_size": [
+          4096,
+          2248
+        ],
+        "render_mode": "smooth",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/drone/sapunta/rgb/2025_otoño.tif",
+      "source_fingerprint": {
+        "path": "data/drone/sapunta/rgb/2025_otoño.tif",
+        "size": 641437896,
+        "mtime_ns": 1773278857718339200
+      },
+      "export_signature": "{\"buffer_m\": 100.0, \"index\": \"rgb\", \"mode\": \"rgb_visual\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}}"
+    },
+    "sapunta_2025_invierno_rgb": {
+      "source": "drone",
+      "wetland_id": "sapunta",
+      "index": "rgb",
+      "year": 2025,
+      "season": "Invierno",
+      "period_key": "2025_invierno",
+      "visual": {
+        "path": "drone/rasters/sapunta_2025_invierno_rgb.webp",
+        "bounds": [
+          [
+            -21.296380796568883,
+            -68.77475096444367
+          ],
+          [
+            -21.29344689318265,
+            -68.76905809509441
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          16921,
+          9288
+        ],
+        "display_size": [
+          4096,
+          2248
+        ],
+        "render_mode": "smooth",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/drone/sapunta/rgb/2025_invierno.tif",
+      "source_fingerprint": {
+        "path": "data/drone/sapunta/rgb/2025_invierno.tif",
+        "size": 655112080,
+        "mtime_ns": 1773278706332761100
+      },
+      "export_signature": "{\"buffer_m\": 100.0, \"index\": \"rgb\", \"mode\": \"rgb_visual\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}}"
+    },
+    "sapunta_2025_primavera_rgb": {
+      "source": "drone",
+      "wetland_id": "sapunta",
+      "index": "rgb",
+      "year": 2025,
+      "season": "Primavera",
+      "period_key": "2025_primavera",
+      "visual": {
+        "path": "drone/rasters/sapunta_2025_primavera_rgb.webp",
+        "bounds": [
+          [
+            -21.29638098212847,
+            -68.7747507783668
+          ],
+          [
+            -21.293446830897796,
+            -68.76905810949424
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          17664,
+          9697
+        ],
+        "display_size": [
+          4096,
+          2249
+        ],
+        "render_mode": "smooth",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/drone/sapunta/rgb/2025_primavera.tif",
+      "source_fingerprint": {
+        "path": "data/drone/sapunta/rgb/2025_primavera.tif",
+        "size": 1071433766,
+        "mtime_ns": 1773278927540614800
+      },
+      "export_signature": "{\"buffer_m\": 100.0, \"index\": \"rgb\", \"mode\": \"rgb_visual\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}}"
+    },
+    "sapunta_2026_verano_rgb": {
+      "source": "drone",
+      "wetland_id": "sapunta",
+      "index": "rgb",
+      "year": 2026,
+      "season": "Verano",
+      "period_key": "2026_verano",
+      "visual": {
+        "path": "drone/rasters/sapunta_2026_verano_rgb.webp",
+        "bounds": [
+          [
+            -21.29638086739921,
+            -68.77475100938743
+          ],
+          [
+            -21.293446986510038,
+            -68.76905807651391
+          ]
+        ],
+        "format": "WEBP",
+        "native_size": [
+          17395,
+          9548
+        ],
+        "display_size": [
+          4096,
+          2248
+        ],
+        "render_mode": "smooth",
+        "opacity": 0.9
+      },
+      "analytic_path": "data/drone/sapunta/rgb/2026_verano.tif",
+      "source_fingerprint": {
+        "path": "data/drone/sapunta/rgb/2026_verano.tif",
+        "size": 6132421858,
+        "mtime_ns": 1773279307641867400
+      },
+      "export_signature": "{\"buffer_m\": 100.0, \"index\": \"rgb\", \"mode\": \"rgb_visual\", \"visualization\": {\"clip_to_aoi\": true, \"opacity\": 0.9, \"preserve_pixels\": true, \"preview_format\": \"WEBP\", \"rgb_context_buffer_m\": 100, \"rgb_max_size\": 4096, \"rgb_quantize_colors\": 64, \"rgb_stretch_percentiles\": [2, 98], \"rgb_upscale_factor\": 1, \"rgb_webp_quality\": 58, \"upscale_factor\": 2}}"
     }
   },
   "periods": [
@@ -318,20 +711,63 @@
       "label": "Otoño 2023"
     },
     {
+      "key": "2023_primavera",
+      "label": "Primavera 2023"
+    },
+    {
       "key": "2023_verano",
       "label": "Verano 2023"
+    },
+    {
+      "key": "2024_invierno",
+      "label": "Invierno 2024"
+    },
+    {
+      "key": "2024_otono",
+      "label": "Otoño 2024"
+    },
+    {
+      "key": "2024_primavera",
+      "label": "Primavera 2024"
+    },
+    {
+      "key": "2024_verano",
+      "label": "Verano 2024"
+    },
+    {
+      "key": "2025_invierno",
+      "label": "Invierno 2025"
+    },
+    {
+      "key": "2025_otono",
+      "label": "Otoño 2025"
+    },
+    {
+      "key": "2025_primavera",
+      "label": "Primavera 2025"
+    },
+    {
+      "key": "2025_verano",
+      "label": "Verano 2025"
+    },
+    {
+      "key": "2026_verano",
+      "label": "Verano 2026"
     }
   ],
   "summary": {
     "n_wetlands": 2,
-    "n_periods": 6,
+    "n_periods": 16,
     "data_points": 0,
-    "raster_count": 6,
+    "raster_count": 16,
     "total_area_ha": 60.8,
-    "latest_period": "Verano 2023",
+    "latest_period": "Verano 2026",
     "available_years": [
       2022,
-      2023
+      2023,
+      2024,
+      2025,
+      2026
     ]
   }
 }

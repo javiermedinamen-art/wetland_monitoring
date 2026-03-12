@@ -1,5 +1,5 @@
 {
-  "generated_at": "2026-03-11T23:14:53+00:00",
+  "generated_at": "2026-03-12T01:36:08+00:00",
   "aoi_path": "wetlands_aoi.geojson",
   "year_range": {
     "start": 2017,
@@ -49,14 +49,17 @@
       "status": "ready",
       "summary": {
         "n_wetlands": 2,
-        "n_periods": 6,
+        "n_periods": 16,
         "data_points": 0,
-        "raster_count": 6,
+        "raster_count": 16,
         "total_area_ha": 60.8,
-        "latest_period": "Verano 2023",
+        "latest_period": "Verano 2026",
         "available_years": [
           2022,
-          2023
+          2023,
+          2024,
+          2025,
+          2026
         ]
       }
     }

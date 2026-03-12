@@ -381,7 +381,7 @@ SEASON_ALIASES = {"otono": ["otono", "otoño"]}
 def get_tiff_path(source_cfg: dict, wetland_id: str, year: int, season: str, index_key: str) -> Path | None:
     for root in get_source_input_roots(source_cfg):
         season_variants = SEASON_ALIASES.get(season, [season])
-        exts = (".tif", ".TIF", ".png", ".PNG", ".jpg", ".JPG") if index_key == "rgb" else (".tif", ".TIF")
+        exts = (".tif", ".tiff", ".TIF", ".TIFF", ".png", ".PNG", ".jpg", ".JPG") if index_key == "rgb" else (".tif", ".tiff", ".TIF", ".TIFF")
         for s in season_variants:
             for ext in exts:
                 candidate_new = root / wetland_id / index_key / f"{year}_{s}{ext}"

@@ -50,6 +50,8 @@
         .card-value{font-size:1.56rem;font-weight:700}
         .card-sub{font-size:.84rem;color:var(--muted);margin-top:6px}
         .card-sub strong{color:var(--text);font-weight:600}
+        .card-sub.mb-6{margin-bottom:8px}
+        .card-select{padding:6px 10px;border-radius:6px;border:1px solid var(--border);background:var(--surface-alt);color:var(--text);font-size:.88rem;min-width:120px}
         .panel{background:var(--surface);border:1px solid var(--border);border-radius:var(--radius);padding:18px}
         .map-panel{margin-bottom:18px}
         .charts-panel{margin-bottom:28px}
@@ -106,10 +108,10 @@
     <div class="cards">
         <div class="card period"><div class="card-label">Período más reciente</div><div class="card-value" id="kpi-period">—</div><div class="card-sub" id="kpi-period-sub"></div></div>
         <div class="card area"><div class="card-label">Área del AOI</div><div class="card-value" id="kpi-area">—</div><div class="card-sub" id="kpi-area-sub"></div></div>
-        <div class="card ndvi"><div class="card-label">NDVI actual vs histórico</div><div class="card-value" id="kpi-ndvi-current">—</div><div class="card-sub" id="kpi-ndvi-current-sub"></div></div>
-        <div class="card ndvi"><div class="card-label">NDVI anomalía estacional</div><div class="card-value" id="kpi-ndvi-seasonal">—</div><div class="card-sub" id="kpi-ndvi-seasonal-sub"></div></div>
-        <div class="card ndwi"><div class="card-label">NDWI actual vs histórico</div><div class="card-value" id="kpi-ndwi-current">—</div><div class="card-sub" id="kpi-ndwi-current-sub"></div></div>
-        <div class="card ndwi"><div class="card-label">NDWI anomalía estacional</div><div class="card-value" id="kpi-ndwi-seasonal">—</div><div class="card-sub" id="kpi-ndwi-seasonal-sub"></div></div>
+        <div class="card ndvi"><div class="card-label" id="kpi-ndvi-current-label">NDVI — vs promedio histórico</div><div class="card-value" id="kpi-ndvi-current">—</div><div class="card-sub" id="kpi-ndvi-current-sub"></div></div>
+        <div class="card ndvi"><div class="card-label">NDVI anomalía estacional</div><div class="card-sub mb-6"><select id="kpi-ndvi-season-select" class="card-select"></select></div><div class="card-value" id="kpi-ndvi-seasonal">—</div><div class="card-sub" id="kpi-ndvi-seasonal-sub"></div></div>
+        <div class="card ndwi"><div class="card-label" id="kpi-ndwi-current-label">NDWI — vs promedio histórico</div><div class="card-value" id="kpi-ndwi-current">—</div><div class="card-sub" id="kpi-ndwi-current-sub"></div></div>
+        <div class="card ndwi"><div class="card-label">NDWI anomalía estacional</div><div class="card-sub mb-6"><select id="kpi-ndwi-season-select" class="card-select"></select></div><div class="card-value" id="kpi-ndwi-seasonal">—</div><div class="card-sub" id="kpi-ndwi-seasonal-sub"></div></div>
     </div>
 
     <section class="panel map-panel">
@@ -462,31 +464,75 @@ function updateKPIs(){
 function renderMetricCard(indexKey){
     const indexEntry=getIndexEntry(indexKey);
     const latest=indexEntry.metrics?.latest;
-    const trend=indexEntry.metrics?.trend;
     const currentId=`kpi-${indexKey}-current`;
     const currentSubId=`kpi-${indexKey}-current-sub`;
+    const currentLabelId=`kpi-${indexKey}-current-label`;
     const seasonalId=`kpi-${indexKey}-seasonal`;
     const seasonalSubId=`kpi-${indexKey}-seasonal-sub`;
+    const seasonSelectId=`kpi-${indexKey}-season-select`;
 
     if(!latest){
+        document.getElementById(currentLabelId).textContent=`${indexKey.toUpperCase()} — vs promedio histórico`;
         setCard(currentId,'—',currentSubId,'Sin histórico disponible');
         setCard(seasonalId,'—',seasonalSubId,'Sin línea base estacional');
         return;
     }
 
-    const trendText=trend?`${trend.direction==='up'?'sube':'baja'} ${fmtSigned(trend.slope_per_year)}/año`:'tendencia insuficiente';
-    setCard(
-        currentId,
-        fmtValue(latest.value),
-        currentSubId,
-        `Histórico <strong>${fmtValue(latest.historical_mean)}</strong> · Anom. <strong>${fmtSigned(latest.historical_anomaly_abs)}</strong> (${fmtPct(latest.historical_anomaly_pct)}) · ${trendText}`
-    );
-    setCard(
-        seasonalId,
-        fmtSigned(latest.seasonal_anomaly_abs),
-        seasonalSubId,
-        `${latest.season_label}: base <strong>${fmtValue(latest.seasonal_mean)}</strong> · ${fmtPct(latest.seasonal_anomaly_pct)}`
-    );
+    const lastYear=latest.year;
+    document.getElementById(currentLabelId).textContent=`${indexKey.toUpperCase()} ${lastYear} vs promedio histórico`;
+    setCard(currentId,fmtValue(latest.value),currentSubId,'');
+    const pct=latest.historical_anomaly_pct;
+    const subEl=document.getElementById(currentSubId);
+    subEl.innerHTML='';
+    subEl.appendChild(document.createTextNode(`Promedio histórico: ${fmtValue(latest.historical_mean)} · `));
+    if(pct!==null&&pct!==undefined){
+        const verb=pct>=0?'Aumentó':'Disminuyó';
+        const span=document.createElement('span');
+        span.textContent=`${verb} en ${fmtPct(pct)}`;
+        span.style.color=pct>=0?'#22c55e':'#ef4444';
+        span.style.fontWeight='600';
+        subEl.appendChild(span);
+    }else{
+        subEl.appendChild(document.createTextNode('—'));
+    }
+
+    const sel=document.getElementById(seasonSelectId);
+    const seasonalMeans=indexEntry.metrics?.seasonal_means||{};
+    const points=indexEntry.points||[];
+    const seasonKeys=Object.keys(seasonalMeans).filter(k=>seasonalMeans[k]?.mean!=null);
+    if(seasonKeys.length===0){
+        setCard(seasonalId,'—',seasonalSubId,'Sin línea base estacional');
+        return;
+    }
+    const prevSelected=sel.value;
+    sel.innerHTML='';
+    seasonKeys.forEach(sk=>{
+        const opt=document.createElement('option');
+        opt.value=sk;
+        opt.textContent=seasonalMeans[sk]?.label||sk;
+        sel.appendChild(opt);
+    });
+    const selectedSeason=seasonKeys.includes(prevSelected)?prevSelected:(latest.season_key&&seasonKeys.includes(latest.season_key)?latest.season_key:seasonKeys[0]);
+    sel.value=selectedSeason;
+    sel.onchange=()=>{renderMetricCard(indexKey);};
+    const mostRecentForSeason=points.filter(p=>p.season_key===selectedSeason).sort((a,b)=>b.year-a.year)[0];
+    const seasonalMean=seasonalMeans[selectedSeason]?.mean;
+    if(!mostRecentForSeason||seasonalMean===null||seasonalMean===undefined){
+        setCard(seasonalId,'—',seasonalSubId,'Sin dato para esta estación');
+        return;
+    }
+    const anomaly=+(mostRecentForSeason.value-seasonalMean).toFixed(4);
+    const pctSeasonal=seasonalMean!==0?Math.round(((mostRecentForSeason.value-seasonalMean)/Math.abs(seasonalMean))*10000)/100:null;
+    setCard(seasonalId,fmtSigned(anomaly),seasonalSubId,'');
+    const subSeasonEl=document.getElementById(seasonalSubId);
+    subSeasonEl.innerHTML=`${mostRecentForSeason.season_label} ${mostRecentForSeason.year} · base <strong>${fmtValue(seasonalMean)}</strong>`;
+    if(pctSeasonal!==null){
+        const span=document.createElement('span');
+        span.textContent=` (${pctSeasonal>=0?'+':''}${pctSeasonal}%)`;
+        span.style.color=pctSeasonal>=0?'#22c55e':'#ef4444';
+        span.style.fontWeight='600';
+        subSeasonEl.appendChild(span);
+    }
 }
 
 function renderCharts(){
@@ -598,17 +644,20 @@ function renderSeasonalAnomalyChart(divId,indexKey){
         const seasonalMean=entry.metrics.seasonal_means?.[point.season_key]?.mean;
         return seasonalMean===null||seasonalMean===undefined?null:+(point.value-seasonalMean).toFixed(4);
     });
+    const lastN=4;
+    const sliced=points.slice(-lastN);
+    const slicedAnomalies=anomalies.slice(-lastN);
     const trace={
-        x:points.map(point=>point.label),
-        y:anomalies,
+        x:sliced.map(point=>point.label),
+        y:slicedAnomalies,
         type:'bar',
-        marker:{color:anomalies.map(value=>value>=0?'#22c55e':'#ef4444')},
+        marker:{color:slicedAnomalies.map(value=>value>=0?'#22c55e':'#ef4444')},
         hovertemplate:'<b>%{x}</b><br>Anomalía %{y:.4f}<extra></extra>'
     };
     const layout=cloneLayout();
     layout.xaxis={...layout.xaxis,type:'category',tickangle:-35};
     layout.yaxis={...layout.yaxis,title:{text:'Anomalía'}};
-    layout.title={text:'Desvío respecto al promedio de la estación',font:{size:13,color:'#c8d3e0'}};
+    layout.title={text:'Últimas 4 estaciones disponibles vs promedio estacional',font:{size:13,color:'#c8d3e0'}};
     drawPlot(divId,[trace],layout);
 }
 
